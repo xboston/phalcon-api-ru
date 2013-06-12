@@ -24,7 +24,7 @@ $versionPieces = explode(' ' , $version);
 $genVersion    = $versionPieces[0];
 
 define('API_DIR' , dirname(__DIR__) . '/' . $genVersion . '/');
-define('DOC_INDENT' , '   ');
+define('DOC_INDENT' , '   api/');
 
 
 class API_Generator
@@ -445,7 +445,7 @@ foreach ( $classes as $className ) {
     if ( count($documentationData['methods']) ) {
 
         $code .= 'Methods' . PHP_EOL;
-        $code .= '---------' . PHP_EOL . PHP_EOL;
+        $code .= '-------' . PHP_EOL . PHP_EOL;
         foreach ( $documentationData['methods'] as $method ) {
 
             $docClassName = str_replace("\\" , "_" , $method->getDeclaringClass()->name);
@@ -543,7 +543,7 @@ foreach ( $classes as $className ) {
 
     }
 
-    file_put_contents(API_DIR . $simpleClassName . '.rst' , $code);
+    file_put_contents(API_DIR .'api/'. $simpleClassName . '.rst' , $code);
 }
 
 
