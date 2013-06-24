@@ -26,6 +26,7 @@ $genVersion    = $versionPieces[0];
 define('API_DIR' , dirname(__DIR__) . '/' . $genVersion . '/');
 define('DOC_INDENT' , '   api/');
 
+is_dir(API_DIR) ? : mkdir(API_DIR , 0777 , true);
 
 class API_Generator
 {
@@ -34,8 +35,14 @@ class API_Generator
 
     protected $_classDocs = array();
 
+    /**
+     * @var Phalcon\Logger\Adapter\Stream
+     */
+    private $logger;
+
     public function __construct($directory)
     {
+        $this->logger = new Phalcon\Logger\Adapter\Stream("php://stdout");
         $this->_scanSources($directory);
     }
 
@@ -45,6 +52,9 @@ class API_Generator
         foreach ( $iterator as $item ) {
             if ( $item->getExtension() == 'c' ) {
                 if ( strpos($item->getPathname() , 'kernel') === false ) {
+
+                    $this->logger->info($item->getPathname());
+
                     $this->_getDocs($item->getPathname());
                 }
             }
@@ -133,11 +143,10 @@ class API_Generator
         return $this->_classDocs;
     }
 
-    public function getPhpDoc($phpdoc , $className , $methodName , $realClassName)
+    public function getPhpDoc($phpdoc , $className)
     {
 
-        $ret         = array();
-        $lines       = array();
+        $ret         = [ ];
         $description = '';
 
         $phpdoc = trim($phpdoc);
@@ -149,113 +158,17 @@ class API_Generator
             $line  = preg_replace('#^[ \t]+\*#' , '' , $line);
             $line  = str_replace('*\/' , '*/' , $line);
             $tline = trim($line);
-            if ( $className != $tline ) {
-                $lines[] = $line;
+
+            preg_match('/@([a-z0-9]+)/' , $tline , $matches);
+
+            if ( $className != $tline && (!isset($matches[1]) || ( $matches[1] != 'param' && $matches[1] != 'return' ) )) {
+                $description .= $line . PHP_EOL;
             }
         }
 
-        $rc = str_replace("\\\\" , "\\" , $realClassName);
+        $description = strtr($description , [ '<code>' => '<div class="highlight"><pre>' , '</code>' => '</pre></div>' ]);
 
-        $numberBlock = -1;
-        $insideCode  = false;
-        $codeBlocks  = array();
-        foreach ( $lines as $line ) {
-            if ( strpos($line , '<code') !== false ) {
-                $numberBlock++;
-                $insideCode = true;
-            }
-            if ( strpos($line , '</code') !== false ) {
-                $insideCode = false;
-            }
-            if ( $insideCode == false ) {
-                $line = str_replace('</code>' , '' , $line);
-                if ( trim($line) != $rc ) {
-                    if ( preg_match('/@([a-z0-9]+)/' , $line , $matches) ) {
-                        $content = trim(str_replace($matches[0] , '' , $line));
-                        if ( $matches[1] == 'param' ) {
-                            $parts = preg_split('/[ \t]+/' , $content);
-                            if ( count($parts) == 2 ) {
-                                $ret['parameters'][$parts[1]] = trim($parts[0]);
-                            } else {
-                                //throw new Exception("Failed proccessing parameters in ".$className.'::'.$methodName);
-                            }
-                        } else {
-                            $ret[$matches[1]] = $content;
-                        }
-                    } else {
-                        $description .= ltrim($line) . "\n";
-                    }
-                }
-            } else {
-                if ( !isset($codeBlocks[$numberBlock]) ) {
-                    $line                     = str_replace('<code>' , '' , $line);
-                    $codeBlocks[$numberBlock] = $line . "\n";
-                    $description .= '%%' . $numberBlock . '%%';
-                } else {
-                    $codeBlocks[$numberBlock] .= $line . "\n";
-                }
-            }
-        }
-
-        foreach ( $codeBlocks as $n => $cc ) {
-            $c         = '';
-            $firstLine = true;
-            $p         = explode("\n" , $cc);
-            foreach ( $p as $pp ) {
-                if ( $firstLine ) {
-                    if ( substr(ltrim($pp) , 0 , 1) != '[' ) {
-                        if ( !preg_match('#^<?php#' , ltrim($pp)) ) {
-                            if ( count($p) == 1 ) {
-                                $c .= '    <?php ';
-                            } else {
-                                $c .= '    <?php' . PHP_EOL . PHP_EOL;
-                            }
-                        }
-                    }
-                    $firstLine = false;
-                }
-                $pp = preg_replace('#^\t#' , '' , $pp);
-                if ( count($p) != 1 ) {
-                    $c .= '    ' . $pp . PHP_EOL;
-                } else {
-                    $c .= $pp . PHP_EOL;
-                }
-            }
-            $c .= PHP_EOL;
-            $codeBlocks[$n] = rtrim($c);
-        }
-
-        $description = str_replace('<p>' , '' , $description);
-        $description = str_replace('</p>' , PHP_EOL . PHP_EOL , $description);
-
-        $c = $description;
-        $c = str_replace("\\" , "\\\\" , $c);
-        $c = trim(str_replace("\t" , "" , $c));
-        $c = trim(str_replace("\n" , " " , $c));
-        foreach ( $codeBlocks as $n => $cc ) {
-            if ( preg_match('#\[[a-z]+\]#' , $cc) ) {
-                $type = 'ini';
-            } else {
-                $type = 'php';
-            }
-            $c = str_replace('%%' . $n . '%%' , PHP_EOL . PHP_EOL . '.. code-block:: ' . $type . PHP_EOL . PHP_EOL . $cc . PHP_EOL . PHP_EOL , $c);
-        }
-
-        $final     = '';
-        $blankLine = false;
-        foreach ( explode("\n" , $c) as $line ) {
-            if ( trim($line) == '' ) {
-                if ( $blankLine == false ) {
-                    $final .= $line . "\n";
-                    $blankLine = true;
-                }
-            } else {
-                $final .= $line . "\n";
-                $blankLine = false;
-            }
-        }
-
-        $ret['description'] = $final;
+        $ret['description'] = $description;
 
         return $ret;
     }
@@ -282,82 +195,27 @@ foreach ( get_declared_interfaces() as $className ) {
     $classes[] = $className;
 }
 
-//Exception class docs
-$docs['Exception'] = array(
-    '__construct'      => '/**
- * Exception constructor
- *
- * @param string $message
- * @param int $code
- * @param Exception $previous
-*/' ,
-    'getMessage'       => '/**
- * Gets the Exception message
- *
- * @return string
-*/' ,
-    'getCode'          => '/**
- * Gets the Exception code
- *
- * @return int
-*/' ,
-    'getLine'          => '/**
- * Gets the line in which the exception occurred
- *
- * @return int
-*/' ,
-    'getFile'          => '/**
- * Gets the file in which the exception occurred
- *
- * @return string
-*/' ,
-    'getTrace'         => '/**
- * Gets the stack trace
- *
- * @return array
-*/' ,
-    'getTrace'         => '/**
- * Gets the stack trace
- *
- * @return array
-*/' ,
-    'getTraceAsString' => '/**
- * Gets the stack trace as a string
- *
- * @return Exception
-*/' ,
-    '__clone'          => '/**
- * Clone the exception
- *
- * @return Exception
-*/' ,
-    'getPrevious'      => '/**
- * Returns previous Exception
- *
- * @return Exception
-*/' ,
-    '__toString'       => '/**
- * String representation of the exception
- *
- * @return string
-*/' ,
-);
-
 sort($classes);
 
-$indexClasses    = array();
-$indexInterfaces = array();
+
 foreach ( $classes as $className ) {
+
+    $classData = [ ];
+    $code      = '';
 
     $realClassName = $className;
 
     $simpleClassName = str_replace("\\" , "_" , $className);
+    $location        = API_DIR . str_replace("\\" , "/" , $className);
+
+    is_dir($location) ? : mkdir($location , 0777 , true);
 
     $reflector = new ReflectionClass($className);
 
     $documentationData = array();
 
     $typeClass = 'public';
+
     if ( $reflector->isAbstract() == true ) {
         $typeClass = 'abstract';
     }
@@ -376,41 +234,39 @@ foreach ( $classes as $className ) {
         'extends'     => $reflector->getParentClass() ,
         'implements'  => $reflector->getInterfaceNames() ,
         'constants'   => $reflector->getConstants() ,
-        'methods'     => $reflector->getMethods()
+        'methods'     => $reflector->getMethods() ,
     );
-
-    if ( $reflector->isInterface() == true ) {
-        $indexInterfaces[] = DOC_INDENT . $simpleClassName;
-    } else {
-        $indexClasses[] = DOC_INDENT . $simpleClassName;
-    }
 
     $nsClassName = str_replace("\\" , "\\\\" , $className);
 
-    if ( $reflector->isInterface() == true ) {
-        $code = 'Interface **' . $nsClassName . '**' . PHP_EOL;
-        $code .= str_repeat("=" , strlen($nsClassName) + 14) . PHP_EOL . PHP_EOL;
-    } else {
-        $code = 'Class **' . $nsClassName . '**' . PHP_EOL;
-        $code .= str_repeat("=" , strlen($nsClassName) + 10) . PHP_EOL . PHP_EOL;
-    }
+    $classData['name']      = $className;
+    $classData['type']      = $reflector->isInterface() == true ? 'Interface' : 'Class';
+    $classData['typeClass'] = $typeClass;
+    $classData['namespace'] = $reflector->getNamespaceName();
 
+
+    $extends = false;
     if ( $documentationData['extends'] ) {
         $extendsName = $documentationData['extends']->name;
+
+        // расширяет внутренний класс
         if ( strpos($extendsName , 'Phalcon') !== false ) {
             if ( class_exists($extendsName) ) {
                 $extendsPath = str_replace("\\" , "_" , $extendsName);
                 $extendsName = str_replace("\\" , "\\\\" , $extendsName);
-                $code .= '*extends* :doc:`' . $extendsName . ' <' . $extendsPath . '>`' . PHP_EOL . PHP_EOL;
+                $extends     = 'phalcon-core: ' . $extendsName . ' => ' . $extendsPath;
             } else {
-                $code .= '*extends* ' . $extendsName . PHP_EOL . PHP_EOL;
+                $extends = 'phalcon-none: ' . $extendsName . PHP_EOL . PHP_EOL;
             }
         } else {
-            $code .= '*extends* ' . $extendsName . PHP_EOL . PHP_EOL;
+            $extends = 'php-net: ' . $extendsName . PHP_EOL . PHP_EOL;
         }
     }
 
-    //Generate the interfaces part
+    $classData['extends'] = $extends;
+
+    // реализует
+    $implements = false;
     if ( count($documentationData['implements']) ) {
         $implements = array();
         foreach ( $documentationData['implements'] as $interfaceName ) {
@@ -418,7 +274,7 @@ foreach ( $classes as $className ) {
                 if ( interface_exists($interfaceName) ) {
                     $interfacePath = str_replace("\\" , "_" , $interfaceName);
                     $interfaceName = str_replace("\\" , "\\\\" , $interfaceName);
-                    $implements[]  = ':doc:`' . $interfaceName . ' <' . $interfacePath . '>`';
+                    $implements[]  = 'phalcon-core: ' . $interfaceName . ' => ' . $interfacePath;
                 } else {
                     $implements[] = str_replace("\\" , "\\\\" , $interfaceName);
                 }
@@ -426,26 +282,33 @@ foreach ( $classes as $className ) {
                 $implements[] = $interfaceName;
             }
         }
-        $code .= '*implements* ' . join(', ' , $implements) . PHP_EOL . PHP_EOL;
     }
 
+    $classData['implements'] = $implements;
+
+    $descriptionClass = false;
     if ( isset($classDocs[$realClassName]) ) {
-        $ret = $api->getPhpDoc($classDocs[$realClassName] , $className , null , $realClassName);
-        $code .= $ret['description'] . PHP_EOL . PHP_EOL;
+        $ret         = $api->getPhpDoc($classDocs[$realClassName] , $className , null , $realClassName);
+        $descriptionClass = $ret['description'];
     }
 
+    $classData['description'] = $descriptionClass;
+
+
+    $constants = [ ];
     if ( count($documentationData['constants']) ) {
-        $code .= 'Constants' . PHP_EOL;
-        $code .= '---------' . PHP_EOL . PHP_EOL;
         foreach ( $documentationData['constants'] as $name => $constant ) {
-            $code .= '*' . gettype($constant) . '* **' . $name . '**' . PHP_EOL . PHP_EOL;
+            $constants[$name] = gettype($constant);
         }
     }
 
+    $classData['constants'] = $constants;
+
+    $classData['methods'] = [ ];
+
+    $methodData = false;
     if ( count($documentationData['methods']) ) {
 
-        $code .= 'Methods' . PHP_EOL;
-        $code .= '-------' . PHP_EOL . PHP_EOL;
         foreach ( $documentationData['methods'] as $method ) {
 
             $docClassName = str_replace("\\" , "_" , $method->getDeclaringClass()->name);
@@ -461,25 +324,26 @@ foreach ( $classes as $className ) {
                 $ret = array();
             }
 
-            $code .= implode(' ' , Reflection::getModifierNames($method->getModifiers())) . ' ';
+            $methodData['types'] = array_flip(Reflection::getModifierNames($method->getModifiers()));
 
+            $return = null;
             if ( isset($ret['return']) ) {
                 if ( preg_match('/^(Phalcon[a-zA-Z0-9\\\\]+)/' , $ret['return'] , $matches) ) {
                     if ( class_exists($matches[0]) || interface_exists($matches[0]) ) {
                         $extendsPath = str_replace("\\" , "_" , $matches[1]);
                         $extendsName = str_replace("\\" , "\\\\" , $matches[1]);
-                        $code .= str_replace($matches[1] , ':doc:`' . $extendsName . ' <' . $extendsPath . '>` ' , $ret['return']);
+                        $return      = str_replace($matches[1] , 'phalcon-core: ' . $extendsName . ' => ' . $extendsPath . ' ' , $ret['return']);
                     } else {
                         $extendsName = str_replace("\\" , "\\\\" , $ret['return']);
-                        $code .= '*' . $extendsName . '* ';
+                        $return      = 'phalcon-none: ' . $extendsName;
                     }
 
                 } else {
-                    $code .= '*' . $ret['return'] . '* ';
+                    $return = 'php-net: ' . $ret['return'];
                 }
             }
-
-            $code .= ' **' . $method->name . '** (';
+            $methodData['return'] = $return;
+            $methodData['name']   = $method->name;
 
             $cp = array();
             foreach ( $method->getParameters() as $parameter ) {
@@ -522,50 +386,41 @@ foreach ( $classes as $className ) {
                     }
                 }
             }
-            $code .= join(', ' , $cp) . ')';
 
+            $methodData['parameters'] = join(', ' , $cp) . ')';
+
+
+            $methodData['inherited'] = false;
             if ( $simpleClassName != $docClassName ) {
-                $code .= ' inherited from ' . str_replace("\\" , "\\\\" , $method->getDeclaringClass()->name);
+                $methodData['inherited'] = ' inherited from ' . str_replace("\\" , "\\\\" , $method->getDeclaringClass()->name);
             }
 
-            $code .= PHP_EOL . PHP_EOL;
-
+            $description = false;
             if ( isset($ret['description']) ) {
                 foreach ( explode("\n" , $ret['description']) as $dline ) {
-                    $code .= "" . $dline . "\n";
+                    $description .= $dline;
                 }
             } else {
-                $code .= "...\n";
+                $description .= "...\n";
             }
-            $code .= PHP_EOL . PHP_EOL;
+            $methodData['description'] = $description;
 
+            $classData['methods'][] = $methodData;
         }
 
     }
 
-    file_put_contents(API_DIR .'api/'. $simpleClassName . '.rst' , $code);
+
+    ob_start();
+    require("body-full.php");
+
+    $data = ob_get_clean();
+
+    file_put_contents('test.html' , $data);
+    file_put_contents($location . '.html' , $data);
+
+    continue;
+    //die;
+
+    file_put_contents($location . '.html' , $code);
 }
-
-
-$index = 'Добро пожаловать!
-=================
-
-Что такое Phalcon?
-------------------
-Phalcon это проект с открытым исходным кодом, полноценный фреймворк для PHP 5 в виде Cи-расширения, оптимизированного для
-высокой производительности. Для работы вам не нужно знать язык Cи, так как функциональность фреймворка представлена классами PHP
-и полностью готова к использованию. Части Phalcon очень слабо связаны между собой, что позволяет использовать их в качестве
-независимых компонентов для любого вашего приложения.
-
-Phalcon заботится не только о производительности, нашей целью является создание надежного и простого в использовании инструмента!
-
-.. highlights::
-    Перевод документации на русский язык производится энтузиастами. Мы будем рады всем желающим поучаствовать в переводе и поиске ошибок.
-    Перевод и координация осуществляется на `GitHub проекта <https://github.com/xboston/phalcon-docs-ru>`_ и группе `Вконтакте <http://vk.com/phalconphp>`_.
-
-Оглавление
-----------
-.. toctree::
-   :maxdepth: 1' . PHP_EOL . PHP_EOL;
-
-file_put_contents(API_DIR . 'index.rst' , $index . join(PHP_EOL , $indexClasses) . PHP_EOL . join(PHP_EOL , $indexInterfaces));
