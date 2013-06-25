@@ -5,7 +5,7 @@
 
     <title></title>
 
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" type="text/css" media="all" href="css/style.css?v=1"/>
 
 </head>
@@ -19,8 +19,8 @@
         <a class="header-logo" href="#">Phalcon</a>
 
         <div class="header-right">
-            <iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
-                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
         </div>
         <ul class="header-nav">
 
@@ -51,179 +51,181 @@
 
 <div class="content-wrap clear-fix">
 
-<div class="sidebar">
+    <div class="sidebar">
 
-    <div class="searchbox-wrap">
-        <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
-        <input type="submit" class="search-button"/>
-    </div>
-
-
-    <ul class="api-table-of-contents">
-        <li><a href="#" class="api-top-level-link">Acl</a></li>
-        <li><a href="#" class="api-top-level-link">Annotations</a></li>
-        <li><a href="#" class="api-top-level-link">Assets</a></li>
-        <li>
-            <a href="#" class="api-top-level-link active">Cache</a>
-            <ul class="api-sublist dash-list">
-                <li>
-                    <a class="api-link active" href="#">Backend</a>
-                    <ul class="api-sublist">
-                        <li><a href="#" class="api-link">Apc</a></li>
-                        <li><a href="#" class="api-link">File</a></li>
-                        <li><a href="#" class="api-link">Memcache</a></li>
-                        <li><a href="#" class="api-link">Memory</a></li>
-                        <li><a href="#" class="api-link">Mongo</a></li>
-                    </ul>
-                </li>
-                <li><a class="api-link" href="#">Exeption</a></li>
-                <li>
-                    <a class="api-link" href="#">Frontend</a>
-                    <ul class="api-sublist">
-                        <li><a href="#" class="api-link">Base64</a></li>
-                        <li><a href="#" class="api-link">Data</a></li>
-                        <li><a href="#" class="api-link">Json</a></li>
-                        <li><a href="#" class="api-link">None</a></li>
-                        <li><a href="#" class="api-link">Output</a></li>
-                    </ul>
-                </li>
-                <li><a class="api-link" href="#">Multiple</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="api-top-level-link">CLI</a></li>
-        <li><a href="#" class="api-top-level-link">Config</a></li>
-        <li><a href="#" class="api-top-level-link">Crypt</a></li>
-        <li><a href="#" class="api-top-level-link">Db</a></li>
-        <li><a href="#" class="api-top-level-link">DI</a></li>
-        <li><a href="#" class="api-top-level-link">Escaper</a></li>
-        <li><a href="#" class="api-top-level-link">Events</a></li>
-        <li><a href="#" class="api-top-level-link">Filter</a></li>
-        <li><a href="#" class="api-top-level-link">Flash</a></li>
-        <li><a href="#" class="api-top-level-link">Forms</a></li>
-        <li><a href="#" class="api-top-level-link">Http</a></li>
-        <li><a href="#" class="api-top-level-link">Loader</a></li>
-        <li><a href="#" class="api-top-level-link">Logger</a></li>
-        <li><a href="#" class="api-top-level-link">Mvc</a></li>
-        <li><a href="#" class="api-top-level-link">Paginator</a></li>
-        <li><a href="#" class="api-top-level-link">Queue</a></li>
-        <li><a href="#" class="api-top-level-link">Security</a></li>
-        <li><a href="#" class="api-top-level-link">Session</a></li>
-        <li><a href="#" class="api-top-level-link">Tag</a></li>
-        <li><a href="#" class="api-top-level-link">Translate</a></li>
-        <li><a href="#" class="api-top-level-link">Validation</a></li>
-    </ul>
-
-</div>
-
-<div class="content">
-
-    <h1><span class="lighter"><?php echo $classData['type'] ?></span> <?php echo $classData['name'] ?></h1>
-
-    <table class="api-info-table">
-
-        <tr>
-            <th>Namespace:</th>
-            <td><a href="#"><?php echo $classData['namespace'] ?></a></td>
-        </tr>
-
-        <?php if ( $classData['implements'] ): ?>
-            <tr>
-                <th>Implements:</th>
-                <td>
-                    <?php foreach ( $classData['implements'] as $implements ): ?>
-                        <a href="#"><?php echo $implements ?></a>
-                    <?php endforeach ?>
-                </td>
-            </tr>
-        <?php endif ?>
-
-        <?php if ( $classData['extends'] ): ?>
-            <tr>
-                <th>Extends:</th>
-                <td><a href="#"><?php echo $classData['extends'] ?></a></td>
-            </tr>
-        <?php endif ?>
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
 
 
-    </table>
-
-    <?php if ( $classData['description'] ): ?>
-        <div class="note"><?php echo $classData['description'] ?></div>
-    <?php endif ?>
-
-    <h2>Subclasses</h2>
-
-    <ul class="two-columns">
-        <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
-        <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
-        <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
-        <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
-        <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
-    </ul>
-
-    <?php if ( $classData['constants'] ): ?>
-        <h2>Constants</h2>
-
-        <ul class="two-columns">
-            <?php foreach ( $classData['constants'] as $value=>$type ): ?>
-                <li><?php echo $type . ': ' . $value ?></li>
-            <?php endforeach ?>
-
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
         </ul>
 
-    <?php endif ?>
-
-    <?php if($classData['methods']): ?>
-    <h2>Methods summary</h2>
-
-    <table class="api-methods-table">
-
-        <?php foreach($classData['methods'] as $method): ?>
-        <tr>
-            <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#"><?php echo $method['name'] ?></a></td>
-            <td class="description"><?php echo $method['description'] ?></td>
-        </tr>
-        <?php endforeach ?>
-
-    </table>
-    <?php endif ?>
-
-
-
-    <h2>Method details</h2>
-
-
-    <h3>__construct</h3>
-
-    <p>
-
-    <div class="highlight">
-                    <pre>
-public __construct ($frontend, $options = null )
-                    </pre>
     </div>
-    </p>
 
-    <p>Phalcon\Cache\Backend constructor</p>
+    <div class="content">
 
-    <h4>Parameters:</h4>
+        <h1><span class="lighter"><?php echo $classData['type'] ?></span> <?php echo $classData['name'] ?></h1>
 
-    <ul>
-        <li><span class="strong">$frontend</span> <a href="#">Phalcon\Cache\FrontendInterface</a><br/>the property name or the event name</li>
-        <li><span class="strong">$options</span> array</li>
-    </ul>
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#"><?php echo $classData['namespace'] ?></a></td>
+            </tr>
+
+            <?php if ( $classData['implements'] ): ?>
+                <tr>
+                    <th>Implements:</th>
+                    <td>
+                        <?php foreach ( $classData['implements'] as $implements ): ?>
+                            <a href="#"><?php echo $implements ?></a>
+                        <?php endforeach ?>
+                    </td>
+                </tr>
+            <?php endif ?>
+
+            <?php if ( $classData['extends'] ): ?>
+                <tr>
+                    <th>Extends:</th>
+                    <td><a href="#"><?php echo $classData['extends'] ?></a></td>
+                </tr>
+            <?php endif ?>
 
 
-    <h4>Returns:</h4>
+        </table>
 
-    <p>mixed the behavior object, or null if the behavior does not exist</p>
+        <?php if ( $classData['description'] ): ?>
+            <div class="note"><?php echo $classData['description']['full'] ?></div>
+        <?php endif ?>
+<!--
+        <h2>Subclasses</h2>
 
-    <h4>Source Code:</h4>
+        <ul class="two-columns">
+            <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+            <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+            <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+            <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+            <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+        </ul>
+-->
+        <?php if ( $classData['constants'] ): ?>
 
-    <p><a href="#">Cache/Backend.php:25-31</a></p>
+            <h2>Constants</h2>
+
+            <ul class="two-columns">
+                <?php foreach ( $classData['constants'] as $value => $type ): ?>
+                    <li><?php echo gettype($type) . ' ' . $value ?></li>
+                <?php endforeach ?>
+            </ul>
+
+        <?php endif ?>
+
+        <?php if ( $classData['methods'] ): ?>
+
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                <?php foreach ( $classData['methods'] as $method ): ?>
+                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#"><?php echo $method['name'] ?></a></td>
+                        <td class="description"><?php echo $method['description']['mini'] ?></td>
+                    </tr>
+                <?php endforeach ?>
+            </table>
+
+            <h2>Method details</h2>
+
+            <?php foreach ( $classData['methods'] as $method ): ?>
+                <br />
+                <h3><?php echo $method['name'];?></h3>
+
+                <p>
+                    <div class="highlight">
+                        <pre><?php echo implode(' ',$method['modifiers']) ?> <?php echo $method['name'] ?> ( <?php echo implode(', ',$method['parameters']) ?> )</pre>
+                    </div>
+                </p>
+
+                <?php if($method['description']): ?>
+
+                    <p><?php echo $method['description']['full']; ?></p>
+
+                <?php endif ?>
+
+                <?php if($method['parameters']): ?>
+
+                <h4>Parameters:</h4>
+
+                <ul>
+                    <?php foreach($method['parameters'] as $parameter): ?>
+                    <li><span class="strong"><?php echo $parameter ?></span> <a href="#">Phalcon\Cache\FrontendInterface</a><br/>the property name or the event name</li>
+                    <?php endforeach ?>
+                    <!--<li><span class="strong">$options</span> array</li>-->
+                </ul>
+
+                <?php endif ?>
+
+                <h4>Returns:</h4>
+
+                <p>mixed the behavior object, or null if the behavior does not exist</p>
 
 
-</div>
+            <?php endforeach ?>
+
+        <?php endif ?>
+    </div>
 </div>
 
 
