@@ -1,12 +1,5 @@
 <?php
 
-/**
- * This scripts generates the stubs to be used on IDEs
- *
- * Change the CPHALCON_DIR constant to point to the dev/ directory in the Phalcon source code
- *
- * php ide/gen-stubs.php
- */
 
 if ( !extension_loaded('phalcon') ) {
     throw new Exception("Phalcon extension is required");
@@ -106,17 +99,6 @@ class Stubs_Generator
         }
     }
 
-    protected function _findClassName($classDoc)
-    {
-
-
-        foreach ( explode("\n" , $classDoc) as $line ) {
-            echo $line;
-        }
-
-        return null;
-    }
-
     public function getDocs()
     {
         return $this->_docs;
@@ -152,7 +134,7 @@ foreach ( $allClasses as $className ) {
         continue;
     }
 
-    //className = "Phalcon\Tag";
+    //$className = "Phalcon\CLI\Console";
 
     $logger->log($className);
 
@@ -216,7 +198,7 @@ foreach ( $allClasses as $className ) {
         if ( $extends ) {
             $classData['extends'] = $extends->name;
 
-            $logger->info('extends: ' . $reflector->name . ' - ' . $extends->name);
+            //$logger->info('extends: ' . $reflector->name . ' - ' . $extends->name);
         } else {
             $classData['extends'] = false;
         }
@@ -311,42 +293,42 @@ foreach ( $allClasses as $className ) {
     file_put_contents($path . DIRECTORY_SEPARATOR . $normalClassName . '.html' , $source);
 }
 
-
 class helper
 {
 
-    public static function getPhpDoc($phpdoc , $className)
+    public static function getPhpDoc($phpdoc , $className = false)
     {
 
         $description = '';
 
         $phpdoc = trim($phpdoc);
-        $phpdoc = str_replace("\r" , "" , $phpdoc);
 
         foreach ( explode("\n" , $phpdoc) as $line ) {
-            $line  = preg_replace('#^/\*\*#' , '' , $line);
-            $line  = str_replace('*/' , '' , $line);
-            $line  = preg_replace('#^[ \t]+\*#' , '' , $line);
-            $line  = str_replace('*\/' , '*/' , $line);
-            $tline = trim($line);
+            $line = preg_replace('#^/\*\*#' , '' , $line);
+            $line = str_replace('*/' , '' , $line);
+            $line = preg_replace('#^[ \t]+\*#' , '' , $line);
+            $line = str_replace('*\/' , '*/' , $line);
+            $line = preg_replace('#^[\t]\*#' , '' , $line);
 
-            preg_match('/@([a-z0-9]+)/' , $tline , $matches);
-
-            if ( $className != $tline && (!isset($matches[1]) || ($matches[1] != 'param' && $matches[1] != 'return')) ) {
-                $description .= $line . PHP_EOL;
-            }
+            $description .= $line . PHP_EOL;
         }
 
-        $description = trim($description , "\n");
+        preg_match("|<code([^>]*)>(.*?)<\/code\s*>|si" , $description , $codes);
+        $code = isset($codes[2]) ? $codes[2] : false;
 
-        $descriptionMini = preg_replace("|<code([^>]*)>(.*?)<\/code\s*>|si" , '' , $description);
+        $descriptionFull = $description;
+        $descriptionFull = preg_replace('/@([a-z0-9_-]+)([^\n]+)/is' , '' , $descriptionFull);
 
-        $descriptionFull = strtr($description , [ '<code>' => '<div class="highlight"><pre>' , '</code>' => '</pre></div>' ]);
-        $descriptionFull = trim($descriptionFull , "\n");
+        $descriptionMini = preg_replace("|<code([^>]*)>(.*?)<\/code\s*>|si" , '' , $descriptionFull);
+        $descriptionMini = str_replace("\n" , ' ' , $descriptionMini);
 
-        $descriptionFull = nl2br($descriptionFull);
+        preg_match_all('/@param\s([^\s]+)\s([^\n]+)/is' , $description , $arr);
+        $params = array_combine($arr[2] , $arr[1]);
 
-        return [ 'mini' => $descriptionMini , 'full' => $descriptionFull ];
+        preg_match('/@return\s([^\n]+)/is' , $description , $returns);
+        $return = isset($returns[1]) ? $returns[1] : 'return';
+
+        return [ 'full' => $descriptionFull , 'description' => trim($descriptionMini) , 'code' => $code , 'params' => $params , 'return' => $return ];
     }
 
 }

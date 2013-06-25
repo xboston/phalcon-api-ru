@@ -5,8 +5,8 @@
 
     <title></title>
 
-    <!--<link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>-->
-    <link rel="stylesheet" type="text/css" media="all" href="css/style.css?v=1"/>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
 
 </head>
 <body>
@@ -131,7 +131,7 @@
                     <th>Implements:</th>
                     <td>
                         <?php foreach ( $classData['implements'] as $implements ): ?>
-                            <a href="#"><?php echo $implements ?></a>
+                            <a href="#"><?php echo $implements ?></a>,
                         <?php endforeach ?>
                     </td>
                 </tr>
@@ -148,19 +148,28 @@
         </table>
 
         <?php if ( $classData['description'] ): ?>
-            <div class="note"><?php echo $classData['description']['full'] ?></div>
+            <div class="note"><?php echo $classData['description']['description'] ?></div>
         <?php endif ?>
-<!--
-        <h2>Subclasses</h2>
 
-        <ul class="two-columns">
-            <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
-            <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
-            <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
-            <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
-            <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
-        </ul>
--->
+        <?php if ( $classData['description']['code'] ): ?>
+
+            <div class="highlight">
+                <pre><?php echo $classData['description']['code']; ?></pre>
+            </div>
+
+        <?php endif ?>
+
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
         <?php if ( $classData['constants'] ): ?>
 
             <h2>Constants</h2>
@@ -180,8 +189,8 @@
             <table class="api-methods-table">
                 <?php foreach ( $classData['methods'] as $method ): ?>
                     <tr>
-                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#"><?php echo $method['name'] ?></a></td>
-                        <td class="description"><?php echo $method['description']['mini'] ?></td>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#<?php echo $method['name'] ?>"><?php echo $method['name'] ?></a></td>
+                        <td class="description"><?php echo $method['description']['description'] ?></td>
                     </tr>
                 <?php endforeach ?>
             </table>
@@ -189,38 +198,47 @@
             <h2>Method details</h2>
 
             <?php foreach ( $classData['methods'] as $method ): ?>
-                <br />
-                <h3><?php echo $method['name'];?></h3>
+                <br/>
+                <h3 id="<?php echo $method['name'] ?>"><?php echo $method['name']; ?></h3>
 
                 <p>
-                    <div class="highlight">
-                        <pre><?php echo implode(' ',$method['modifiers']) ?> <?php echo $method['name'] ?> ( <?php echo implode(', ',$method['parameters']) ?> )</pre>
-                    </div>
+                <div class="highlight">
+                    <pre><?php echo implode(' ' , $method['modifiers']) ?> <?php echo $method['name'] ?> ( <?php echo implode(', ' , $method['parameters']) ?> )</pre>
+                </div>
                 </p>
 
-                <?php if($method['description']): ?>
+                <?php if ( $method['description'] ): ?>
 
-                    <p><?php echo $method['description']['full']; ?></p>
-
-                <?php endif ?>
-
-                <?php if($method['parameters']): ?>
-
-                <h4>Parameters:</h4>
-
-                <ul>
-                    <?php foreach($method['parameters'] as $parameter): ?>
-                    <li><span class="strong"><?php echo $parameter ?></span> <a href="#">Phalcon\Cache\FrontendInterface</a><br/>the property name or the event name</li>
-                    <?php endforeach ?>
-                    <!--<li><span class="strong">$options</span> array</li>-->
-                </ul>
+                    <p><?php echo $method['description']['description']; ?></p>
 
                 <?php endif ?>
 
-                <h4>Returns:</h4>
+                <?php if ( $method['description']['code'] ): ?>
 
-                <p>mixed the behavior object, or null if the behavior does not exist</p>
+                    <div class="highlight">
+                        <pre><?php echo $method['description']['code']; ?></pre>
+                    </div>
 
+                <?php endif ?>
+
+
+                <?php if ( $method['description']['params'] ): ?>
+
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                        <?php foreach ( $method['description']['params'] as $parameterName => $parameterType ): ?>
+                            <li><span class="strong"><?php echo $parameterName ?></span> <a href="#"><?php echo $parameterType ?></a></li>
+                        <?php endforeach ?>
+                    </ul>
+
+                <?php endif ?>
+
+                <?php if ( $method['description']['return'] !== 'return' ): ?>
+                    <h4>Returns:</h4>
+
+                    <p><?php echo $method['description']['return'] ?></p>
+                <?php endif ?>
 
             <?php endforeach ?>
 
