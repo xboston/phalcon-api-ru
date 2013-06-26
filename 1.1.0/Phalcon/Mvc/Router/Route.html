@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Mvc\Router\Route</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Mvc\Router</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\Mvc\Router\RouteInterface</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Mvc\Router\Route   This class represents every route added to the router</div>
+        
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">\Phalcon\Mvc\Router\Route constructor</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compilePattern">compilePattern</a></td>
+                        <td class="description">Replaces placeholders from pattern returning a valid PCRE regular expression</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#via">via</a></td>
+                        <td class="description">Set one or more HTTP methods that constraint the matching of the route</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#reConfigure">reConfigure</a></td>
+                        <td class="description">Reconfigure the route adding a new pattern and a set of paths</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getName">getName</a></td>
+                        <td class="description">Returns the route's name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setName">setName</a></td>
+                        <td class="description">Sets the route's name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#beforeMatch">beforeMatch</a></td>
+                        <td class="description">Sets a callback that is called if the route is matched.  The developer can implement any arbitrary conditions here  If the callback returns false the route is treaded as not matched</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getBeforeMatch">getBeforeMatch</a></td>
+                        <td class="description">Returns the 'before match' callback if any</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getRouteId">getRouteId</a></td>
+                        <td class="description">Returns the route's id</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getPattern">getPattern</a></td>
+                        <td class="description">Returns the route's pattern</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getCompiledPattern">getCompiledPattern</a></td>
+                        <td class="description">Returns the route's compiled pattern</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getPaths">getPaths</a></td>
+                        <td class="description">Returns the paths</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getReversedPaths">getReversedPaths</a></td>
+                        <td class="description">Returns the paths using positions as keys and names as values</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setHttpMethods">setHttpMethods</a></td>
+                        <td class="description">Sets a set of HTTP methods that constraint the matching of the route (alias of via)</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getHttpMethods">getHttpMethods</a></td>
+                        <td class="description">Returns the HTTP methods that constraint matching the route</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setHostname">setHostname</a></td>
+                        <td class="description">Sets a hostname restriction to the route</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getHostname">getHostname</a></td>
+                        <td class="description">Returns the hostname restriction if any</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#convert">convert</a></td>
+                        <td class="description">Adds a converter to perform an additional transformation for certain parameter</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getConverters">getConverters</a></td>
+                        <td class="description">Returns the router converter</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#reset">reset</a></td>
+                        <td class="description">Resets the internal route id generator</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __construct ( $pattern, $paths = null, $httpMethods = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>\Phalcon\Mvc\Router\Route constructor</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$pattern</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$paths</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$httpMethods</span> <a href="#">array|string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="compilePattern">compilePattern</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compilePattern ( $pattern )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Replaces placeholders from pattern returning a valid PCRE regular expression</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$pattern</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="via">via</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public via ( $httpMethods )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Set one or more HTTP methods that constraint the matching of the route</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ $route->via('GET');
+ $route->via(array('GET', 'POST'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$httpMethods</span> <a href="#">string|array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Router\Route</p>
+                
+                            <br/>
+                <h3 id="reConfigure">reConfigure</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public reConfigure ( $pattern, $paths = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Reconfigure the route adding a new pattern and a set of paths</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$pattern</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$paths</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getName">getName</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getName (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the route's name</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setName">setName</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setName ( $name )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the route's name</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ $router->add('/about', array(
+     'controller' => 'about'
+ ))->setName('about');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Router\Route</p>
+                
+                            <br/>
+                <h3 id="beforeMatch">beforeMatch</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public beforeMatch ( $callback )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a callback that is called if the route is matched.  The developer can implement any arbitrary conditions here  If the callback returns false the route is treaded as not matched</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$callback</span> <a href="#">callback</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Router\Route</p>
+                
+                            <br/>
+                <h3 id="getBeforeMatch">getBeforeMatch</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getBeforeMatch (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the 'before match' callback if any</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="getRouteId">getRouteId</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getRouteId (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the route's id</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getPattern">getPattern</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getPattern (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the route's pattern</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getCompiledPattern">getCompiledPattern</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getCompiledPattern (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the route's compiled pattern</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getPaths">getPaths</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getPaths (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the paths</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="getReversedPaths">getReversedPaths</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getReversedPaths (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the paths using positions as keys and names as values</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="setHttpMethods">setHttpMethods</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setHttpMethods ( $httpMethods )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a set of HTTP methods that constraint the matching of the route (alias of via)</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ $route->setHttpMethods('GET');
+ $route->setHttpMethods(array('GET', 'POST'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$httpMethods</span> <a href="#">string|array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Router\Route</p>
+                
+                            <br/>
+                <h3 id="getHttpMethods">getHttpMethods</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getHttpMethods (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the HTTP methods that constraint matching the route</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string|array</p>
+                
+                            <br/>
+                <h3 id="setHostname">setHostname</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setHostname ( $hostname )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a hostname restriction to the route</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ $route->setHostname('localhost');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$httpMethods</span> <a href="#">string|array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Router\Route</p>
+                
+                            <br/>
+                <h3 id="getHostname">getHostname</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getHostname (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the hostname restriction if any</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="convert">convert</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public convert ( $name, $converter )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds a converter to perform an additional transformation for certain parameter</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$converter</span> <a href="#">callable</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Router\Route</p>
+                
+                            <br/>
+                <h3 id="getConverters">getConverters</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getConverters (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the router converter</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="reset">reset</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static reset (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resets the internal route id generator</p>
+
+                
+                
+
+                
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

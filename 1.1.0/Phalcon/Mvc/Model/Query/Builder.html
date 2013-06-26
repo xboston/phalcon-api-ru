@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Mvc\Model\Query\Builder</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Mvc\Model\Query</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\Mvc\Model\Query\BuilderInterface</a>,
+                                                    <a href="#">Phalcon\DI\InjectionAwareInterface</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Mvc\Model\Query\Builder   Helps to create PHQL queries using an OO interface</div>
+        
+        
+            <div class="highlight">
+                <pre>
+$resultset = $this->modelsManager->createBuilder()
+   ->from('Robots')
+   ->join('RobotsParts')
+   ->limit(20)
+   ->orderBy('Robots.name')
+   ->getQuery()
+   ->execute();
+</pre>
+            </div>
+
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">\Phalcon\Mvc\Model\Query\Builder constructor</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDI">setDI</a></td>
+                        <td class="description">Sets the DependencyInjector container</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDI">getDI</a></td>
+                        <td class="description">Returns the DependencyInjector container</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#columns">columns</a></td>
+                        <td class="description">Sets the columns to be queried</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getColumns">getColumns</a></td>
+                        <td class="description">Return the columns to be queried</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#from">from</a></td>
+                        <td class="description">Sets the models who makes part of the query</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addFrom">addFrom</a></td>
+                        <td class="description">Add a model to take part of the query</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getFrom">getFrom</a></td>
+                        <td class="description">Return the models who makes part of the query</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#join">join</a></td>
+                        <td class="description">Adds a join to the query</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#leftJoin">leftJoin</a></td>
+                        <td class="description">Adds a LEFT join to the query</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#rightJoin">rightJoin</a></td>
+                        <td class="description">Adds a RIGHT join to the query</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#where">where</a></td>
+                        <td class="description">Sets the query conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#andWhere">andWhere</a></td>
+                        <td class="description">Appends a condition to the current conditions using a AND operator</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#orWhere">orWhere</a></td>
+                        <td class="description">Appends a condition to the current conditions using a OR operator</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#betweenWhere">betweenWhere</a></td>
+                        <td class="description">Appends a BETWEEN condition to the current conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#inWhere">inWhere</a></td>
+                        <td class="description">Appends an IN condition to the current conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#notInWhere">notInWhere</a></td>
+                        <td class="description">Appends a NOT IN condition to the current conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getWhere">getWhere</a></td>
+                        <td class="description">Return the conditions for the query</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#orderBy">orderBy</a></td>
+                        <td class="description">Sets a ORDER BY condition clause</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getOrderBy">getOrderBy</a></td>
+                        <td class="description">Returns the set ORDER BY clause</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#having">having</a></td>
+                        <td class="description">Sets a HAVING condition clause. You need to escape PHQL reserved words using [ and ] delimiters</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getHaving">getHaving</a></td>
+                        <td class="description">Return the current having clause</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#limit">limit</a></td>
+                        <td class="description">Sets a LIMIT clause, optionally a offset clause</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getLimit">getLimit</a></td>
+                        <td class="description">Returns the current LIMIT clause</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#offset">offset</a></td>
+                        <td class="description">Sets an OFFSET clause</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getOffset">getOffset</a></td>
+                        <td class="description">Returns the current OFFSET clause</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#groupBy">groupBy</a></td>
+                        <td class="description">Sets a GROUP BY clause</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getGroupBy">getGroupBy</a></td>
+                        <td class="description">Returns the GROUP BY clause</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getPhql">getPhql</a></td>
+                        <td class="description">Returns a PHQL statement built based on the builder parameters</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getQuery">getQuery</a></td>
+                        <td class="description">Returns the query built</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __construct ( $params = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>\Phalcon\Mvc\Model\Query\Builder constructor</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$params</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setDI">setDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setDI ( $dependencyInjector )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the DependencyInjector container</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="getDI">getDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDI (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the DependencyInjector container</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DiInterface</p>
+                
+                            <br/>
+                <h3 id="columns">columns</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public columns ( $columns )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the columns to be queried</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->columns(array('id', 'name'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$columns</span> <a href="#">string|array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="getColumns">getColumns</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getColumns (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Return the columns to be queried</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string|array</p>
+                
+                            <br/>
+                <h3 id="from">from</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public from ( $models )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the models who makes part of the query</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->from(array('Robots', 'RobotsParts'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$models</span> <a href="#">string|array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="addFrom">addFrom</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addFrom ( $model, $alias = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Add a model to take part of the query</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->addFrom('Robots', 'r');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$model</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$alias</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="getFrom">getFrom</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getFrom (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Return the models who makes part of the query</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string|array</p>
+                
+                            <br/>
+                <h3 id="join">join</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public join ( $model, $conditions = null, $alias = null, $type = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds a join to the query</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->join('Robots');
+	$builder->join('Robots', 'r.id = RobotsParts.robots_id');
+	$builder->join('Robots', 'r.id = RobotsParts.robots_id', 'r');
+	$builder->join('Robots', 'r.id = RobotsParts.robots_id', 'r', 'LEFT');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$model</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$conditions</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$alias</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$type</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="leftJoin">leftJoin</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public leftJoin ( $model, $conditions = null, $alias = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds a LEFT join to the query</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->leftJoin('Robots', 'r.id = RobotsParts.robots_id', 'r');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$model</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$conditions</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$alias</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="rightJoin">rightJoin</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public rightJoin ( $model, $conditions = null, $alias = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds a RIGHT join to the query</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->rightJoin('Robots', 'r.id = RobotsParts.robots_id', 'r');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$model</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$conditions</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$alias</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="where">where</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public where ( $conditions, $bindParams = null, $bindTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the query conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->where('name = :name: AND id > :id:');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$conditions</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$bindParams</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$bindTypes</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="andWhere">andWhere</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public andWhere ( $conditions, $bindParams = null, $bindTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends a condition to the current conditions using a AND operator</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->andWhere('name = "Peter"');
+	$builder->andWhere('name = :name: AND id > :id:', array('name' => 'Peter', 'id' => 100));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$conditions</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$bindParams</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$bindTypes</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="orWhere">orWhere</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public orWhere ( $conditions, $bindParams = null, $bindTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends a condition to the current conditions using a OR operator</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->orWhere('name = "Peter"');
+	$builder->orWhere('name = :name: AND id > :id:', array('name' => 'Peter', 'id' => 100));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$conditions</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$bindParams</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$bindTypes</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="betweenWhere">betweenWhere</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public betweenWhere ( $expr, $minimum, $maximum )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends a BETWEEN condition to the current conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->betweenWhere('price', 100.25, 200.50);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$expr</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$minimum</span> <a href="#">mixed</a></li>
+                                                    <li><span class="strong">$maximum</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="inWhere">inWhere</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public inWhere ( $expr, $values )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends an IN condition to the current conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->inWhere('id', [1, 2, 3]);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$expr</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$values</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="notInWhere">notInWhere</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public notInWhere ( $expr, $values )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends a NOT IN condition to the current conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->notInWhere('id', [1, 2, 3]);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$expr</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$values</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="getWhere">getWhere</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getWhere (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Return the conditions for the query</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string|array</p>
+                
+                            <br/>
+                <h3 id="orderBy">orderBy</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public orderBy ( $orderBy )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a ORDER BY condition clause</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->orderBy('Robots.name');
+	$builder->orderBy(array('1', 'Robots.name'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$orderBy</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="getOrderBy">getOrderBy</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getOrderBy (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the set ORDER BY clause</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string|array</p>
+                
+                            <br/>
+                <h3 id="having">having</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public having ( $having )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a HAVING condition clause. You need to escape PHQL reserved words using [ and ] delimiters</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->having('SUM(Robots.price) > 0');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$having</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="getHaving">getHaving</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getHaving (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Return the current having clause</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string|array</p>
+                
+                            <br/>
+                <h3 id="limit">limit</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public limit ( $limit, $offset = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a LIMIT clause, optionally a offset clause</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->limit(100);
+	$builder->limit(100, 20);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$limit</span> <a href="#">int</a></li>
+                                                    <li><span class="strong">$offset</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="getLimit">getLimit</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getLimit (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the current LIMIT clause</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string|array</p>
+                
+                            <br/>
+                <h3 id="offset">offset</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public offset ( $offset )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets an OFFSET clause</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->offset(30);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$limit</span> <a href="#">int</a></li>
+                                                    <li><span class="strong">$offset</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="getOffset">getOffset</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getOffset (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the current OFFSET clause</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string|array</p>
+                
+                            <br/>
+                <h3 id="groupBy">groupBy</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public groupBy ( $group )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a GROUP BY clause</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$builder->groupBy(array('Robots.name'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$group</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query\Builder</p>
+                
+                            <br/>
+                <h3 id="getGroupBy">getGroupBy</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getGroupBy (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the GROUP BY clause</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getPhql">getPhql</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getPhql (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns a PHQL statement built based on the builder parameters</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getQuery">getQuery</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getQuery (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the query built</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Query</p>
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

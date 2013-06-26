@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Mvc\Model\Criteria</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Mvc\Model</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\Mvc\Model\CriteriaInterface</a>,
+                                                    <a href="#">Phalcon\DI\InjectionAwareInterface</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Mvc\Model\Criteria   This class allows to build the array parameter required by Phalcon\Mvc\Model::find  and Phalcon\Mvc\Model::findFirst, using an object-oriented interfase</div>
+        
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDI">setDI</a></td>
+                        <td class="description">Sets the DependencyInjector container</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDI">getDI</a></td>
+                        <td class="description">Returns the DependencyInjector container</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setModelName">setModelName</a></td>
+                        <td class="description">Set a model on which the query will be executed</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getModelName">getModelName</a></td>
+                        <td class="description">Returns an internal model name on which the criteria will be applied</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#bind">bind</a></td>
+                        <td class="description">Adds the bind parameter to the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#where">where</a></td>
+                        <td class="description">Adds the conditions parameter to the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addWhere">addWhere</a></td>
+                        <td class="description">Appends a condition to the current conditions using an AND operator (deprecated)</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#andWhere">andWhere</a></td>
+                        <td class="description">Appends a condition to the current conditions using an AND operator</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#orWhere">orWhere</a></td>
+                        <td class="description">Appends a condition to the current conditions using an OR operator</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#conditions">conditions</a></td>
+                        <td class="description">Adds the conditions parameter to the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#order">order</a></td>
+                        <td class="description">Adds the order-by parameter to the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#limit">limit</a></td>
+                        <td class="description">Adds the limit parameter to the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#forUpdate">forUpdate</a></td>
+                        <td class="description">Adds the "for_update" parameter to the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#sharedLock">sharedLock</a></td>
+                        <td class="description">Adds the "shared_lock" parameter to the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getWhere">getWhere</a></td>
+                        <td class="description">Returns the conditions parameter in the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getConditions">getConditions</a></td>
+                        <td class="description">Returns the conditions parameter in the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getLimit">getLimit</a></td>
+                        <td class="description">Returns the limit parameter in the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getOrder">getOrder</a></td>
+                        <td class="description">Returns the order parameter in the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getParams">getParams</a></td>
+                        <td class="description">Returns all the parameters defined in the criteria</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fromInput">fromInput</a></td>
+                        <td class="description">Builds a \Phalcon\Mvc\Model\Criteria based on an input array like $_POST</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#execute">execute</a></td>
+                        <td class="description">Executes a find using the parameters built with the criteria</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="setDI">setDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setDI ( $dependencyInjector )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the DependencyInjector container</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getDI">getDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDI (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the DependencyInjector container</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DiInterface</p>
+                
+                            <br/>
+                <h3 id="setModelName">setModelName</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setModelName ( $modelName )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Set a model on which the query will be executed</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$modelName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="getModelName">getModelName</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getModelName (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns an internal model name on which the criteria will be applied</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="bind">bind</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public bind ( $bindParams )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds the bind parameter to the criteria</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$bindParams</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="where">where</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public where ( $conditions )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds the conditions parameter to the criteria</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$conditions</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="addWhere">addWhere</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addWhere ( $conditions )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends a condition to the current conditions using an AND operator (deprecated)</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$conditions</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="andWhere">andWhere</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public andWhere ( $conditions )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends a condition to the current conditions using an AND operator</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$conditions</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="orWhere">orWhere</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public orWhere ( $conditions )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends a condition to the current conditions using an OR operator</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$conditions</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="conditions">conditions</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public conditions ( $conditions )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds the conditions parameter to the criteria</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$conditions</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="order">order</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public order ( $orderColumns )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds the order-by parameter to the criteria</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$orderColumns</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="limit">limit</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public limit ( $limit, $offset = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds the limit parameter to the criteria</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$limit</span> <a href="#">int</a></li>
+                                                    <li><span class="strong">$offset</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="forUpdate">forUpdate</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public forUpdate ( $forUpdate = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds the "for_update" parameter to the criteria</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$forUpdate</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="sharedLock">sharedLock</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public sharedLock ( $sharedLock = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds the "shared_lock" parameter to the criteria</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$sharedLock</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="getWhere">getWhere</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getWhere (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the conditions parameter in the criteria</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getConditions">getConditions</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getConditions (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the conditions parameter in the criteria</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getLimit">getLimit</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getLimit (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the limit parameter in the criteria</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getOrder">getOrder</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getOrder (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the order parameter in the criteria</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getParams">getParams</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getParams (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns all the parameters defined in the criteria</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="fromInput">fromInput</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static fromInput ( $dependencyInjector, $modelName, $data )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a \Phalcon\Mvc\Model\Criteria based on an input array like $_POST</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                                    <li><span class="strong">$modelName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$data</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>static</p>
+                
+                            <br/>
+                <h3 id="execute">execute</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public execute (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Executes a find using the parameters built with the criteria</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\ResultsetInterface</p>
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

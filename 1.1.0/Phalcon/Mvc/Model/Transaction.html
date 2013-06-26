@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Mvc\Model\Transaction</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Mvc\Model</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\Mvc\Model\TransactionInterface</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Mvc\Model\Transaction   Transactions are protective blocks where SQL statements are only permanent if they can  all succeed as one atomic action. Phalcon\Transaction is intended to be used with Phalcon_Model_Base.  Phalcon Transactions should be created using Phalcon\Transaction\Manager.</div>
+        
+        
+            <div class="highlight">
+                <pre>
+try {
+
+  $manager = new Phalcon\Mvc\Model\Transaction\Manager();
+
+  $transaction = $manager->get();
+
+  $robot = new Robots();
+  $robot->setTransaction($transaction);
+  $robot->name = 'WALL·E';
+  $robot->created_at = date('Y-m-d');
+  if ($robot->save() == false) {
+    $transaction->rollback("Can't save robot");
+  }
+
+  $robotPart = new RobotParts();
+  $robotPart->setTransaction($transaction);
+  $robotPart->type = 'head';
+  if ($robotPart->save() == false) {
+    $transaction->rollback("Can't save robot part");
+  }
+
+  $transaction->commit();
+
+} catch(Phalcon\Mvc\Model\Transaction\Failed $e) {
+  echo 'Failed, reason: ', $e->getMessage();
+}
+
+</pre>
+            </div>
+
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">\Phalcon\Mvc\Model\Transaction constructor</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setTransactionManager">setTransactionManager</a></td>
+                        <td class="description">Sets transaction manager related to the transaction</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#begin">begin</a></td>
+                        <td class="description">Starts the transaction</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#commit">commit</a></td>
+                        <td class="description">Commits the transaction</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#rollback">rollback</a></td>
+                        <td class="description">Rollbacks the transaction</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getConnection">getConnection</a></td>
+                        <td class="description">Returns the connection related to transaction</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setIsNewTransaction">setIsNewTransaction</a></td>
+                        <td class="description">Sets if is a reused transaction or new once</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setRollbackOnAbort">setRollbackOnAbort</a></td>
+                        <td class="description">Sets flag to rollback on abort the HTTP connection</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isManaged">isManaged</a></td>
+                        <td class="description">Checks whether transaction is managed by a transaction manager</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getMessages">getMessages</a></td>
+                        <td class="description">Returns validations messages from last save try</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isValid">isValid</a></td>
+                        <td class="description">Checks whether internal connection is under an active transaction</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setRollbackedRecord">setRollbackedRecord</a></td>
+                        <td class="description">Sets object which generates rollback action</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __construct ( $dependencyInjector, $autoBegin = null, $service = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>\Phalcon\Mvc\Model\Transaction constructor</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                                    <li><span class="strong">$autoBegin</span> <a href="#">boolean</a></li>
+                                                    <li><span class="strong">$service</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setTransactionManager">setTransactionManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setTransactionManager ( $manager )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets transaction manager related to the transaction</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$manager</span> <a href="#">\Phalcon\Mvc\Model\Transaction\ManagerInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="begin">begin</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public begin (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Starts the transaction</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="commit">commit</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public commit (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Commits the transaction</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="rollback">rollback</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public rollback ( $rollbackMessage = null, $rollbackRecord = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Rollbacks the transaction</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getConnection">getConnection</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getConnection (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the connection related to transaction</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Db\AdapterInterface</p>
+                
+                            <br/>
+                <h3 id="setIsNewTransaction">setIsNewTransaction</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setIsNewTransaction ( $isNew )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets if is a reused transaction or new once</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$isNew</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setRollbackOnAbort">setRollbackOnAbort</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setRollbackOnAbort ( $rollbackOnAbort )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets flag to rollback on abort the HTTP connection</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$rollbackOnAbort</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="isManaged">isManaged</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isManaged (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether transaction is managed by a transaction manager</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getMessages">getMessages</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getMessages (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns validations messages from last save try</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="isValid">isValid</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isValid (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether internal connection is under an active transaction</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="setRollbackedRecord">setRollbackedRecord</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setRollbackedRecord ( $record )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets object which generates rollback action</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$record</span> <a href="#">\Phalcon\Mvc\ModelInterface</a></li>
+                                            </ul>
+
+                
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

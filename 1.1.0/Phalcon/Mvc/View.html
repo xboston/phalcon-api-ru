@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Mvc\View</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Mvc</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\Events\EventsAwareInterface</a>,
+                                                    <a href="#">Phalcon\DI\InjectionAwareInterface</a>,
+                                                    <a href="#">Phalcon\Mvc\ViewInterface</a>,
+                                            </td>
+                </tr>
+            
+                            <tr>
+                    <th>Extends:</th>
+                    <td><a href="#">Phalcon\DI\Injectable</a></td>
+                </tr>
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Mvc\View   Phalcon\Mvc\View is a class for working with the "view" portion of the model-view-controller pattern.  That is, it exists to help keep the view script separate from the model and controller scripts.  It provides a system of helpers, output filters, and variable escaping.</div>
+        
+        
+            <div class="highlight">
+                <pre>
+ //Setting views directory
+ $view = new Phalcon\Mvc\View();
+ $view->setViewsDir('app/views/');
+
+ $view->start();
+ //Shows recent posts view (app/views/posts/recent.phtml)
+ $view->render('posts', 'recent');
+ $view->finish();
+
+ //Printing views output
+ echo $view->getContent();
+ </pre>
+            </div>
+
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+            <h2>Constants</h2>
+
+            <ul class="two-columns">
+                                    <li>integer LEVEL_MAIN_LAYOUT</li>
+                                    <li>integer LEVEL_AFTER_TEMPLATE</li>
+                                    <li>integer LEVEL_LAYOUT</li>
+                                    <li>integer LEVEL_BEFORE_TEMPLATE</li>
+                                    <li>integer LEVEL_ACTION_VIEW</li>
+                                    <li>integer LEVEL_NO_RENDER</li>
+                            </ul>
+
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">\Phalcon\Mvc\View constructor</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setViewsDir">setViewsDir</a></td>
+                        <td class="description">Sets views directory. Depending of your platform, always add a trailing slash or backslash</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getViewsDir">getViewsDir</a></td>
+                        <td class="description">Gets views directory</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setLayoutsDir">setLayoutsDir</a></td>
+                        <td class="description">Sets the layouts sub-directory. Must be a directory under the views directory. Depending of your platform, always add a trailing slash or backslash</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getLayoutsDir">getLayoutsDir</a></td>
+                        <td class="description">Gets the current layouts sub-directory</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setPartialsDir">setPartialsDir</a></td>
+                        <td class="description">Sets a partials sub-directory. Must be a directory under the views directory. Depending of your platform, always add a trailing slash or backslash</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getPartialsDir">getPartialsDir</a></td>
+                        <td class="description">Gets the current partials sub-directory</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setBasePath">setBasePath</a></td>
+                        <td class="description">Sets base path. Depending of your platform, always add a trailing slash or backslash</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setRenderLevel">setRenderLevel</a></td>
+                        <td class="description">Sets the render level for the view</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#disableLevel">disableLevel</a></td>
+                        <td class="description">Disables a specific level of rendering</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setMainView">setMainView</a></td>
+                        <td class="description">Sets default view name. Must be a file without extension in the views directory</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getMainView">getMainView</a></td>
+                        <td class="description">Returns the name of the main view</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setLayout">setLayout</a></td>
+                        <td class="description">Change the layout to be used instead of using the name of the latest controller name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getLayout">getLayout</a></td>
+                        <td class="description">Returns the name of the main view</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setTemplateBefore">setTemplateBefore</a></td>
+                        <td class="description">Appends template before controller layout</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#cleanTemplateBefore">cleanTemplateBefore</a></td>
+                        <td class="description">Resets any template before layouts</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setTemplateAfter">setTemplateAfter</a></td>
+                        <td class="description">Appends template after controller layout</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#cleanTemplateAfter">cleanTemplateAfter</a></td>
+                        <td class="description">Resets any template before layouts</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setParamToView">setParamToView</a></td>
+                        <td class="description">Adds parameters to views (alias of setVar)</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setVars">setVars</a></td>
+                        <td class="description">Set all the render params</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setVar">setVar</a></td>
+                        <td class="description">Set a single view parameter</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getVar">getVar</a></td>
+                        <td class="description">Returns a parameter previously set in the view</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getParamsToView">getParamsToView</a></td>
+                        <td class="description">Returns parameters to views</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getControllerName">getControllerName</a></td>
+                        <td class="description">Gets the name of the controller rendered</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getActionName">getActionName</a></td>
+                        <td class="description">Gets the name of the action rendered</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getParams">getParams</a></td>
+                        <td class="description">Gets extra parameters of the action rendered</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#start">start</a></td>
+                        <td class="description">Starts rendering process enabling the output buffering</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_loadTemplateEngines">_loadTemplateEngines</a></td>
+                        <td class="description">Loads registered template engines, if none is registered it will use \Phalcon\Mvc\View\Engine\Php</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_engineRender">_engineRender</a></td>
+                        <td class="description">Checks whether view exists on registered extensions and render it</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#registerEngines">registerEngines</a></td>
+                        <td class="description">Register templating engines</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#render">render</a></td>
+                        <td class="description">Executes render process from dispatching data</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#pick">pick</a></td>
+                        <td class="description">Choose a different view to render instead of last-controller/last-action</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#partial">partial</a></td>
+                        <td class="description">Renders a partial view</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getRender">getRender</a></td>
+                        <td class="description">Perform the automatic rendering returning the output as a string</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#finish">finish</a></td>
+                        <td class="description">Finishes the render process by stopping the output buffering</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_createCache">_createCache</a></td>
+                        <td class="description">Create a \Phalcon\Cache based on the internal cache options</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isCaching">isCaching</a></td>
+                        <td class="description">Check if the component is currently caching the output content</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getCache">getCache</a></td>
+                        <td class="description">Returns the cache instance used to cache</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#cache">cache</a></td>
+                        <td class="description">Cache the actual view render to certain level</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setContent">setContent</a></td>
+                        <td class="description">Externally sets the view content</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getContent">getContent</a></td>
+                        <td class="description">Returns cached ouput from another view stage</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getActiveRenderPath">getActiveRenderPath</a></td>
+                        <td class="description">Returns the path of the view that is currently rendered</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#disable">disable</a></td>
+                        <td class="description">Disables the auto-rendering process</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#enable">enable</a></td>
+                        <td class="description">Enables the auto-rendering process</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#reset">reset</a></td>
+                        <td class="description">Resets the view component to its factory default values</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__set">__set</a></td>
+                        <td class="description">Magic method to pass variables to the views</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__get">__get</a></td>
+                        <td class="description">Magic method to retrieve a variable passed to the view</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDI">setDI</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDI">getDI</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setEventsManager">setEventsManager</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getEventsManager">getEventsManager</a></td>
+                        <td class="description"></td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __construct ( $options = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>\Phalcon\Mvc\View constructor</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$options</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setViewsDir">setViewsDir</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setViewsDir ( $viewsDir )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets views directory. Depending of your platform, always add a trailing slash or backslash</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$viewsDir</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getViewsDir">getViewsDir</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getViewsDir (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets views directory</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setLayoutsDir">setLayoutsDir</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setLayoutsDir ( $layoutsDir )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the layouts sub-directory. Must be a directory under the views directory. Depending of your platform, always add a trailing slash or backslash</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ $view->setLayoutsDir('../common/layouts/');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$layoutsDir</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getLayoutsDir">getLayoutsDir</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getLayoutsDir (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets the current layouts sub-directory</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setPartialsDir">setPartialsDir</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setPartialsDir ( $partialsDir )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a partials sub-directory. Must be a directory under the views directory. Depending of your platform, always add a trailing slash or backslash</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ $view->setPartialsDir('../common/partials/');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$partialsDir</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getPartialsDir">getPartialsDir</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getPartialsDir (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets the current partials sub-directory</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setBasePath">setBasePath</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setBasePath ( $basePath )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets base path. Depending of your platform, always add a trailing slash or backslash</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	$view->setBasePath(__DIR__.'/');
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$basePath</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setRenderLevel">setRenderLevel</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setRenderLevel ( $level )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the render level for the view</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	//Render the view related to the controller only
+ 	$this->view->setRenderLevel(View::LEVEL_VIEW);
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$level</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="disableLevel">disableLevel</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public disableLevel ( $level )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Disables a specific level of rendering</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ //Render all levels except ACTION level
+ $this->view->disableLevel(View::LEVEL_ACTION_VIEW);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$level</span> <a href="#">int|array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setMainView">setMainView</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setMainView ( $viewPath )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets default view name. Must be a file without extension in the views directory</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	//Renders as main view views-dir/inicio.phtml
+ 	$this->view->setMainView('inicio');
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$viewPath</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getMainView">getMainView</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getMainView (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the name of the main view</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setLayout">setLayout</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setLayout ( $layout )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Change the layout to be used instead of using the name of the latest controller name</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	$this->view->setLayout('main');
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$layout</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getLayout">getLayout</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getLayout (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the name of the main view</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setTemplateBefore">setTemplateBefore</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setTemplateBefore ( $templateBefore )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends template before controller layout</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$templateBefore</span> <a href="#">string|array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="cleanTemplateBefore">cleanTemplateBefore</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public cleanTemplateBefore (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resets any template before layouts</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="setTemplateAfter">setTemplateAfter</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setTemplateAfter ( $templateAfter )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends template after controller layout</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$templateAfter</span> <a href="#">string|array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="cleanTemplateAfter">cleanTemplateAfter</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public cleanTemplateAfter (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resets any template before layouts</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="setParamToView">setParamToView</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setParamToView ( $key, $value )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds parameters to views (alias of setVar)</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$this->view->setParamToView('products', $products);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$key</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$value</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setVars">setVars</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setVars ( $params, $merge = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Set all the render params</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$this->view->setVars(array('products' => $products));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$params</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$merge</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setVar">setVar</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setVar ( $key, $value )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Set a single view parameter</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$this->view->setVar('products', $products);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$key</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$value</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getVar">getVar</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getVar ( $key )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns a parameter previously set in the view</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$key</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="getParamsToView">getParamsToView</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getParamsToView (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns parameters to views</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="getControllerName">getControllerName</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getControllerName (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets the name of the controller rendered</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getActionName">getActionName</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getActionName (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets the name of the action rendered</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getParams">getParams</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getParams (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets extra parameters of the action rendered</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="start">start</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public start (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Starts rendering process enabling the output buffering</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="_loadTemplateEngines">_loadTemplateEngines</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _loadTemplateEngines (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Loads registered template engines, if none is registered it will use \Phalcon\Mvc\View\Engine\Php</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="_engineRender">_engineRender</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _engineRender (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether view exists on registered extensions and render it</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$engines</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$viewPath</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$silence</span> <a href="#">boolean</a></li>
+                                                    <li><span class="strong">$mustClean</span> <a href="#">boolean</a></li>
+                                                    <li><span class="strong">$cache</span> <a href="#">\Phalcon\Cache\BackendInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="registerEngines">registerEngines</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public registerEngines ( $engines )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Register templating engines</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+$this->view->registerEngines(array(
+  ".phtml" => "Phalcon\Mvc\View\Engine\Php",
+  ".volt" => "Phalcon\Mvc\View\Engine\Volt",
+  ".mhtml" => "MyCustomEngine"
+));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$engines</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="render">render</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public render ( $controllerName, $actionName, $params = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Executes render process from dispatching data</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ $view->start();
+ //Shows recent posts view (app/views/posts/recent.phtml)
+ $view->render('posts', 'recent');
+ $view->finish();
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$controllerName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$actionName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$params</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="pick">pick</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public pick ( $renderView )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Choose a different view to render instead of last-controller/last-action</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ class ProductsController extends \Phalcon\Mvc\Controller
+ {
+
+    public function saveAction()
+    {
+
+         //Do some save stuff...
+
+         //Then show the list view
+         $this->view->pick("products/list");
+    }
+ }
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$renderView</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="partial">partial</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public partial ( $partialPath )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Renders a partial view</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	//Show a partial inside another view
+ 	$this->partial('shared/footer');
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$partialPath</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getRender">getRender</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getRender ( $controllerName, $actionName, $params = null, $configCallback = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Perform the automatic rendering returning the output as a string</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	$template = $this->view->getRender('products', 'show', array('products' => $products));
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$controllerName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$actionName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$params</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$configCallback</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="finish">finish</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public finish (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Finishes the render process by stopping the output buffering</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="_createCache">_createCache</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _createCache (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Create a \Phalcon\Cache based on the internal cache options</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Cache\BackendInterface</p>
+                
+                            <br/>
+                <h3 id="isCaching">isCaching</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isCaching (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check if the component is currently caching the output content</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getCache">getCache</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getCache (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the cache instance used to cache</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Cache\BackendInterface</p>
+                
+                            <br/>
+                <h3 id="cache">cache</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public cache ( $options = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Cache the actual view render to certain level</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$options</span> <a href="#">boolean|array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setContent">setContent</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setContent ( $content )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Externally sets the view content</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$this->view->setContent("<h1>hello</h1>");
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$content</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getContent">getContent</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getContent (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns cached ouput from another view stage</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getActiveRenderPath">getActiveRenderPath</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getActiveRenderPath (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the path of the view that is currently rendered</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="disable">disable</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public disable (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Disables the auto-rendering process</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="enable">enable</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public enable (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Enables the auto-rendering process</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="reset">reset</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public reset (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resets the view component to its factory default values</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="__set">__set</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __set ( $key, $value )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Magic method to pass variables to the views</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$this->view->products = $products;
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$key</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$value</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="__get">__get</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __get ( $key )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Magic method to retrieve a variable passed to the view</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	echo $this->view->products;
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$key</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="setDI">setDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setDI ( $dependencyInjector )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getDI">getDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDI (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="setEventsManager">setEventsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setEventsManager ( $eventsManager )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getEventsManager">getEventsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getEventsManager (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,3239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Mvc\Model</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Mvc</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\Mvc\ModelInterface</a>,
+                                                    <a href="#">Phalcon\Mvc\Model\ResultInterface</a>,
+                                                    <a href="#">Phalcon\DI\InjectionAwareInterface</a>,
+                                                    <a href="#">Serializable</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Mvc\Model   <p>Phalcon\Mvc\Model connects business objects and database tables to create  a persistable domain model where logic and data are presented in one wrapping.  It‘s an implementation of the object-relational mapping (ORM).</p>   <p>A model represents the information (data) of the application and the rules to manipulate that data.  Models are primarily used for managing the rules of interaction with a corresponding database table.  In most cases, each table in your database will correspond to one model in your application.  The bulk of your application’s business logic will be concentrated in the models.</p>   <p>Phalcon\Mvc\Model is the first ORM written in C-language for PHP, giving to developers high performance  when interacting with databases while is also easy to use.</p></div>
+        
+        
+            <div class="highlight">
+                <pre>
+
+ $robot = new Robots();
+ $robot->type = 'mechanical';
+ $robot->name = 'Astro Boy';
+ $robot->year = 1952;
+ if ($robot->save() == false) {
+  echo "Umh, We can store robots: ";
+  foreach ($robot->getMessages() as $message) {
+    echo $message;
+  }
+ } else {
+  echo "Great, a new robot was saved successfully!";
+ }
+ </pre>
+            </div>
+
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+            <h2>Constants</h2>
+
+            <ul class="two-columns">
+                                    <li>integer OP_NONE</li>
+                                    <li>integer OP_CREATE</li>
+                                    <li>integer OP_UPDATE</li>
+                                    <li>integer OP_DELETE</li>
+                                    <li>integer DIRTY_STATE_PERSISTENT</li>
+                                    <li>integer DIRTY_STATE_TRANSIENT</li>
+                                    <li>integer DIRTY_STATE_DETACHED</li>
+                            </ul>
+
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">\Phalcon\Mvc\Model constructor</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDI">setDI</a></td>
+                        <td class="description">Sets the dependency injection container</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDI">getDI</a></td>
+                        <td class="description">Returns the dependency injection container</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setEventsManager">setEventsManager</a></td>
+                        <td class="description">Sets a custom events manager</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getEventsManager">getEventsManager</a></td>
+                        <td class="description">Returns the custom events manager</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getModelsMetaData">getModelsMetaData</a></td>
+                        <td class="description">Returns the models meta-data service related to the entity instance</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getModelsManager">getModelsManager</a></td>
+                        <td class="description">Returns the models manager related to the entity instance</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setTransaction">setTransaction</a></td>
+                        <td class="description">Sets a transaction related to the Model instance</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setSource">setSource</a></td>
+                        <td class="description">Sets table name which model should be mapped</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getSource">getSource</a></td>
+                        <td class="description">Returns table name mapped in the model</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setSchema">setSchema</a></td>
+                        <td class="description">Sets schema name where table mapped is located</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getSchema">getSchema</a></td>
+                        <td class="description">Returns schema name where table mapped is located</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setConnectionService">setConnectionService</a></td>
+                        <td class="description">Sets the DependencyInjection connection service name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setReadConnectionService">setReadConnectionService</a></td>
+                        <td class="description">Sets the DependencyInjection connection service name used to read data</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setWriteConnectionService">setWriteConnectionService</a></td>
+                        <td class="description">Sets the DependencyInjection connection service name used to write data</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getReadConnectionService">getReadConnectionService</a></td>
+                        <td class="description">Returns the DependencyInjection connection service name used to read data related the model</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getWriteConnectionService">getWriteConnectionService</a></td>
+                        <td class="description">Returns the DependencyInjection connection service name used to write data related to the model</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDirtyState">setDirtyState</a></td>
+                        <td class="description">Sets the dirty state of the object using one of the DIRTY_STATE_* constants</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDirtyState">getDirtyState</a></td>
+                        <td class="description">Returns one of the DIRTY_STATE_* constants telling if the record exists in the database or not</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getReadConnection">getReadConnection</a></td>
+                        <td class="description">Gets the connection used to read data for the model</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getWriteConnection">getWriteConnection</a></td>
+                        <td class="description">Gets the connection used to write data to the model</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#assign">assign</a></td>
+                        <td class="description">Assigns values to a model from an array</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#cloneResultMap">cloneResultMap</a></td>
+                        <td class="description">Assigns values to a model from an array returning a new model.</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#cloneResultMapHydrate">cloneResultMapHydrate</a></td>
+                        <td class="description">Returns an hydrated result based on the data and the column map</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#cloneResult">cloneResult</a></td>
+                        <td class="description">Assigns values to a model from an array returning a new model</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#find">find</a></td>
+                        <td class="description">Allows to query a set of records that match the specified conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#findFirst">findFirst</a></td>
+                        <td class="description">Allows to query the first record that match the specified conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#query">query</a></td>
+                        <td class="description">Create a criteria for a specific model</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_exists">_exists</a></td>
+                        <td class="description">Checks if the current record already exists or not</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_groupResult">_groupResult</a></td>
+                        <td class="description">Generate a PHQL SELECT statement for an aggregate</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#count">count</a></td>
+                        <td class="description">Allows to count how many records match the specified conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#sum">sum</a></td>
+                        <td class="description">Allows to calculate a summatory on a column that match the specified conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#maximum">maximum</a></td>
+                        <td class="description">Allows to get the maximum value of a column that match the specified conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#minimum">minimum</a></td>
+                        <td class="description">Allows to get the minimum value of a column that match the specified conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#average">average</a></td>
+                        <td class="description">Allows to calculate the average value on a column matching the specified conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fireEvent">fireEvent</a></td>
+                        <td class="description">Fires an event, implicitly calls behaviors and listeners in the events manager are notified</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fireEventCancel">fireEventCancel</a></td>
+                        <td class="description">Fires an event, implicitly calls behaviors and listeners in the events manager are notified  This method stops if one of the callbacks/listeners returns boolean false</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_cancelOperation">_cancelOperation</a></td>
+                        <td class="description">Cancel the current operation</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#appendMessage">appendMessage</a></td>
+                        <td class="description">Appends a customized message on the validation process</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#validate">validate</a></td>
+                        <td class="description">Executes validators on every validation call</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#validationHasFailed">validationHasFailed</a></td>
+                        <td class="description">Check whether validation process has generated any messages</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getMessages">getMessages</a></td>
+                        <td class="description">Returns all the validation messages</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_checkForeignKeys">_checkForeignKeys</a></td>
+                        <td class="description">Reads "belongs to" relations and check the virtual foreign keys when inserting or updating records</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_checkForeignKeysReverse">_checkForeignKeysReverse</a></td>
+                        <td class="description">Reads both "hasMany" and "hasOne" relations and checks the virtual foreign keys when deleting records</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_preSave">_preSave</a></td>
+                        <td class="description">Executes internal hooks before save a record</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_postSave">_postSave</a></td>
+                        <td class="description">Executes internal events after save a record</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_doLowInsert">_doLowInsert</a></td>
+                        <td class="description">Sends a pre-build INSERT SQL statement to the relational database system</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_doLowUpdate">_doLowUpdate</a></td>
+                        <td class="description">Sends a pre-build UPDATE SQL statement to the relational database system</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_preSaveRelatedRecords">_preSaveRelatedRecords</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_postSaveRelatedRecords">_postSaveRelatedRecords</a></td>
+                        <td class="description">Save the related records assigned in the has-one/has-many relations</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#save">save</a></td>
+                        <td class="description">Inserts or updates a model instance. Returning true on success or false otherwise.</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#create">create</a></td>
+                        <td class="description">Inserts a model instance. If the instance already exists in the persistance it will throw an exception  Returning true on success or false otherwise.</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#update">update</a></td>
+                        <td class="description">Updates a model instance. If the instance doesn't exist in the persistance it will throw an exception  Returning true on success or false otherwise.</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#delete">delete</a></td>
+                        <td class="description">Deletes a model instance. Returning true on success or false otherwise.</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getOperationMade">getOperationMade</a></td>
+                        <td class="description">Returns the type of the latest operation performed by the ORM  Returns one of the OP_* class constants</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#refresh">refresh</a></td>
+                        <td class="description">Refreshes the model attributes re-querying the record from the database</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#skipOperation">skipOperation</a></td>
+                        <td class="description">Skips the current operation forcing a success state</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#readAttribute">readAttribute</a></td>
+                        <td class="description">Reads an attribute value by its name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#writeAttribute">writeAttribute</a></td>
+                        <td class="description">Writes an attribute value by its name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#skipAttributes">skipAttributes</a></td>
+                        <td class="description">Sets a list of attributes that must be skipped from the  generated INSERT/UPDATE statement</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#skipAttributesOnCreate">skipAttributesOnCreate</a></td>
+                        <td class="description">Sets a list of attributes that must be skipped from the  generated INSERT statement</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#skipAttributesOnUpdate">skipAttributesOnUpdate</a></td>
+                        <td class="description">Sets a list of attributes that must be skipped from the  generated UPDATE statement</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#hasOne">hasOne</a></td>
+                        <td class="description">Setup a 1-1 relation between two models</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#belongsTo">belongsTo</a></td>
+                        <td class="description">Setup a relation reverse 1-1  between two models</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#hasMany">hasMany</a></td>
+                        <td class="description">Setup a relation 1-n between two models</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#hasManyThrough">hasManyThrough</a></td>
+                        <td class="description">Setup a relation n-n between two models through an intermediate relation</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addBehavior">addBehavior</a></td>
+                        <td class="description">Setups a behavior in a model</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#keepSnapshots">keepSnapshots</a></td>
+                        <td class="description">Sets if the model must keep the original record snapshot in memory</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setSnapshotData">setSnapshotData</a></td>
+                        <td class="description">Sets the record's snapshot data.  This method is used internally to set snapshot data when the model was set up to keep snapshot data</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#hasSnapshotData">hasSnapshotData</a></td>
+                        <td class="description">Checks if the object has internal snapshot data</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getSnapshotData">getSnapshotData</a></td>
+                        <td class="description">Returns the internal snapshot data</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#hasChanged">hasChanged</a></td>
+                        <td class="description">Check if a specific attribute has changed  This only works if the model is keeping data snapshots</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getChangedFields">getChangedFields</a></td>
+                        <td class="description">Returns a list of changed values</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#useDynamicUpdate">useDynamicUpdate</a></td>
+                        <td class="description">Sets if a model must use dynamic update instead of the all-field update</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getRelated">getRelated</a></td>
+                        <td class="description">Returns related records based on defined relations</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_getRelatedRecords">_getRelatedRecords</a></td>
+                        <td class="description">Returns related records defined relations depending on the method name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__call">__call</a></td>
+                        <td class="description">Handles method calls when a method is not implemented</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__callStatic">__callStatic</a></td>
+                        <td class="description">Handles method calls when a static method is not implemented</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__set">__set</a></td>
+                        <td class="description">Magic method to assign values to the the model</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__get">__get</a></td>
+                        <td class="description">Magic method to get related records using the relation alias as a property</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__isset">__isset</a></td>
+                        <td class="description">Magic method to check if a property is a valid relation</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#serialize">serialize</a></td>
+                        <td class="description">Serializes the object ignoring connections or static properties</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#unserialize">unserialize</a></td>
+                        <td class="description">Unserializes the object from a serialized string</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dump">dump</a></td>
+                        <td class="description">Returns a simple representation of the object that can be used with var_dump</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#toArray">toArray</a></td>
+                        <td class="description">Returns the instance as an array representation</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setup">setup</a></td>
+                        <td class="description">Enables/disables options in the ORM</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>final public __construct ( $dependencyInjector = null, $modelsManager = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>\Phalcon\Mvc\Model constructor</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                                    <li><span class="strong">$modelsManager</span> <a href="#">\Phalcon\Mvc\Model\ManagerInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setDI">setDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setDI ( $dependencyInjector )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the dependency injection container</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getDI">getDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDI (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the dependency injection container</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DiInterface</p>
+                
+                            <br/>
+                <h3 id="setEventsManager">setEventsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected setEventsManager (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a custom events manager</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$eventsManager</span> <a href="#">\Phalcon\Events\ManagerInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getEventsManager">getEventsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected getEventsManager (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the custom events manager</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Events\ManagerInterface</p>
+                
+                            <br/>
+                <h3 id="getModelsMetaData">getModelsMetaData</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getModelsMetaData (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the models meta-data service related to the entity instance</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\MetaDataInterface</p>
+                
+                            <br/>
+                <h3 id="getModelsManager">getModelsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getModelsManager (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the models manager related to the entity instance</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\ManagerInterface</p>
+                
+                            <br/>
+                <h3 id="setTransaction">setTransaction</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setTransaction ( $transaction )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a transaction related to the Model instance</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+use \Phalcon\Mvc\Model\Transaction\Manager as TxManager;
+use \Phalcon\Mvc\Model\Transaction\Failed as TxFailed;
+
+try {
+
+  $txManager = new TxManager();
+
+  $transaction = $txManager->get();
+
+  $robot = new Robots();
+  $robot->setTransaction($transaction);
+  $robot->name = 'WALL·E';
+  $robot->created_at = date('Y-m-d');
+  if ($robot->save() == false) {
+    $transaction->rollback("Can't save robot");
+  }
+
+  $robotPart = new RobotParts();
+  $robotPart->setTransaction($transaction);
+  $robotPart->type = 'head';
+  if ($robotPart->save() == false) {
+    $transaction->rollback("Robot part cannot be saved");
+  }
+
+  $transaction->commit();
+
+} catch (TxFailed $e) {
+  echo 'Failed, reason: ', $e->getMessage();
+}
+
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$transaction</span> <a href="#">\Phalcon\Mvc\Model\TransactionInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="setSource">setSource</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected setSource (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets table name which model should be mapped</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$source</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="getSource">getSource</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getSource (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns table name mapped in the model</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setSchema">setSchema</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected setSchema (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets schema name where table mapped is located</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$schema</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="getSchema">getSchema</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getSchema (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns schema name where table mapped is located</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setConnectionService">setConnectionService</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setConnectionService ( $connectionService )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the DependencyInjection connection service name</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$connectionService</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="setReadConnectionService">setReadConnectionService</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setReadConnectionService ( $connectionService )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the DependencyInjection connection service name used to read data</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$connectionService</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="setWriteConnectionService">setWriteConnectionService</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setWriteConnectionService ( $connectionService )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the DependencyInjection connection service name used to write data</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$connectionService</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="getReadConnectionService">getReadConnectionService</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getReadConnectionService (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the DependencyInjection connection service name used to read data related the model</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getWriteConnectionService">getWriteConnectionService</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getWriteConnectionService (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the DependencyInjection connection service name used to write data related to the model</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setDirtyState">setDirtyState</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setDirtyState ( $dirtyState )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the dirty state of the object using one of the DIRTY_STATE_* constants</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dirtyState</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="getDirtyState">getDirtyState</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDirtyState (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns one of the DIRTY_STATE_* constants telling if the record exists in the database or not</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="getReadConnection">getReadConnection</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getReadConnection (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets the connection used to read data for the model</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Db\AdapterInterface</p>
+                
+                            <br/>
+                <h3 id="getWriteConnection">getWriteConnection</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getWriteConnection (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets the connection used to write data to the model</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Db\AdapterInterface</p>
+                
+                            <br/>
+                <h3 id="assign">assign</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public assign ( $data, $columnMap = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Assigns values to a model from an array</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+$robot->assign(array(
+  'type' => 'mechanical',
+  'name' => 'Astro Boy',
+  'year' => 1952
+));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$object</span> <a href="#">\Phalcon\Mvc\Model</a></li>
+                                                    <li><span class="strong">$data</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$columnMap</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="cloneResultMap">cloneResultMap</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static cloneResultMap ( $base, $data, $columnMap, $dirtyState = null, $keepSnapshots = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Assigns values to a model from an array returning a new model.</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+$robot = \Phalcon\Mvc\Model::cloneResultMap(new Robots(), array(
+  'type' => 'mechanical',
+  'name' => 'Astro Boy',
+  'year' => 1952
+));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$base</span> <a href="#">\Phalcon\Mvc\Model</a></li>
+                                                    <li><span class="strong">$data</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$columnMap</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$dirtyState</span> <a href="#">int</a></li>
+                                                    <li><span class="strong">$keepSnapshots</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="cloneResultMapHydrate">cloneResultMapHydrate</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static cloneResultMapHydrate ( $data, $columnMap, $hydrationMode )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns an hydrated result based on the data and the column map</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$data</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$columnMap</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$hydrationMode</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="cloneResult">cloneResult</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static cloneResult ( $base, $data, $dirtyState = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Assigns values to a model from an array returning a new model</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+$robot = \Phalcon\Mvc\Model::cloneResult(new Robots(), array(
+  'type' => 'mechanical',
+  'name' => 'Astro Boy',
+  'year' => 1952
+));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$base</span> <a href="#">\Phalcon\Mvc\Model</a></li>
+                                                    <li><span class="strong">$data</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$dirtyState</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="find">find</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static find ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to query a set of records that match the specified conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+ //How many robots are there?
+ $robots = Robots::find();
+ echo "There are ", count($robots), "\n";
+
+ //How many mechanical robots are there?
+ $robots = Robots::find("type='mechanical'");
+ echo "There are ", count($robots), "\n";
+
+ //Get and print virtual robots ordered by name
+ $robots = Robots::find(array("type='virtual'", "order" => "name"));
+ foreach ($robots as $robot) {
+	   echo $robot->name, "\n";
+ }
+
+ //Get first 100 virtual robots ordered by name
+ $robots = Robots::find(array("type='virtual'", "order" => "name", "limit" => 100));
+ foreach ($robots as $robot) {
+	   echo $robot->name, "\n";
+ }
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p> \Phalcon\Mvc\Model\ResultsetInterface</p>
+                
+                            <br/>
+                <h3 id="findFirst">findFirst</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static findFirst ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to query the first record that match the specified conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+ //What's the first robot in robots table?
+ $robot = Robots::findFirst();
+ echo "The robot name is ", $robot->name;
+
+ //What's the first mechanical robot in robots table?
+ $robot = Robots::findFirst("type='mechanical'");
+ echo "The first mechanical robot name is ", $robot->name;
+
+ //Get first virtual robot ordered by name
+ $robot = Robots::findFirst(array("type='virtual'", "order" => "name"));
+ echo "The first virtual robot name is ", $robot->name;
+
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="query">query</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static query ( $dependencyInjector = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Create a criteria for a specific model</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Criteria</p>
+                
+                            <br/>
+                <h3 id="_exists">_exists</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _exists (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks if the current record already exists or not</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$metaData</span> <a href="#">\Phalcon\Mvc\Model\MetadataInterface</a></li>
+                                                    <li><span class="strong">$connection</span> <a href="#">\Phalcon\Db\AdapterInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="_groupResult">_groupResult</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected static _groupResult (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Generate a PHQL SELECT statement for an aggregate</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$function</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$alias</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\ResultsetInterface</p>
+                
+                            <br/>
+                <h3 id="count">count</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static count ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to count how many records match the specified conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+ //How many robots are there?
+ $number = Robots::count();
+ echo "There are ", $number, "\n";
+
+ //How many mechanical robots are there?
+ $number = Robots::count("type='mechanical'");
+ echo "There are ", $number, " mechanical robots\n";
+
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="sum">sum</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static sum ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to calculate a summatory on a column that match the specified conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+ //How much are all robots?
+ $sum = Robots::sum(array('column' => 'price'));
+ echo "The total price of robots is ", $sum, "\n";
+
+ //How much are mechanical robots?
+ $sum = Robots::sum(array("type='mechanical'", 'column' => 'price'));
+ echo "The total price of mechanical robots is  ", $sum, "\n";
+
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>double</p>
+                
+                            <br/>
+                <h3 id="maximum">maximum</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static maximum ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to get the maximum value of a column that match the specified conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+ //What is the maximum robot id?
+ $id = Robots::maximum(array('column' => 'id'));
+ echo "The maximum robot id is: ", $id, "\n";
+
+ //What is the maximum id of mechanical robots?
+ $sum = Robots::maximum(array("type='mechanical'", 'column' => 'id'));
+ echo "The maximum robot id of mechanical robots is ", $id, "\n";
+
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="minimum">minimum</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static minimum ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to get the minimum value of a column that match the specified conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+ //What is the minimum robot id?
+ $id = Robots::minimum(array('column' => 'id'));
+ echo "The minimum robot id is: ", $id;
+
+ //What is the minimum id of mechanical robots?
+ $sum = Robots::minimum(array("type='mechanical'", 'column' => 'id'));
+ echo "The minimum robot id of mechanical robots is ", $id;
+
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="average">average</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static average ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to calculate the average value on a column matching the specified conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+ //What's the average price of robots?
+ $average = Robots::average(array('column' => 'price'));
+ echo "The average price is ", $average, "\n";
+
+ //What's the average price of mechanical robots?
+ $average = Robots::average(array("type='mechanical'", 'column' => 'price'));
+ echo "The average price of mechanical robots is ", $average, "\n";
+
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>double</p>
+                
+                            <br/>
+                <h3 id="fireEvent">fireEvent</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public fireEvent ( $eventName )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Fires an event, implicitly calls behaviors and listeners in the events manager are notified</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$eventName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="fireEventCancel">fireEventCancel</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public fireEventCancel ( $eventName )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Fires an event, implicitly calls behaviors and listeners in the events manager are notified  This method stops if one of the callbacks/listeners returns boolean false</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$eventName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="_cancelOperation">_cancelOperation</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _cancelOperation (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Cancel the current operation</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="appendMessage">appendMessage</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public appendMessage ( $message )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends a customized message on the validation process</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ use \Phalcon\Mvc\Model\Message as Message;
+
+ class Robots extends \Phalcon\Mvc\Model
+ {
+
+   public function beforeSave()
+   {
+     if ($this->name == 'Peter') {
+        $message = new Message("Sorry, but a robot cannot be named Peter");
+        $this->appendMessage($message);
+     }
+   }
+ }
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$message</span> <a href="#">\Phalcon\Mvc\Model\MessageInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="validate">validate</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected validate (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Executes validators on every validation call</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+use \Phalcon\Mvc\Model\Validator\ExclusionIn as ExclusionIn;
+
+class Subscriptors extends \Phalcon\Mvc\Model
+{
+
+	public function validation()
+  {
+ 		$this->validate(new ExclusionIn(array(
+			'field' => 'status',
+			'domain' => array('A', 'I')
+		)));
+		if ($this->validationHasFailed() == true) {
+			return false;
+		}
+	}
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$validator</span> <a href="#">object</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="validationHasFailed">validationHasFailed</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public validationHasFailed (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check whether validation process has generated any messages</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+use \Phalcon\Mvc\Model\Validator\ExclusionIn as ExclusionIn;
+
+class Subscriptors extends \Phalcon\Mvc\Model
+{
+
+	public function validation()
+  {
+ 		$this->validate(new ExclusionIn(array(
+			'field' => 'status',
+			'domain' => array('A', 'I')
+		)));
+		if ($this->validationHasFailed() == true) {
+			return false;
+		}
+	}
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getMessages">getMessages</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getMessages (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns all the validation messages</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$robot = new Robots();
+	$robot->type = 'mechanical';
+	$robot->name = 'Astro Boy';
+	$robot->year = 1952;
+	if ($robot->save() == false) {
+  	echo "Umh, We can't store robots right now ";
+  	foreach ($robot->getMessages() as $message) {
+			echo $message;
+		}
+	} else {
+  	echo "Great, a new robot was saved successfully!";
+	}
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\MessageInterface[]</p>
+                
+                            <br/>
+                <h3 id="_checkForeignKeys">_checkForeignKeys</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _checkForeignKeys (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Reads "belongs to" relations and check the virtual foreign keys when inserting or updating records</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="_checkForeignKeysReverse">_checkForeignKeysReverse</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _checkForeignKeysReverse (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Reads both "hasMany" and "hasOne" relations and checks the virtual foreign keys when deleting records</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="_preSave">_preSave</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _preSave (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Executes internal hooks before save a record</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$metaData</span> <a href="#">\Phalcon\Mvc\Model\MetadataInterface</a></li>
+                                                    <li><span class="strong">$exists</span> <a href="#">boolean</a></li>
+                                                    <li><span class="strong">$identityField</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="_postSave">_postSave</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _postSave (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Executes internal events after save a record</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$success</span> <a href="#">boolean</a></li>
+                                                    <li><span class="strong">$exists</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="_doLowInsert">_doLowInsert</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _doLowInsert (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sends a pre-build INSERT SQL statement to the relational database system</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$metaData</span> <a href="#">\Phalcon\Mvc\Model\MetadataInterface</a></li>
+                                                    <li><span class="strong">$connection</span> <a href="#">\Phalcon\Db\AdapterInterface</a></li>
+                                                    <li><span class="strong">$table</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="_doLowUpdate">_doLowUpdate</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _doLowUpdate (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sends a pre-build UPDATE SQL statement to the relational database system</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$metaData</span> <a href="#">\Phalcon\Mvc\Model\MetadataInterface</a></li>
+                                                    <li><span class="strong">$connection</span> <a href="#">\Phalcon\Db\AdapterInterface</a></li>
+                                                    <li><span class="strong">$table</span> <a href="#">string|array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="_preSaveRelatedRecords">_preSaveRelatedRecords</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _preSaveRelatedRecords (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p></p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$related</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="_postSaveRelatedRecords">_postSaveRelatedRecords</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _postSaveRelatedRecords (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Save the related records assigned in the has-one/has-many relations</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$connection</span> <a href="#">\Phalcon\Db\AdapterInterface</a></li>
+                                                    <li><span class="strong">$related</span> <a href="#">\Phalcon\Mvc\ModelInterface[]</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="save">save</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public save ( $data = null, $whiteList = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Inserts or updates a model instance. Returning true on success or false otherwise.</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	//Creating a new robot
+	$robot = new Robots();
+	$robot->type = 'mechanical';
+	$robot->name = 'Astro Boy';
+	$robot->year = 1952;
+	$robot->save();
+
+	//Updating a robot name
+	$robot = Robots::findFirst("id=100");
+	$robot->name = "Biomass";
+	$robot->save();
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$data</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$whiteList</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="create">create</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public create ( $data = null, $whiteList = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Inserts a model instance. If the instance already exists in the persistance it will throw an exception  Returning true on success or false otherwise.</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	//Creating a new robot
+	$robot = new Robots();
+	$robot->type = 'mechanical';
+	$robot->name = 'Astro Boy';
+	$robot->year = 1952;
+	$robot->create();
+
+  //Passing an array to create
+  $robot = new Robots();
+  $robot->create(array(
+      'type' => 'mechanical',
+      'name' => 'Astroy Boy',
+      'year' => 1952
+  ));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$data</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$whiteList</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="update">update</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public update ( $data = null, $whiteList = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Updates a model instance. If the instance doesn't exist in the persistance it will throw an exception  Returning true on success or false otherwise.</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	//Updating a robot name
+	$robot = Robots::findFirst("id=100");
+	$robot->name = "Biomass";
+	$robot->update();
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$data</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$whiteList</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="delete">delete</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public delete (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Deletes a model instance. Returning true on success or false otherwise.</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+$robot = Robots::findFirst("id=100");
+$robot->delete();
+
+foreach (Robots::find("type = 'mechanical'") as $robot) {
+   $robot->delete();
+}
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getOperationMade">getOperationMade</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getOperationMade (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the type of the latest operation performed by the ORM  Returns one of the OP_* class constants</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="refresh">refresh</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public refresh (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Refreshes the model attributes re-querying the record from the database</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="skipOperation">skipOperation</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public skipOperation ( $skip )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Skips the current operation forcing a success state</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$skip</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="readAttribute">readAttribute</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public readAttribute ( $attribute )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Reads an attribute value by its name</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo $robot->readAttribute('name');
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$attribute</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="writeAttribute">writeAttribute</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public writeAttribute ( $attribute, $value )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Writes an attribute value by its name</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	$robot->writeAttribute('name', 'Rosey');
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$attribute</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$value</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="skipAttributes">skipAttributes</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected skipAttributes (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a list of attributes that must be skipped from the  generated INSERT/UPDATE statement</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+class Robots extends \Phalcon\Mvc\Model
+{
+
+   public function initialize()
+   {
+       $this->skipAttributes(array('price'));
+   }
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$attributes</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="skipAttributesOnCreate">skipAttributesOnCreate</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected skipAttributesOnCreate (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a list of attributes that must be skipped from the  generated INSERT statement</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+class Robots extends \Phalcon\Mvc\Model
+{
+
+   public function initialize()
+   {
+       $this->skipAttributesOnCreate(array('created_at'));
+   }
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$attributes</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="skipAttributesOnUpdate">skipAttributesOnUpdate</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected skipAttributesOnUpdate (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a list of attributes that must be skipped from the  generated UPDATE statement</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+class Robots extends \Phalcon\Mvc\Model
+{
+
+   public function initialize()
+   {
+       $this->skipAttributesOnUpdate(array('modified_in'));
+   }
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$attributes</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="hasOne">hasOne</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected hasOne (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Setup a 1-1 relation between two models</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+class Robots extends \Phalcon\Mvc\Model
+{
+
+   public function initialize()
+   {
+       $this->hasOne('id', 'RobotsDescription', 'robots_id');
+   }
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$fields</span> <a href="#">mixed</a></li>
+                                                    <li><span class="strong">$referenceModel</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$referencedFields</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="belongsTo">belongsTo</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected belongsTo (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Setup a relation reverse 1-1  between two models</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+class RobotsParts extends \Phalcon\Mvc\Model
+{
+
+   public function initialize()
+   {
+       $this->belongsTo('robots_id', 'Robots', 'id');
+   }
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$fields</span> <a href="#">mixed</a></li>
+                                                    <li><span class="strong">$referenceModel</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$referencedFields</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="hasMany">hasMany</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected hasMany (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Setup a relation 1-n between two models</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+class Robots extends \Phalcon\Mvc\Model
+{
+
+   public function initialize()
+   {
+       $this->hasMany('id', 'RobotsParts', 'robots_id');
+   }
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$fields</span> <a href="#">mixed</a></li>
+                                                    <li><span class="strong">$referenceModel</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$referencedFields</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="hasManyThrough">hasManyThrough</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected hasManyThrough (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Setup a relation n-n between two models through an intermediate relation</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+class Robots extends \Phalcon\Mvc\Model
+{
+
+   public function initialize()
+   {
+       //A reference relation must be set
+       $this->hasMany('id', 'RobotsParts', 'robots_id');
+
+       //Setup a many-to-many relation to Parts through RobotsParts
+       $this->hasManyThrough('Parts', 'RobotsParts');
+   }
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$referenceModel</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$throughRelation</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="addBehavior">addBehavior</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected addBehavior (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Setups a behavior in a model</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+use \Phalcon\Mvc\Model\Behaviors\Timestampable;
+
+class Robots extends \Phalcon\Mvc\Model
+{
+
+   public function initialize()
+   {
+		$this->addBehavior(new Timestampable(array(
+			'onCreate' => array(
+				'field' => 'created_at',
+				'format' => 'Y-m-d'
+			)
+		)));
+   }
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$behavior</span> <a href="#">\Phalcon\Mvc\Model\BehaviorInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="keepSnapshots">keepSnapshots</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected keepSnapshots (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets if the model must keep the original record snapshot in memory</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+class Robots extends \Phalcon\Mvc\Model
+{
+
+   public function initialize()
+   {
+		$this->keepSnapshots(true);
+   }
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$keepSnapshots</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setSnapshotData">setSnapshotData</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setSnapshotData ( $data, $columnMap = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the record's snapshot data.  This method is used internally to set snapshot data when the model was set up to keep snapshot data</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$data</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$columnMap</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="hasSnapshotData">hasSnapshotData</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public hasSnapshotData (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks if the object has internal snapshot data</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getSnapshotData">getSnapshotData</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getSnapshotData (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the internal snapshot data</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="hasChanged">hasChanged</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public hasChanged ( $fieldName = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check if a specific attribute has changed  This only works if the model is keeping data snapshots</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$fieldName</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getChangedFields">getChangedFields</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getChangedFields (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns a list of changed values</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="useDynamicUpdate">useDynamicUpdate</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected useDynamicUpdate (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets if a model must use dynamic update instead of the all-field update</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+class Robots extends \Phalcon\Mvc\Model
+{
+
+   public function initialize()
+   {
+		$this->useDynamicUpdate(true);
+   }
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dynamicUpdate</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getRelated">getRelated</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getRelated ( $alias, $arguments = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns related records based on defined relations</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$alias</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$arguments</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\ResultsetInterface</p>
+                
+                            <br/>
+                <h3 id="_getRelatedRecords">_getRelatedRecords</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _getRelatedRecords (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns related records defined relations depending on the method name</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$modelName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$method</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$arguments</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="__call">__call</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __call ( $method, $arguments = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Handles method calls when a method is not implemented</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$method</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$arguments</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="__callStatic">__callStatic</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static __callStatic ( $method, $arguments = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Handles method calls when a static method is not implemented</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$method</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$arguments</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="__set">__set</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __set ( $property, $value )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Magic method to assign values to the the model</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$property</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$value</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="__get">__get</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __get ( $property )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Magic method to get related records using the relation alias as a property</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$property</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Resultset</p>
+                
+                            <br/>
+                <h3 id="__isset">__isset</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __isset ( $property )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Magic method to check if a property is a valid relation</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$property</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="serialize">serialize</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public serialize (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Serializes the object ignoring connections or static properties</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="unserialize">unserialize</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public unserialize ( $data )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Unserializes the object from a serialized string</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$data</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="dump">dump</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dump (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns a simple representation of the object that can be used with var_dump</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ var_dump($robot->dump());
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="toArray">toArray</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public toArray (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the instance as an array representation</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ print_r($robot->toArray());
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="setup">setup</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static setup ( $options )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Enables/disables options in the ORM</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$options</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

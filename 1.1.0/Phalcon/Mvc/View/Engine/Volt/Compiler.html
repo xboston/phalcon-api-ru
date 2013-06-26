@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Mvc\View\Engine\Volt\Compiler</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Mvc\View\Engine\Volt</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\DI\InjectionAwareInterface</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Mvc\View\Engine\Volt\Compiler   This class reads and compiles Volt templates into PHP plain code</div>
+        
+        
+            <div class="highlight">
+                <pre>
+	$compiler = new \Phalcon\Mvc\View\Engine\Volt\Compiler();
+	$compiler->compile('views/partials/header.volt');
+
+	require $compiler->getCompiledTemplatePath();
+</pre>
+            </div>
+
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">\Phalcon\Mvc\View\Engine\Volt\Compiler</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setOptions">setOptions</a></td>
+                        <td class="description">Sets the compiler options</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getOptions">getOptions</a></td>
+                        <td class="description">Returns the compiler options</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDI">setDI</a></td>
+                        <td class="description">Sets the dependency injector</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDI">getDI</a></td>
+                        <td class="description">Returns the internal dependency injector</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addFunction">addFunction</a></td>
+                        <td class="description">Register a new function in the compiler</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getFunctions">getFunctions</a></td>
+                        <td class="description">Register the user registered functions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addFilter">addFilter</a></td>
+                        <td class="description">Register a new filter in the compiler</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getFilters">getFilters</a></td>
+                        <td class="description">Register the user registered filters</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setUniquePrefix">setUniquePrefix</a></td>
+                        <td class="description">Set a unique prefix to be used as prefix for compiled variables</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getUniquePrefix">getUniquePrefix</a></td>
+                        <td class="description">Return a unique prefix to be used as prefix for compiled variables and contexts</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#attributeReader">attributeReader</a></td>
+                        <td class="description">Resolves attribute reading</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#functionCall">functionCall</a></td>
+                        <td class="description">Resolves function intermediate code into PHP function calls</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#resolveTest">resolveTest</a></td>
+                        <td class="description">Resolves filter intermediate code into a valid PHP expression</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#resolveFilter">resolveFilter</a></td>
+                        <td class="description">Resolves filter intermediate code into PHP function calls</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#expression">expression</a></td>
+                        <td class="description">Resolves an expression node in an AST volt tree</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_statementListOrExtends">_statementListOrExtends</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileForeach">compileForeach</a></td>
+                        <td class="description">Compiles a 'foreach' intermediate code representation into plain PHP code</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileForElse">compileForElse</a></td>
+                        <td class="description">Generates a 'forelse' PHP code</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileIf">compileIf</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileElseIf">compileElseIf</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileCache">compileCache</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileEcho">compileEcho</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileInclude">compileInclude</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileSet">compileSet</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileDo">compileDo</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileAutoEscape">compileAutoEscape</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_statementList">_statementList</a></td>
+                        <td class="description">Traverses a statement list compiling each of its nodes</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_compileSource">_compileSource</a></td>
+                        <td class="description">Compiles a Volt source code returning a PHP plain version</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileString">compileString</a></td>
+                        <td class="description">Compiles a template into a string</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compileFile">compileFile</a></td>
+                        <td class="description">Compiles a template into a file forcing the destination path</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#compile">compile</a></td>
+                        <td class="description">Compiles a template into a file applying the compiler options  This method does not return the compiled path if the template was not compiled</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getTemplatePath">getTemplatePath</a></td>
+                        <td class="description">Returns the path that is currently beign compiled</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getCompiledTemplatePath">getCompiledTemplatePath</a></td>
+                        <td class="description">Returns the path to the last compiled template</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#parse">parse</a></td>
+                        <td class="description">Parses a Volt template returning its intermediate representation</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __construct ( $view = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>\Phalcon\Mvc\View\Engine\Volt\Compiler</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$view</span> <a href="#">\Phalcon\Mvc\ViewInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setOptions">setOptions</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setOptions ( $options )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the compiler options</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$options</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getOptions">getOptions</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getOptions (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the compiler options</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="setDI">setDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setDI ( $dependencyInjector )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the dependency injector</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getDI">getDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDI (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the internal dependency injector</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DiInterface</p>
+                
+                            <br/>
+                <h3 id="addFunction">addFunction</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addFunction ( $name, $definition )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Register a new function in the compiler</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$definition</span> <a href="#">Closure|string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\View\Engine\Volt\Compiler</p>
+                
+                            <br/>
+                <h3 id="getFunctions">getFunctions</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getFunctions (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Register the user registered functions</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="addFilter">addFilter</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addFilter ( $name, $definition )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Register a new filter in the compiler</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$definition</span> <a href="#">Closure|string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\View\Engine\Volt\Compiler</p>
+                
+                            <br/>
+                <h3 id="getFilters">getFilters</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getFilters (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Register the user registered filters</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="setUniquePrefix">setUniquePrefix</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setUniquePrefix ( $prefix )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Set a unique prefix to be used as prefix for compiled variables</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$prefix</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getUniquePrefix">getUniquePrefix</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getUniquePrefix (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Return a unique prefix to be used as prefix for compiled variables and contexts</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="attributeReader">attributeReader</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public attributeReader ( $expr )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resolves attribute reading</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$expr</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="functionCall">functionCall</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public functionCall ( $expr )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resolves function intermediate code into PHP function calls</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$expr</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="resolveTest">resolveTest</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public resolveTest ( $test, $left )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resolves filter intermediate code into a valid PHP expression</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$test</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$left</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="resolveFilter">resolveFilter</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected resolveFilter (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resolves filter intermediate code into PHP function calls</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$filter</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$left</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="expression">expression</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public expression ( $expr )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resolves an expression node in an AST volt tree</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$expr</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="_statementListOrExtends">_statementListOrExtends</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _statementListOrExtends (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="compileForeach">compileForeach</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileForeach ( $statement, $extendsMode = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Compiles a 'foreach' intermediate code representation into plain PHP code</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$statement</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$extendsMode</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="compileForElse">compileForElse</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileForElse (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Generates a 'forelse' PHP code</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="compileIf">compileIf</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileIf ( $statement, $extendsMode = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="compileElseIf">compileElseIf</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileElseIf ( $statement )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="compileCache">compileCache</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileCache ( $statement, $extendsMode = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="compileEcho">compileEcho</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileEcho ( $statement )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="compileInclude">compileInclude</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileInclude ( $statement )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="compileSet">compileSet</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileSet ( $statement )</pre>
+                </div>
+                </p>
+
+                
+                    <p></p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="compileDo">compileDo</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileDo ( $statement )</pre>
+                </div>
+                </p>
+
+                
+                    <p></p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="compileAutoEscape">compileAutoEscape</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileAutoEscape ( $statement, $extendsMode )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="_statementList">_statementList</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _statementList (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Traverses a statement list compiling each of its nodes</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$statement</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="_compileSource">_compileSource</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _compileSource (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Compiles a Volt source code returning a PHP plain version</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$viewCode</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$extendsMode</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="compileString">compileString</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileString ( $viewCode, $extendsMode = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Compiles a template into a string</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo $compiler->compileString('{{ "hello world" }}');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$viewCode</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$extendsMode</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="compileFile">compileFile</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compileFile ( $path, $compiledPath, $extendsMode = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Compiles a template into a file forcing the destination path</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$compiler->compile('views/layouts/main.volt', 'views/layouts/main.volt.php');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$path</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$compiledPath</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$extendsMode</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string|array</p>
+                
+                            <br/>
+                <h3 id="compile">compile</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public compile ( $templatePath, $extendsMode = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Compiles a template into a file applying the compiler options  This method does not return the compiled path if the template was not compiled</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$compiler->compile('views/layouts/main.volt');
+	require $compiler->getCompiledTemplatePath();
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$templatePath</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$extendsMode</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string|array</p>
+                
+                            <br/>
+                <h3 id="getTemplatePath">getTemplatePath</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getTemplatePath (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the path that is currently beign compiled</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getCompiledTemplatePath">getCompiledTemplatePath</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getCompiledTemplatePath (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the path to the last compiled template</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="parse">parse</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public parse ( $viewCode )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Parses a Volt template returning its intermediate representation</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	print_r($compiler->parse('{{ 3 + 2 }}'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$viewCode</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

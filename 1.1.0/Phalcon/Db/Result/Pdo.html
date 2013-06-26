@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Db\Result\Pdo</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Db\Result</a></td>
+            </tr>
+
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Db\Result\Pdo   Encapsulates the resultset internals</div>
+        
+        
+            <div class="highlight">
+                <pre>
+	$result = $connection->query("SELECT * FROM robots ORDER BY name");
+	$result->setFetchMode(Phalcon\Db::FETCH_NUM);
+	while ($robot = $result->fetchArray()) {
+		print_r($robot);
+	}
+ </pre>
+            </div>
+
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">\Phalcon\Db\Result\Pdo constructor</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#execute">execute</a></td>
+                        <td class="description">Allows to executes the statement again. Some database systems don't support scrollable cursors,  So, as cursors are forward only, we need to execute the cursor again to fetch rows from the begining</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fetch">fetch</a></td>
+                        <td class="description">Fetches an array/object of strings that corresponds to the fetched row, or FALSE if there are no more rows.  This method is affected by the active fetch flag set using \Phalcon\Db\Result\Pdo::setFetchMode</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fetchArray">fetchArray</a></td>
+                        <td class="description">Returns an array of strings that corresponds to the fetched row, or FALSE if there are no more rows.  This method is affected by the active fetch flag set using \Phalcon\Db\Result\Pdo::setFetchMode</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fetchAll">fetchAll</a></td>
+                        <td class="description">Returns an array of arrays containing all the records in the result  This method is affected by the active fetch flag set using \Phalcon\Db\Result\Pdo::setFetchMode</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#numRows">numRows</a></td>
+                        <td class="description">Gets number of rows returned by a resulset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dataSeek">dataSeek</a></td>
+                        <td class="description">Moves internal resulset cursor to another position letting us to fetch a certain row</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setFetchMode">setFetchMode</a></td>
+                        <td class="description">Changes the fetching mode affecting \Phalcon\Db\Result\Pdo::fetch()</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getInternalResult">getInternalResult</a></td>
+                        <td class="description">Gets the internal PDO result object</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __construct ( $connection, $result, $sqlStatement = null, $bindParams = null, $bindTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>\Phalcon\Db\Result\Pdo constructor</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$connection</span> <a href="#">\Phalcon\Db\AdapterInterface</a></li>
+                                                    <li><span class="strong">$sqlStatement</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$bindParams</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$bindTypes</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$result</span> <a href="#">\PDOStatement</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="execute">execute</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public execute (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to executes the statement again. Some database systems don't support scrollable cursors,  So, as cursors are forward only, we need to execute the cursor again to fetch rows from the begining</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="fetch">fetch</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public fetch (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Fetches an array/object of strings that corresponds to the fetched row, or FALSE if there are no more rows.  This method is affected by the active fetch flag set using \Phalcon\Db\Result\Pdo::setFetchMode</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$result = $connection->query("SELECT * FROM robots ORDER BY name");
+	$result->setFetchMode(Phalcon\Db::FETCH_OBJ);
+	while ($robot = $result->fetch()) {
+		echo $robot->name;
+	}
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="fetchArray">fetchArray</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public fetchArray (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns an array of strings that corresponds to the fetched row, or FALSE if there are no more rows.  This method is affected by the active fetch flag set using \Phalcon\Db\Result\Pdo::setFetchMode</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$result = $connection->query("SELECT * FROM robots ORDER BY name");
+	$result->setFetchMode(Phalcon\Db::FETCH_NUM);
+	while( $robot = $result->fetchArray()) {
+		print_r($robot);
+	}
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="fetchAll">fetchAll</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public fetchAll (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns an array of arrays containing all the records in the result  This method is affected by the active fetch flag set using \Phalcon\Db\Result\Pdo::setFetchMode</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$result = $connection->query("SELECT * FROM robots ORDER BY name");
+	$robots = $result->fetchAll();
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="numRows">numRows</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public numRows (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets number of rows returned by a resulset</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$result = $connection->query("SELECT * FROM robots ORDER BY name");
+	echo 'There are ', $result->numRows(), ' rows in the resulset';
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="dataSeek">dataSeek</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dataSeek ( $number )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Moves internal resulset cursor to another position letting us to fetch a certain row</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$result = $connection->query("SELECT * FROM robots ORDER BY name");
+	$result->dataSeek(2); // Move to third row on result
+	$row = $result->fetch(); // Fetch third row
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$number</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setFetchMode">setFetchMode</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setFetchMode ( $fetchMode )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Changes the fetching mode affecting \Phalcon\Db\Result\Pdo::fetch()</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	//Return array with integer indexes
+	$result->setFetchMode(Phalcon\Db::FETCH_NUM);
+
+	//Return associative array without integer indexes
+	$result->setFetchMode(Phalcon\Db::FETCH_ASSOC);
+
+	//Return associative array together with integer indexes
+	$result->setFetchMode(Phalcon\Db::FETCH_BOTH);
+
+	//Return an object
+	$result->setFetchMode(Phalcon\Db::FETCH_OBJ);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$fetchMode</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getInternalResult">getInternalResult</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getInternalResult (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets the internal PDO result object</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\PDOStatement</p>
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

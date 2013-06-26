@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\DI</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\DiInterface</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\DI   Phalcon\DI is a component that implements Dependency Injection of services and  it's itself a container for them.   Since Phalcon is highly decoupled, Phalcon\DI is essential to integrate the different  components of the framework. The developer can also use this component to inject dependencies  and manage global instances of the different classes used in the application.   Basically, this component implements the `Inversion of Control` pattern. Applying this,  the objects do not receive their dependencies using setters or constructors, but requesting  a service dependency injector. This reduces the overall complexity, since there is only one  way to get the required dependencies within a component.   Additionally, this pattern increases testability in the code, thus making it less prone to errors.</div>
+        
+        
+            <div class="highlight">
+                <pre>
+ $di = new Phalcon\DI();
+
+ //Using a string definition
+ $di->set('request', 'Phalcon\Http\Request', true);
+
+ //Using an anonymous function
+ $di->set('request', function(){
+	  return new Phalcon\Http\Request();
+ }, true);
+
+ $request = $di->getRequest();
+
+</pre>
+            </div>
+
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">\Phalcon\DI constructor</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#set">set</a></td>
+                        <td class="description">Registers a service in the services container</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setShared">setShared</a></td>
+                        <td class="description">Registers an "always shared" service in the services container</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#remove">remove</a></td>
+                        <td class="description">Removes a service in the services container</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#attempt">attempt</a></td>
+                        <td class="description">Attempts to register a service in the services container  Only is successful if a service hasn't been registered previously  with the same name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setRaw">setRaw</a></td>
+                        <td class="description">Sets a service using a raw \Phalcon\DI\Service definition</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getRaw">getRaw</a></td>
+                        <td class="description">Returns a service definition without resolving</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getService">getService</a></td>
+                        <td class="description">Returns a \Phalcon\DI\Service instance</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#get">get</a></td>
+                        <td class="description">Resolves the service based on its configuration</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getShared">getShared</a></td>
+                        <td class="description">Resolves a service, the resolved service is stored in the DI, subsequent requests for this service will return the same instance</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#has">has</a></td>
+                        <td class="description">Check whether the DI contains a service by a name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#wasFreshInstance">wasFreshInstance</a></td>
+                        <td class="description">Check whether the last service obtained via getShared produced a fresh instance or an existing one</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getServices">getServices</a></td>
+                        <td class="description">Return the services registered in the DI</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#offsetExists">offsetExists</a></td>
+                        <td class="description">Check if a service is registered using the array syntax</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#offsetSet">offsetSet</a></td>
+                        <td class="description">Allows to register a shared service using the array syntax</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#offsetGet">offsetGet</a></td>
+                        <td class="description">Allows to obtain a shared service using the array syntax</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#offsetUnset">offsetUnset</a></td>
+                        <td class="description">Removes a service from the services container using the array syntax</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__call">__call</a></td>
+                        <td class="description">Magic method to get or set services using setters/getters</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDefault">setDefault</a></td>
+                        <td class="description">Set a default dependency injection container to be obtained into static methods</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDefault">getDefault</a></td>
+                        <td class="description">Return the lastest DI created</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#reset">reset</a></td>
+                        <td class="description">Resets the internal default DI</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __construct (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>\Phalcon\DI constructor</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="set">set</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public set ( $name, $definition, $shared = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Registers a service in the services container</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$definition</span> <a href="#">mixed</a></li>
+                                                    <li><span class="strong">$shared</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DI\ServiceInterface</p>
+                
+                            <br/>
+                <h3 id="setShared">setShared</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setShared ( $name, $definition )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Registers an "always shared" service in the services container</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$definition</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DI\ServiceInterface</p>
+                
+                            <br/>
+                <h3 id="remove">remove</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public remove ( $name )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Removes a service in the services container</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="attempt">attempt</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public attempt ( $name, $definition, $shared = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Attempts to register a service in the services container  Only is successful if a service hasn't been registered previously  with the same name</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$definition</span> <a href="#">mixed</a></li>
+                                                    <li><span class="strong">$shared</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DI\ServiceInterface</p>
+                
+                            <br/>
+                <h3 id="setRaw">setRaw</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setRaw ( $name, $rawDefinition )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a service using a raw \Phalcon\DI\Service definition</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$rawDefinition</span> <a href="#">\Phalcon\DI\ServiceInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DI\ServiceInterface</p>
+                
+                            <br/>
+                <h3 id="getRaw">getRaw</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getRaw ( $name )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns a service definition without resolving</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="getService">getService</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getService ( $name )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns a \Phalcon\DI\Service instance</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DI\ServiceInterface</p>
+                
+                            <br/>
+                <h3 id="get">get</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public get ( $name, $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resolves the service based on its configuration</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="getShared">getShared</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getShared ( $name, $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resolves a service, the resolved service is stored in the DI, subsequent requests for this service will return the same instance</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="has">has</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public has ( $name )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check whether the DI contains a service by a name</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="wasFreshInstance">wasFreshInstance</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public wasFreshInstance (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check whether the last service obtained via getShared produced a fresh instance or an existing one</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getServices">getServices</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getServices (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Return the services registered in the DI</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DI\Service[]</p>
+                
+                            <br/>
+                <h3 id="offsetExists">offsetExists</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public offsetExists ( $alias )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check if a service is registered using the array syntax</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$alias</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="offsetSet">offsetSet</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public offsetSet ( $alias, $definition )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to register a shared service using the array syntax</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$di['request'] = new \Phalcon\Http\Request();
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$alias</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$definition</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="offsetGet">offsetGet</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public offsetGet ( $alias )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to obtain a shared service using the array syntax</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	var_dump($di['request']);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$alias</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="offsetUnset">offsetUnset</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public offsetUnset ( $alias )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Removes a service from the services container using the array syntax</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$alias</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="__call">__call</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __call ( $method, $arguments = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Magic method to get or set services using setters/getters</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$method</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$arguments</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="setDefault">setDefault</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static setDefault ( $dependencyInjector )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Set a default dependency injection container to be obtained into static methods</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getDefault">getDefault</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static getDefault (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Return the lastest DI created</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DiInterface</p>
+                
+                            <br/>
+                <h3 id="reset">reset</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static reset (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resets the internal default DI</p>
+
+                
+                
+
+                
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

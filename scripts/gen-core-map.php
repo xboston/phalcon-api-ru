@@ -120,6 +120,11 @@ $api = new Stubs_Generator(CPHALCON_DIR);
 $classDocs = $api->getClassDocs();
 $docs      = $api->getDocs();
 
+/*
+file_put_contents('1.php', var_export($docs,true) );
+die;
+*/
+
 $allClasses = array_merge(get_declared_classes() /* , get_declared_interfaces()*/);
 
 // список интерфейсов

@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Mvc\Collection</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Mvc</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\Mvc\CollectionInterface</a>,
+                                                    <a href="#">Phalcon\DI\InjectionAwareInterface</a>,
+                                                    <a href="#">Serializable</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Mvc\Collection   This component implements a high level abstraction for NoSQL databases which  works with documents</div>
+        
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+            <h2>Constants</h2>
+
+            <ul class="two-columns">
+                                    <li>integer OP_NONE</li>
+                                    <li>integer OP_CREATE</li>
+                                    <li>integer OP_UPDATE</li>
+                                    <li>integer OP_DELETE</li>
+                            </ul>
+
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">\Phalcon\Mvc\Model constructor</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setId">setId</a></td>
+                        <td class="description">Sets a value for the _id property, creates a MongoId object if needed</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getId">getId</a></td>
+                        <td class="description">Returns the value of the _id property</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDI">setDI</a></td>
+                        <td class="description">Sets the dependency injection container</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDI">getDI</a></td>
+                        <td class="description">Returns the dependency injection container</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setEventsManager">setEventsManager</a></td>
+                        <td class="description">Sets a custom events manager</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getEventsManager">getEventsManager</a></td>
+                        <td class="description">Returns the custom events manager</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getModelsManager">getModelsManager</a></td>
+                        <td class="description">Returns the models manager related to the entity instance</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getReservedAttributes">getReservedAttributes</a></td>
+                        <td class="description">Returns an array with reserved properties that cannot be part of the insert/update</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#useImplicitObjectIds">useImplicitObjectIds</a></td>
+                        <td class="description">Sets if a model must use implicit objects ids</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setSource">setSource</a></td>
+                        <td class="description">Sets collection name which model should be mapped</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getSource">getSource</a></td>
+                        <td class="description">Returns collection name mapped in the model</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setConnectionService">setConnectionService</a></td>
+                        <td class="description">Sets the DependencyInjection connection service name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getConnectionService">getConnectionService</a></td>
+                        <td class="description">Returns DependencyInjection connection service</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getConnection">getConnection</a></td>
+                        <td class="description">Retrieves a database connection</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#readAttribute">readAttribute</a></td>
+                        <td class="description">Reads an attribute value by its name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#writeAttribute">writeAttribute</a></td>
+                        <td class="description">Writes an attribute value by its name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#cloneResult">cloneResult</a></td>
+                        <td class="description">Returns a cloned collection</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_getResultset">_getResultset</a></td>
+                        <td class="description">Returns a collection resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_getGroupResultset">_getGroupResultset</a></td>
+                        <td class="description">Perform a count over a resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_preSave">_preSave</a></td>
+                        <td class="description">Executes internal hooks before save a document</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_postSave">_postSave</a></td>
+                        <td class="description">Executes internal events after save a document</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#validate">validate</a></td>
+                        <td class="description">Executes validators on every validation call</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#validationHasFailed">validationHasFailed</a></td>
+                        <td class="description">Check whether validation process has generated any messages</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fireEvent">fireEvent</a></td>
+                        <td class="description">Fires an internal event</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fireEventCancel">fireEventCancel</a></td>
+                        <td class="description">Fires an internal event that cancels the operation</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_cancelOperation">_cancelOperation</a></td>
+                        <td class="description">Cancel the current operation</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_exists">_exists</a></td>
+                        <td class="description">Checks if the document exists in the collection</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getMessages">getMessages</a></td>
+                        <td class="description">Returns all the validation messages</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#appendMessage">appendMessage</a></td>
+                        <td class="description">Appends a customized message on the validation process</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#save">save</a></td>
+                        <td class="description">Creates/Updates a collection based on the values in the atributes</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#findById">findById</a></td>
+                        <td class="description">Find a document by its id (_id)</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#findFirst">findFirst</a></td>
+                        <td class="description">Allows to query the first record that match the specified conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#find">find</a></td>
+                        <td class="description">Allows to query a set of records that match the specified conditions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#count">count</a></td>
+                        <td class="description">Perform a count over a collection</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#aggregate">aggregate</a></td>
+                        <td class="description">Perform an aggregation using the Mongo aggregation framework</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#delete">delete</a></td>
+                        <td class="description">Deletes a model instance. Returning true on success or false otherwise.</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#toArray">toArray</a></td>
+                        <td class="description">Returns the instance as an array representation</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#serialize">serialize</a></td>
+                        <td class="description">Serializes the object ignoring connections or protected properties</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#unserialize">unserialize</a></td>
+                        <td class="description">Unserializes the object from a serialized string</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>final public __construct ( $dependencyInjector = null, $modelsManager = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>\Phalcon\Mvc\Model constructor</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                                    <li><span class="strong">$modelsManager</span> <a href="#">\Phalcon\Mvc\Collection\ManagerInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setId">setId</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setId ( $id )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a value for the _id property, creates a MongoId object if needed</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$id</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getId">getId</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getId (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the value of the _id property</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\MongoId</p>
+                
+                            <br/>
+                <h3 id="setDI">setDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setDI ( $dependencyInjector )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the dependency injection container</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getDI">getDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDI (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the dependency injection container</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DiInterface</p>
+                
+                            <br/>
+                <h3 id="setEventsManager">setEventsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected setEventsManager (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets a custom events manager</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$eventsManager</span> <a href="#">\Phalcon\Events\ManagerInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getEventsManager">getEventsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected getEventsManager (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the custom events manager</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Events\ManagerInterface</p>
+                
+                            <br/>
+                <h3 id="getModelsManager">getModelsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getModelsManager (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the models manager related to the entity instance</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\ManagerInterface</p>
+                
+                            <br/>
+                <h3 id="getReservedAttributes">getReservedAttributes</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getReservedAttributes (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns an array with reserved properties that cannot be part of the insert/update</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="useImplicitObjectIds">useImplicitObjectIds</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected useImplicitObjectIds (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets if a model must use implicit objects ids</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$useImplicitObjectIds</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setSource">setSource</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected setSource (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets collection name which model should be mapped</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$source</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Collection</p>
+                
+                            <br/>
+                <h3 id="getSource">getSource</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getSource (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns collection name mapped in the model</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setConnectionService">setConnectionService</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setConnectionService ( $connectionService )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the DependencyInjection connection service name</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$connectionService</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model</p>
+                
+                            <br/>
+                <h3 id="getConnectionService">getConnectionService</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getConnectionService (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns DependencyInjection connection service</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getConnection">getConnection</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getConnection (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Retrieves a database connection</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\MongoDb</p>
+                
+                            <br/>
+                <h3 id="readAttribute">readAttribute</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public readAttribute ( $attribute )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Reads an attribute value by its name</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	echo $robot->readAttribute('name');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$attribute</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="writeAttribute">writeAttribute</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public writeAttribute ( $attribute, $value )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Writes an attribute value by its name</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$robot->writeAttribute('name', 'Rosey');
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$attribute</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$value</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="cloneResult">cloneResult</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static cloneResult ( $collection, $document )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns a cloned collection</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$collection</span> <a href="#">\Phalcon\Mvc\Collection</a></li>
+                                                    <li><span class="strong">$document</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Collection</p>
+                
+                            <br/>
+                <h3 id="_getResultset">_getResultset</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected static _getResultset (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns a collection resultset</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$params</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$collection</span> <a href="#">\Phalcon\Mvc\Collection</a></li>
+                                                    <li><span class="strong">$connection</span> <a href="#">\MongoDb</a></li>
+                                                    <li><span class="strong">$unique</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="_getGroupResultset">_getGroupResultset</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected static _getGroupResultset (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Perform a count over a resultset</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$params</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$collection</span> <a href="#">\Phalcon\Mvc\Collection</a></li>
+                                                    <li><span class="strong">$connection</span> <a href="#">\MongoDb</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="_preSave">_preSave</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _preSave (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Executes internal hooks before save a document</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                                    <li><span class="strong">$disableEvents</span> <a href="#">boolean</a></li>
+                                                    <li><span class="strong">$exists</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="_postSave">_postSave</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _postSave (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Executes internal events after save a document</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$disableEvents</span> <a href="#">boolean</a></li>
+                                                    <li><span class="strong">$success</span> <a href="#">boolean</a></li>
+                                                    <li><span class="strong">$exists</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="validate">validate</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected validate (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Executes validators on every validation call</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+use \Phalcon\Mvc\Model\Validator\ExclusionIn as ExclusionIn;
+
+class Subscriptors extends \Phalcon\Mvc\Collection
+{
+
+	public function validation()
+	{
+		$this->validate(new ExclusionIn(array(
+			'field' => 'status',
+			'domain' => array('A', 'I')
+		)));
+		if ($this->validationHasFailed() == true) {
+			return false;
+		}
+	}
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$validator</span> <a href="#">object</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="validationHasFailed">validationHasFailed</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public validationHasFailed (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check whether validation process has generated any messages</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+use \Phalcon\Mvc\Model\Validator\ExclusionIn as ExclusionIn;
+
+class Subscriptors extends \Phalcon\Mvc\Collection
+{
+
+	public function validation()
+	{
+		$this->validate(new ExclusionIn(array(
+			'field' => 'status',
+			'domain' => array('A', 'I')
+		)));
+		if ($this->validationHasFailed() == true) {
+			return false;
+		}
+	}
+
+}
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="fireEvent">fireEvent</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public fireEvent ( $eventName )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Fires an internal event</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$eventName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="fireEventCancel">fireEventCancel</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public fireEventCancel ( $eventName )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Fires an internal event that cancels the operation</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$eventName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="_cancelOperation">_cancelOperation</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _cancelOperation (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Cancel the current operation</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="_exists">_exists</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _exists (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks if the document exists in the collection</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$collection</span> <a href="#">\MongoCollection</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getMessages">getMessages</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getMessages (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns all the validation messages</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+$robot = new Robots();
+$robot->type = 'mechanical';
+$robot->name = 'Astro Boy';
+$robot->year = 1952;
+if ($robot->save() == false) {
+	echo "Umh, We can't store robots right now ";
+	foreach ($robot->getMessages() as $message) {
+		echo $message;
+	}
+} else {
+	echo "Great, a new robot was saved successfully!";
+}
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\MessageInterface[]</p>
+                
+                            <br/>
+                <h3 id="appendMessage">appendMessage</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public appendMessage ( $message )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends a customized message on the validation process</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	use \Phalcon\Mvc\Model\Message as Message;
+
+	class Robots extends \Phalcon\Mvc\Model
+	{
+
+		public function beforeSave()
+		{
+			if ($this->name == 'Peter') {
+				$message = new Message("Sorry, but a robot cannot be named Peter");
+				$this->appendMessage($message);
+			}
+		}
+	}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$message</span> <a href="#">\Phalcon\Mvc\Model\MessageInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="save">save</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public save (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Creates/Updates a collection based on the values in the atributes</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="findById">findById</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static findById ( $id )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Find a document by its id (_id)</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$id</span> <a href="#">string|\MongoId</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Collection</p>
+                
+                            <br/>
+                <h3 id="findFirst">findFirst</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static findFirst ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to query the first record that match the specified conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+ //What's the first robot in the robots table?
+ $robot = Robots::findFirst();
+ echo "The robot name is ", $robot->name, "\n";
+
+ //What's the first mechanical robot in robots table?
+ $robot = Robots::findFirst(array(
+     array("type" => "mechanical")
+ ));
+ echo "The first mechanical robot name is ", $robot->name, "\n";
+
+ //Get first virtual robot ordered by name
+ $robot = Robots::findFirst(array(
+     array("type" => "mechanical"),
+     "order" => array("name" => 1)
+ ));
+ echo "The first virtual robot name is ", $robot->name, "\n";
+
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="find">find</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static find ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Allows to query a set of records that match the specified conditions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+ //How many robots are there?
+ $robots = Robots::find();
+ echo "There are ", count($robots), "\n";
+
+ //How many mechanical robots are there?
+ $robots = Robots::find(array(
+     array("type" => "mechanical")
+ ));
+ echo "There are ", count($robots), "\n";
+
+ //Get and print virtual robots ordered by name
+ $robots = Robots::findFirst(array(
+     array("type" => "virtual"),
+     "order" => array("name" => 1)
+ ));
+ foreach ($robots as $robot) {
+	   echo $robot->name, "\n";
+ }
+
+ //Get first 100 virtual robots ordered by name
+ $robots = Robots::find(array(
+     array("type" => "virtual"),
+     "order" => array("name" => 1),
+     "limit" => 100
+ ));
+ foreach ($robots as $robot) {
+	   echo $robot->name, "\n";
+ }
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p> array</p>
+                
+                            <br/>
+                <h3 id="count">count</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static count ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Perform a count over a collection</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo 'There are ', Robots::count(), ' robots';
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="aggregate">aggregate</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static aggregate ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Perform an aggregation using the Mongo aggregation framework</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="delete">delete</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public delete (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Deletes a model instance. Returning true on success or false otherwise.</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+
+	$robot = Robots::findFirst();
+	$robot->delete();
+
+	foreach (Robots::find() as $robot) {
+		$robot->delete();
+	}
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="toArray">toArray</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public toArray (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the instance as an array representation</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ print_r($robot->toArray());
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="serialize">serialize</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public serialize (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Serializes the object ignoring connections or protected properties</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="unserialize">unserialize</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public unserialize ( $data )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Unserializes the object from a serialized string</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$data</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

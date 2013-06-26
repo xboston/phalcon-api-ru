@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Mvc\Model\Resultset</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Mvc\Model</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\Mvc\Model\ResultsetInterface</a>,
+                                                    <a href="#">Iterator</a>,
+                                                    <a href="#">Traversable</a>,
+                                                    <a href="#">SeekableIterator</a>,
+                                                    <a href="#">Countable</a>,
+                                                    <a href="#">ArrayAccess</a>,
+                                                    <a href="#">Serializable</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Mvc\Model\Resultset   This component allows to Phalcon\Mvc\Model returns large resulsets with the minimum memory consumption  Resulsets can be traversed using a standard foreach or a while statement. If a resultset is serialized  it will dump all the rows into a big array. Then unserialize will retrieve the rows as they were before  serializing.</div>
+        
+        
+            <div class="highlight">
+                <pre>
+
+ //Using a standard foreach
+ $robots = Robots::find(array("type='virtual'", "order" => "name"));
+ foreach ($robots as $robot) {
+  echo $robot->name, "\n";
+ }
+
+ //Using a while
+ $robots = Robots::find(array("type='virtual'", "order" => "name"));
+ $robots->rewind();
+ while ($robots->valid()) {
+  $robot = $robots->current();
+  echo $robot->name, "\n";
+  $robots->next();
+ }
+ </pre>
+            </div>
+
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+            <h2>Constants</h2>
+
+            <ul class="two-columns">
+                                    <li>integer TYPE_RESULT_FULL</li>
+                                    <li>integer TYPE_RESULT_PARTIAL</li>
+                                    <li>integer HYDRATE_RECORDS</li>
+                                    <li>integer HYDRATE_OBJECTS</li>
+                                    <li>integer HYDRATE_ARRAYS</li>
+                            </ul>
+
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#next">next</a></td>
+                        <td class="description">Moves cursor to next row in the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#key">key</a></td>
+                        <td class="description">Gets pointer number of active row in the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#rewind">rewind</a></td>
+                        <td class="description">Rewinds resultset to its beginning</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#seek">seek</a></td>
+                        <td class="description">Changes internal pointer to a specific position in the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#count">count</a></td>
+                        <td class="description">Counts how many rows are in the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#offsetExists">offsetExists</a></td>
+                        <td class="description">Checks whether offset exists in the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#offsetGet">offsetGet</a></td>
+                        <td class="description">Gets row in a specific position of the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#offsetSet">offsetSet</a></td>
+                        <td class="description">Resulsets cannot be changed. It has only been implemented to meet the definition of the ArrayAccess interface</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#offsetUnset">offsetUnset</a></td>
+                        <td class="description">Resulsets cannot be changed. It has only been implemented to meet the definition of the ArrayAccess interface</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getType">getType</a></td>
+                        <td class="description">Returns the internal type of data retrieval that the resultset is using</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getFirst">getFirst</a></td>
+                        <td class="description">Get first row in the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getLast">getLast</a></td>
+                        <td class="description">Get last row in the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setIsFresh">setIsFresh</a></td>
+                        <td class="description">Set if the resultset is fresh or an old one cached</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isFresh">isFresh</a></td>
+                        <td class="description">Tell if the resultset if fresh or an old one cached</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setHydrateMode">setHydrateMode</a></td>
+                        <td class="description">Sets the hydration mode in the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getHydrateMode">getHydrateMode</a></td>
+                        <td class="description">Returns the current hydration mode</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getCache">getCache</a></td>
+                        <td class="description">Returns the associated cache for the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#current">current</a></td>
+                        <td class="description">Returns current row in the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getMessages">getMessages</a></td>
+                        <td class="description">Returns the error messages produced by a batch operation</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#delete">delete</a></td>
+                        <td class="description">Delete every record in the resultset</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#filter">filter</a></td>
+                        <td class="description">Filters a resultset returning only those the developer requires</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#toArray">toArray</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#valid">valid</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#serialize">serialize</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#unserialize">unserialize</a></td>
+                        <td class="description"></td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="next">next</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public next (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Moves cursor to next row in the resultset</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="key">key</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public key (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets pointer number of active row in the resultset</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="rewind">rewind</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public rewind (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Rewinds resultset to its beginning</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="seek">seek</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public seek ( $position )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Changes internal pointer to a specific position in the resultset</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$position</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="count">count</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public count (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Counts how many rows are in the resultset</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="offsetExists">offsetExists</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public offsetExists ( $index )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether offset exists in the resultset</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$index</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="offsetGet">offsetGet</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public offsetGet ( $index )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets row in a specific position of the resultset</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$index</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\ModelInterface</p>
+                
+                            <br/>
+                <h3 id="offsetSet">offsetSet</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public offsetSet ( $index, $value )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resulsets cannot be changed. It has only been implemented to meet the definition of the ArrayAccess interface</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$index</span> <a href="#">int</a></li>
+                                                    <li><span class="strong">$value</span> <a href="#">\Phalcon\Mvc\ModelInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="offsetUnset">offsetUnset</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public offsetUnset ( $offset )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resulsets cannot be changed. It has only been implemented to meet the definition of the ArrayAccess interface</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$offset</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getType">getType</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getType (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the internal type of data retrieval that the resultset is using</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="getFirst">getFirst</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getFirst (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Get first row in the resultset</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\ModelInterface</p>
+                
+                            <br/>
+                <h3 id="getLast">getLast</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getLast (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Get last row in the resultset</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\ModelInterface</p>
+                
+                            <br/>
+                <h3 id="setIsFresh">setIsFresh</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setIsFresh ( $isFresh )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Set if the resultset is fresh or an old one cached</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$isFresh</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Resultset</p>
+                
+                            <br/>
+                <h3 id="isFresh">isFresh</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isFresh (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Tell if the resultset if fresh or an old one cached</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="setHydrateMode">setHydrateMode</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setHydrateMode ( $hydrateMode )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the hydration mode in the resultset</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$hydrateMode</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\Resultset</p>
+                
+                            <br/>
+                <h3 id="getHydrateMode">getHydrateMode</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getHydrateMode (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the current hydration mode</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="getCache">getCache</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getCache (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the associated cache for the resultset</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Cache\BackendInterface</p>
+                
+                            <br/>
+                <h3 id="current">current</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public current (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns current row in the resultset</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\ModelInterface</p>
+                
+                            <br/>
+                <h3 id="getMessages">getMessages</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getMessages (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the error messages produced by a batch operation</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model\MessageInterface[]</p>
+                
+                            <br/>
+                <h3 id="delete">delete</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public delete ( $conditionCallback = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Delete every record in the resultset</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$conditionCallback</span> <a href="#">Closure</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="filter">filter</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public filter ( $filter )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Filters a resultset returning only those the developer requires</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ $filtered = $robots->filter(function($robot){
+		if ($robot->id < 3) {
+			return $robot;
+		}
+	});
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$filter</span> <a href="#">callback</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\Model[]</p>
+                
+                            <br/>
+                <h3 id="toArray">toArray</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>abstract public toArray (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="valid">valid</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>abstract public valid (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="serialize">serialize</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>abstract public serialize (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="unserialize">unserialize</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>abstract public unserialize ( $serialized )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

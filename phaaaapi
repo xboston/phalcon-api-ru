@@ -1,0 +1,9 @@
+#!/bin/sh
+
+###
+# Запуск генерации статичных страниц
+###
+
+dir=`dirname "$0"`
+
+/usr/bin/php -f $dir/cli.php generate $1

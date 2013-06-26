@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Http\Cookie</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Http</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\DI\InjectionAwareInterface</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Http\Cookie   Provide OO wrappers to manage a HTTP cookie</div>
+        
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">\Phalcon\Http\Cookie constructor</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDI">setDI</a></td>
+                        <td class="description">Sets the dependency injector</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDI">getDI</a></td>
+                        <td class="description">Returns the internal dependency injector</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setValue">setValue</a></td>
+                        <td class="description">Sets the cookie's value</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getValue">getValue</a></td>
+                        <td class="description">Returns the cookie's value</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#send">send</a></td>
+                        <td class="description">Sends the cookie to the HTTP client  Stores the cookie definition in session</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#restore">restore</a></td>
+                        <td class="description">Reads the cookie-related info from the SESSION to restore the cookie as it was set  This method is automatically called internally so normally you don't need to call it</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#delete">delete</a></td>
+                        <td class="description">Deletes the cookie by setting an expire time in the past</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#useEncryption">useEncryption</a></td>
+                        <td class="description">Sets if the cookie must be encrypted/decrypted automatically</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isUsingEncryption">isUsingEncryption</a></td>
+                        <td class="description">Check if the cookie is using implicit encryption</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setExpiration">setExpiration</a></td>
+                        <td class="description">Sets the cookie's expiration time</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getExpiration">getExpiration</a></td>
+                        <td class="description">Returns the current expiration time</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setPath">setPath</a></td>
+                        <td class="description">Sets the cookie's expiration time</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getPath">getPath</a></td>
+                        <td class="description">Returns the current cookie's path</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDomain">setDomain</a></td>
+                        <td class="description">Sets the domain that the cookie is available to</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDomain">getDomain</a></td>
+                        <td class="description">Returns the domain that the cookie is available to</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setSecure">setSecure</a></td>
+                        <td class="description">Sets if the cookie must only be sent when the connection is secure (HTTPS)</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getSecure">getSecure</a></td>
+                        <td class="description">Returns whether the cookie must only be sent when the connection is secure (HTTPS)</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setHttpOnly">setHttpOnly</a></td>
+                        <td class="description">Sets if the cookie is accessible only through the HTTP protocol</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getHttpOnly">getHttpOnly</a></td>
+                        <td class="description">Returns if the cookie is accessible only through the HTTP protocol</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__toString">__toString</a></td>
+                        <td class="description">Magic __toString method converts the cookie's value to string</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __construct ( $name, $value = null, $expire = null, $path = null, $secure = null, $httpOnly = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>\Phalcon\Http\Cookie constructor</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$value</span> <a href="#">mixed</a></li>
+                                                    <li><span class="strong">$expire</span> <a href="#">int</a></li>
+                                                    <li><span class="strong">$path</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$secure</span> <a href="#">boolean</a></li>
+                                                    <li><span class="strong">$httpOnly</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setDI">setDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setDI ( $dependencyInjector )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the dependency injector</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getDI">getDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDI (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the internal dependency injector</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DiInterface</p>
+                
+                            <br/>
+                <h3 id="setValue">setValue</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setValue ( $value )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the cookie's value</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$value</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Http\CookieInterface</p>
+                
+                            <br/>
+                <h3 id="getValue">getValue</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getValue ( $filters = null, $defaultValue = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the cookie's value</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$filters</span> <a href="#">string|array</a></li>
+                                                    <li><span class="strong">$defaultValue</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="send">send</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public send (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sends the cookie to the HTTP client  Stores the cookie definition in session</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Http\Cookie</p>
+                
+                            <br/>
+                <h3 id="restore">restore</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public restore (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Reads the cookie-related info from the SESSION to restore the cookie as it was set  This method is automatically called internally so normally you don't need to call it</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Http\Cookie</p>
+                
+                            <br/>
+                <h3 id="delete">delete</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public delete (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Deletes the cookie by setting an expire time in the past</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="useEncryption">useEncryption</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public useEncryption ( $useEncryption )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets if the cookie must be encrypted/decrypted automatically</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$useEncryption</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Http\Cookie</p>
+                
+                            <br/>
+                <h3 id="isUsingEncryption">isUsingEncryption</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isUsingEncryption (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check if the cookie is using implicit encryption</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="setExpiration">setExpiration</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setExpiration ( $expire )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the cookie's expiration time</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$expire</span> <a href="#">int</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Http\Cookie</p>
+                
+                            <br/>
+                <h3 id="getExpiration">getExpiration</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getExpiration (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the current expiration time</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setPath">setPath</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setPath ( $path )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the cookie's expiration time</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$path</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Http\Cookie</p>
+                
+                            <br/>
+                <h3 id="getPath">getPath</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getPath (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the current cookie's path</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setDomain">setDomain</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setDomain ( $domain )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the domain that the cookie is available to</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$domain</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Http\Cookie</p>
+                
+                            <br/>
+                <h3 id="getDomain">getDomain</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDomain (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the domain that the cookie is available to</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setSecure">setSecure</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setSecure ( $secure )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets if the cookie must only be sent when the connection is secure (HTTPS)</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$secure</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Http\Cookie</p>
+                
+                            <br/>
+                <h3 id="getSecure">getSecure</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getSecure (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns whether the cookie must only be sent when the connection is secure (HTTPS)</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="setHttpOnly">setHttpOnly</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setHttpOnly ( $httpOnly )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets if the cookie is accessible only through the HTTP protocol</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$httpOnly</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Http\Cookie</p>
+                
+                            <br/>
+                <h3 id="getHttpOnly">getHttpOnly</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getHttpOnly (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns if the cookie is accessible only through the HTTP protocol</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="__toString">__toString</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __toString (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Magic __toString method converts the cookie's value to string</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

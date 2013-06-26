@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Db\Adapter\Pdo</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Db\Adapter</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\Events\EventsAwareInterface</a>,
+                                            </td>
+                </tr>
+            
+                            <tr>
+                    <th>Extends:</th>
+                    <td><a href="#">Phalcon\Db\Adapter</a></td>
+                </tr>
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Db\Adapter\Pdo   Phalcon\Db\Adapter\Pdo is the Phalcon\Db that internally uses PDO to connect to a database</div>
+        
+        
+            <div class="highlight">
+                <pre>
+	$connection = new Phalcon\Db\Adapter\Pdo\Mysql(array(
+		'host' => '192.168.0.11',
+		'username' => 'sigma',
+		'password' => 'secret',
+		'dbname' => 'blog',
+		'port' => '3306'
+	));
+</pre>
+            </div>
+
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">Constructor for \Phalcon\Db\Adapter\Pdo</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#connect">connect</a></td>
+                        <td class="description">This method is automatically called in \Phalcon\Db\Adapter\Pdo constructor.  Call it when you need to restore a database connection</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#prepare">prepare</a></td>
+                        <td class="description">Returns a PDO prepared statement to be executed with 'executePrepared'</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#executePrepared">executePrepared</a></td>
+                        <td class="description">Executes a prepared statement binding. This function uses integer indexes starting from zero</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#query">query</a></td>
+                        <td class="description">Sends SQL statements to the database server returning the success state.  Use this method only when the SQL statement sent to the server is returning rows</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#execute">execute</a></td>
+                        <td class="description">Sends SQL statements to the database server returning the success state.  Use this method only when the SQL statement sent to the server doesn't return any row</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#affectedRows">affectedRows</a></td>
+                        <td class="description">Returns the number of affected rows by the lastest INSERT/UPDATE/DELETE executed in the database system</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#close">close</a></td>
+                        <td class="description">Closes the active connection returning success. \Phalcon automatically closes and destroys  active connections when the request ends</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#escapeIdentifier">escapeIdentifier</a></td>
+                        <td class="description">Escapes a column/table/schema name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#escapeString">escapeString</a></td>
+                        <td class="description">Escapes a value to avoid SQL injections</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#convertBoundParams">convertBoundParams</a></td>
+                        <td class="description">Converts bound parameters such as :name: or ?1 into PDO bind params ?</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#lastInsertId">lastInsertId</a></td>
+                        <td class="description">Returns the insert id for the auto_increment/serial column inserted in the lastest executed SQL statement</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#begin">begin</a></td>
+                        <td class="description">Starts a transaction in the connection</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#rollback">rollback</a></td>
+                        <td class="description">Rollbacks the active transaction in the connection</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#commit">commit</a></td>
+                        <td class="description">Commits the active transaction in the connection</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getTransactionLevel">getTransactionLevel</a></td>
+                        <td class="description">Returns the current transaction nesting level</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isUnderTransaction">isUnderTransaction</a></td>
+                        <td class="description">Checks whether the connection is under a transaction</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getInternalHandler">getInternalHandler</a></td>
+                        <td class="description">Return internal PDO handler</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setEventsManager">setEventsManager</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getEventsManager">getEventsManager</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fetchOne">fetchOne</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fetchAll">fetchAll</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#insert">insert</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#update">update</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#delete">delete</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getColumnList">getColumnList</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#limit">limit</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#tableExists">tableExists</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#viewExists">viewExists</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#forUpdate">forUpdate</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#sharedLock">sharedLock</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#createTable">createTable</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dropTable">dropTable</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addColumn">addColumn</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#modifyColumn">modifyColumn</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dropColumn">dropColumn</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addIndex">addIndex</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dropIndex">dropIndex</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addPrimaryKey">addPrimaryKey</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dropPrimaryKey">dropPrimaryKey</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addForeignKey">addForeignKey</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dropForeignKey">dropForeignKey</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getColumnDefinition">getColumnDefinition</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#listTables">listTables</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#describeIndexes">describeIndexes</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#describeReferences">describeReferences</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#tableOptions">tableOptions</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDefaultIdValue">getDefaultIdValue</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#supportSequences">supportSequences</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#useExplicitIdValue">useExplicitIdValue</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDescriptor">getDescriptor</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getConnectionId">getConnectionId</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getSQLStatement">getSQLStatement</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getRealSQLStatement">getRealSQLStatement</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getSQLVariables">getSQLVariables</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getSQLBindTypes">getSQLBindTypes</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getType">getType</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDialectType">getDialectType</a></td>
+                        <td class="description"></td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDialect">getDialect</a></td>
+                        <td class="description"></td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public __construct ( $descriptor )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Constructor for \Phalcon\Db\Adapter\Pdo</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$descriptor</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="connect">connect</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public connect ( $descriptor = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>This method is automatically called in \Phalcon\Db\Adapter\Pdo constructor.  Call it when you need to restore a database connection</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ //Make a connection
+ $connection = new \Phalcon\Db\Adapter\Pdo\Mysql(array(
+  'host' => '192.168.0.11',
+  'username' => 'sigma',
+  'password' => 'secret',
+  'dbname' => 'blog',
+ ));
+
+ //Reconnect
+ $connection->connect();
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>	boolean</p>
+                
+                            <br/>
+                <h3 id="prepare">prepare</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public prepare ( $sqlStatement )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns a PDO prepared statement to be executed with 'executePrepared'</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ $statement = $db->prepare('SELECT * FROM robots WHERE name = :name');
+ $result = $connection->executePrepared($statement, array('name' => 'Voltron'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$sqlStatement</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\PDOStatement</p>
+                
+                            <br/>
+                <h3 id="executePrepared">executePrepared</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public executePrepared ( $statement, $placeholders, $dataTypes )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Executes a prepared statement binding. This function uses integer indexes starting from zero</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ $statement = $db->prepare('SELECT * FROM robots WHERE name = :name');
+ $result = $connection->executePrepared($statement, array('name' => 'Voltron'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$statement</span> <a href="#">\PDOStatement</a></li>
+                                                    <li><span class="strong">$placeholders</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$dataTypes</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\PDOStatement</p>
+                
+                            <br/>
+                <h3 id="query">query</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public query ( $sqlStatement, $bindParams = null, $bindTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sends SQL statements to the database server returning the success state.  Use this method only when the SQL statement sent to the server is returning rows</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	//Querying data
+	$resultset = $connection->query("SELECT * FROM robots WHERE type='mechanical'");
+	$resultset = $connection->query("SELECT * FROM robots WHERE type=?", array("mechanical"));
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Db\ResultInterface</p>
+                
+                            <br/>
+                <h3 id="execute">execute</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public execute ( $sqlStatement, $bindParams = null, $bindTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sends SQL statements to the database server returning the success state.  Use this method only when the SQL statement sent to the server doesn't return any row</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	//Inserting data
+	$success = $connection->execute("INSERT INTO robots VALUES (1, 'Astro Boy')");
+	$success = $connection->execute("INSERT INTO robots VALUES (?, ?)", array(1, 'Astro Boy'));
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="affectedRows">affectedRows</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public affectedRows (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the number of affected rows by the lastest INSERT/UPDATE/DELETE executed in the database system</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$connection->execute("DELETE FROM robots");
+	echo $connection->affectedRows(), ' were deleted';
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="close">close</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public close (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Closes the active connection returning success. \Phalcon automatically closes and destroys  active connections when the request ends</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="escapeIdentifier">escapeIdentifier</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public escapeIdentifier ( $identifier )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Escapes a column/table/schema name</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$escapedTable = $connection->escapeIdentifier('robots');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$identifier</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="escapeString">escapeString</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public escapeString ( $str )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Escapes a value to avoid SQL injections</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$escapedStr = $connection->escapeString('some dangerous value');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$str</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="convertBoundParams">convertBoundParams</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public convertBoundParams ( $sql, $params )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Converts bound parameters such as :name: or ?1 into PDO bind params ?</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ print_r($connection->convertBoundParams('SELECT * FROM robots WHERE name = :name:', array('Bender')));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$sql</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$params</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="lastInsertId">lastInsertId</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public lastInsertId ( $sequenceName = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the insert id for the auto_increment/serial column inserted in the lastest executed SQL statement</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ //Inserting a new robot
+ $success = $connection->insert(
+     "robots",
+     array("Astro Boy", 1952),
+     array("name", "year")
+ );
+
+ //Getting the generated id
+ $id = $connection->lastInsertId();
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$sequenceName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="begin">begin</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public begin (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Starts a transaction in the connection</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="rollback">rollback</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public rollback (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Rollbacks the active transaction in the connection</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="commit">commit</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public commit (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Commits the active transaction in the connection</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getTransactionLevel">getTransactionLevel</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getTransactionLevel (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the current transaction nesting level</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>int</p>
+                
+                            <br/>
+                <h3 id="isUnderTransaction">isUnderTransaction</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isUnderTransaction (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether the connection is under a transaction</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	$connection->begin();
+	var_dump($connection->isUnderTransaction()); //true
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getInternalHandler">getInternalHandler</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getInternalHandler (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Return internal PDO handler</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\PDO</p>
+                
+                            <br/>
+                <h3 id="setEventsManager">setEventsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setEventsManager ( $eventsManager )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getEventsManager">getEventsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getEventsManager (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="fetchOne">fetchOne</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public fetchOne ( $sqlQuery, $fetchMode = null, $bindParams = null, $bindTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="fetchAll">fetchAll</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public fetchAll ( $sqlQuery, $fetchMode = null, $bindParams = null, $bindTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="insert">insert</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public insert ( $table, $values, $fields = null, $dataTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="update">update</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public update ( $table, $fields, $values, $whereCondition = null, $dataTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="delete">delete</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public delete ( $table, $whereCondition = null, $placeholders = null, $dataTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getColumnList">getColumnList</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getColumnList ( $columnList )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="limit">limit</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public limit ( $sqlQuery, $number )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="tableExists">tableExists</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public tableExists ( $tableName, $schemaName = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="viewExists">viewExists</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public viewExists ( $viewName, $schemaName = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="forUpdate">forUpdate</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public forUpdate ( $sqlQuery )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="sharedLock">sharedLock</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public sharedLock ( $sqlQuery )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="createTable">createTable</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public createTable ( $tableName, $schemaName, $definition )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="dropTable">dropTable</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dropTable ( $tableName, $schemaName, $ifExists = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="addColumn">addColumn</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addColumn ( $tableName, $schemaName, $column )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="modifyColumn">modifyColumn</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public modifyColumn ( $tableName, $schemaName, $column )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="dropColumn">dropColumn</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dropColumn ( $tableName, $schemaName, $columnName )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="addIndex">addIndex</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addIndex ( $tableName, $schemaName, $index )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="dropIndex">dropIndex</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dropIndex ( $tableName, $schemaName, $indexName )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="addPrimaryKey">addPrimaryKey</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addPrimaryKey ( $tableName, $schemaName, $index )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="dropPrimaryKey">dropPrimaryKey</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dropPrimaryKey ( $tableName, $schemaName )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="addForeignKey">addForeignKey</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addForeignKey ( $tableName, $schemaName, $reference )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="dropForeignKey">dropForeignKey</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dropForeignKey ( $tableName, $schemaName, $referenceName )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getColumnDefinition">getColumnDefinition</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getColumnDefinition ( $column )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="listTables">listTables</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public listTables ( $schemaName = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="describeIndexes">describeIndexes</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public describeIndexes ( $table, $schema = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="describeReferences">describeReferences</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public describeReferences ( $table, $schema = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="tableOptions">tableOptions</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public tableOptions ( $tableName, $schemaName = null )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getDefaultIdValue">getDefaultIdValue</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDefaultIdValue (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="supportSequences">supportSequences</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public supportSequences (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="useExplicitIdValue">useExplicitIdValue</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public useExplicitIdValue (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getDescriptor">getDescriptor</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDescriptor (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getConnectionId">getConnectionId</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getConnectionId (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getSQLStatement">getSQLStatement</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getSQLStatement (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getRealSQLStatement">getRealSQLStatement</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getRealSQLStatement (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getSQLVariables">getSQLVariables</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getSQLVariables (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getSQLBindTypes">getSQLBindTypes</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getSQLBindTypes (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getType">getType</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getType (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getDialectType">getDialectType</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDialectType (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+                            <br/>
+                <h3 id="getDialect">getDialect</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDialect (  )</pre>
+                </div>
+                </p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p></p>
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

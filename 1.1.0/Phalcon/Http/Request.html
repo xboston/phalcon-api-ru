@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Http\Request</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Http</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\Http\RequestInterface</a>,
+                                                    <a href="#">Phalcon\DI\InjectionAwareInterface</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Http\Request   <p>Encapsulates request information for easy and secure access from application controllers.</p>   <p>The request object is a simple value object that is passed between the dispatcher and controller classes.  It packages the HTTP request environment.</p></div>
+        
+        
+            <div class="highlight">
+                <pre>
+	$request = new Phalcon\Http\Request();
+	if ($request->isPost() == true) {
+		if ($request->isAjax() == true) {
+			echo 'Request was made using POST and AJAX';
+		}
+	}
+</pre>
+            </div>
+
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDI">setDI</a></td>
+                        <td class="description">Sets the dependency injector</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDI">getDI</a></td>
+                        <td class="description">Returns the internal dependency injector</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#get">get</a></td>
+                        <td class="description">Gets a variable from the $_REQUEST superglobal applying filters if needed.  If no parameters are given the $_REQUEST superglobal is returned</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getPost">getPost</a></td>
+                        <td class="description">Gets a variable from the $_POST superglobal applying filters if needed  If no parameters are given the $_POST superglobal is returned</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getQuery">getQuery</a></td>
+                        <td class="description">Gets variable from $_GET superglobal applying filters if needed  If no parameters are given the $_GET superglobal is returned</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getServer">getServer</a></td>
+                        <td class="description">Gets variable from $_SERVER superglobal</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#has">has</a></td>
+                        <td class="description">Checks whether $_SERVER superglobal has certain index</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#hasPost">hasPost</a></td>
+                        <td class="description">Checks whether $_POST superglobal has certain index</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#hasQuery">hasQuery</a></td>
+                        <td class="description">Checks whether $_SERVER superglobal has certain index</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#hasServer">hasServer</a></td>
+                        <td class="description">Checks whether $_SERVER superglobal has certain index</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getHeader">getHeader</a></td>
+                        <td class="description">Gets HTTP header from request data</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getScheme">getScheme</a></td>
+                        <td class="description">Gets HTTP schema (http/https)</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isAjax">isAjax</a></td>
+                        <td class="description">Checks whether request has been made using ajax. Checks if $_SERVER['HTTP_X_REQUESTED_WITH']=='XMLHttpRequest'</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isSoapRequested">isSoapRequested</a></td>
+                        <td class="description">Checks whether request has been made using SOAP</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isSecureRequest">isSecureRequest</a></td>
+                        <td class="description">Checks whether request has been made using any secure layer</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getRawBody">getRawBody</a></td>
+                        <td class="description">Gets HTTP raw request body</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getServerAddress">getServerAddress</a></td>
+                        <td class="description">Gets active server address IP</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getServerName">getServerName</a></td>
+                        <td class="description">Gets active server name</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getHttpHost">getHttpHost</a></td>
+                        <td class="description">Gets information about schema, host and port used by the request</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getClientAddress">getClientAddress</a></td>
+                        <td class="description">Gets most possible client IPv4 Address. This method search in $_SERVER['REMOTE_ADDR'] and optionally in $_SERVER['HTTP_X_FORWARDED_FOR']</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getMethod">getMethod</a></td>
+                        <td class="description">Gets HTTP method which request has been made</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getUserAgent">getUserAgent</a></td>
+                        <td class="description">Gets HTTP user agent used to made the request</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isMethod">isMethod</a></td>
+                        <td class="description">Check if HTTP method match any of the passed methods</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isPost">isPost</a></td>
+                        <td class="description">Checks whether HTTP method is POST. if $_SERVER['REQUEST_METHOD']=='POST'</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isGet">isGet</a></td>
+                        <td class="description">Checks whether HTTP method is GET. if $_SERVER['REQUEST_METHOD']=='GET'</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isPut">isPut</a></td>
+                        <td class="description">Checks whether HTTP method is PUT. if $_SERVER['REQUEST_METHOD']=='PUT'</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isPatch">isPatch</a></td>
+                        <td class="description">Checks whether HTTP method is PATCH. if $_SERVER['REQUEST_METHOD']=='PATCH'</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isHead">isHead</a></td>
+                        <td class="description">Checks whether HTTP method is HEAD. if $_SERVER['REQUEST_METHOD']=='HEAD'</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isDelete">isDelete</a></td>
+                        <td class="description">Checks whether HTTP method is DELETE. if $_SERVER['REQUEST_METHOD']=='DELETE'</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#isOptions">isOptions</a></td>
+                        <td class="description">Checks whether HTTP method is OPTIONS. if $_SERVER['REQUEST_METHOD']=='OPTIONS'</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#hasFiles">hasFiles</a></td>
+                        <td class="description">Checks whether request include attached files</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getUploadedFiles">getUploadedFiles</a></td>
+                        <td class="description">Gets attached files as \Phalcon\Http\Request\File instances</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getHTTPReferer">getHTTPReferer</a></td>
+                        <td class="description">Gets web page that refers active request. ie: http://www.google.com</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_getQualityHeader">_getQualityHeader</a></td>
+                        <td class="description">Process a request header and return an array of values with their qualities</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_getBestQuality">_getBestQuality</a></td>
+                        <td class="description">Process a request header and return the one with best quality</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getAcceptableContent">getAcceptableContent</a></td>
+                        <td class="description">Gets array with mime/types and their quality accepted by the browser/client from $_SERVER['HTTP_ACCEPT']</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getBestAccept">getBestAccept</a></td>
+                        <td class="description">Gets best mime/type accepted by the browser/client from $_SERVER['HTTP_ACCEPT']</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getClientCharsets">getClientCharsets</a></td>
+                        <td class="description">Gets charsets array and their quality accepted by the browser/client from $_SERVER['HTTP_ACCEPT_CHARSET']</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getBestCharset">getBestCharset</a></td>
+                        <td class="description">Gets best charset accepted by the browser/client from $_SERVER['HTTP_ACCEPT_CHARSET']</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getLanguages">getLanguages</a></td>
+                        <td class="description">Gets languages array and their quality accepted by the browser/client from $_SERVER['HTTP_ACCEPT_LANGUAGE']</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getBestLanguage">getBestLanguage</a></td>
+                        <td class="description">Gets best language accepted by the browser/client from $_SERVER['HTTP_ACCEPT_LANGUAGE']</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="setDI">setDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setDI ( $dependencyInjector )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the dependency injector</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getDI">getDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDI (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the internal dependency injector</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DiInterface</p>
+                
+                            <br/>
+                <h3 id="get">get</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public get ( $name = null, $filters = null, $defaultValue = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets a variable from the $_REQUEST superglobal applying filters if needed.  If no parameters are given the $_REQUEST superglobal is returned</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	//Returns value from $_REQUEST["user_email"] without sanitizing
+	$userEmail = $request->get("user_email");
+
+	//Returns value from $_REQUEST["user_email"] with sanitizing
+	$userEmail = $request->get("user_email", "email");
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$filters</span> <a href="#">string|array</a></li>
+                                                    <li><span class="strong">$defaultValue</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="getPost">getPost</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getPost ( $name = null, $filters = null, $defaultValue = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets a variable from the $_POST superglobal applying filters if needed  If no parameters are given the $_POST superglobal is returned</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	//Returns value from $_POST["user_email"] without sanitizing
+	$userEmail = $request->getPost("user_email");
+
+	//Returns value from $_POST["user_email"] with sanitizing
+	$userEmail = $request->getPost("user_email", "email");
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$filters</span> <a href="#">string|array</a></li>
+                                                    <li><span class="strong">$defaultValue</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="getQuery">getQuery</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getQuery ( $name = null, $filters = null, $defaultValue = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets variable from $_GET superglobal applying filters if needed  If no parameters are given the $_GET superglobal is returned</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	//Returns value from $_GET["id"] without sanitizing
+	$id = $request->getQuery("id");
+
+	//Returns value from $_GET["id"] with sanitizing
+	$id = $request->getQuery("id", "int");
+
+	//Returns value from $_GET["id"] with a default value
+	$id = $request->getQuery("id", null, 150);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$filters</span> <a href="#">string|array</a></li>
+                                                    <li><span class="strong">$defaultValue</span> <a href="#">mixed</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="getServer">getServer</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getServer ( $name )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets variable from $_SERVER superglobal</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="has">has</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public has ( $name )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether $_SERVER superglobal has certain index</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="hasPost">hasPost</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public hasPost ( $name )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether $_POST superglobal has certain index</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="hasQuery">hasQuery</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public hasQuery ( $name )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether $_SERVER superglobal has certain index</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="hasServer">hasServer</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public hasServer ( $name )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether $_SERVER superglobal has certain index</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="getHeader">getHeader</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getHeader ( $header )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets HTTP header from request data</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$header</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getScheme">getScheme</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getScheme (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets HTTP schema (http/https)</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="isAjax">isAjax</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isAjax (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether request has been made using ajax. Checks if $_SERVER['HTTP_X_REQUESTED_WITH']=='XMLHttpRequest'</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="isSoapRequested">isSoapRequested</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isSoapRequested (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether request has been made using SOAP</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="isSecureRequest">isSecureRequest</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isSecureRequest (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether request has been made using any secure layer</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getRawBody">getRawBody</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getRawBody (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets HTTP raw request body</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getServerAddress">getServerAddress</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getServerAddress (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets active server address IP</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getServerName">getServerName</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getServerName (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets active server name</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getHttpHost">getHttpHost</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getHttpHost (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets information about schema, host and port used by the request</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getClientAddress">getClientAddress</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getClientAddress ( $trustForwardedHeader = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets most possible client IPv4 Address. This method search in $_SERVER['REMOTE_ADDR'] and optionally in $_SERVER['HTTP_X_FORWARDED_FOR']</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$trustForwardedHeader</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getMethod">getMethod</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getMethod (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets HTTP method which request has been made</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getUserAgent">getUserAgent</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getUserAgent (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets HTTP user agent used to made the request</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="isMethod">isMethod</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isMethod ( $methods )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check if HTTP method match any of the passed methods</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$methods</span> <a href="#">string|array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="isPost">isPost</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isPost (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether HTTP method is POST. if $_SERVER['REQUEST_METHOD']=='POST'</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="isGet">isGet</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isGet (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether HTTP method is GET. if $_SERVER['REQUEST_METHOD']=='GET'</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="isPut">isPut</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isPut (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether HTTP method is PUT. if $_SERVER['REQUEST_METHOD']=='PUT'</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="isPatch">isPatch</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isPatch (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether HTTP method is PATCH. if $_SERVER['REQUEST_METHOD']=='PATCH'</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="isHead">isHead</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isHead (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether HTTP method is HEAD. if $_SERVER['REQUEST_METHOD']=='HEAD'</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="isDelete">isDelete</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isDelete (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether HTTP method is DELETE. if $_SERVER['REQUEST_METHOD']=='DELETE'</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="isOptions">isOptions</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public isOptions (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether HTTP method is OPTIONS. if $_SERVER['REQUEST_METHOD']=='OPTIONS'</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="hasFiles">hasFiles</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public hasFiles ( $notErrored = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Checks whether request include attached files</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getUploadedFiles">getUploadedFiles</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getUploadedFiles ( $notErrored = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets attached files as \Phalcon\Http\Request\File instances</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$notErrored</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Http\Request\File[]</p>
+                
+                            <br/>
+                <h3 id="getHTTPReferer">getHTTPReferer</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getHTTPReferer (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets web page that refers active request. ie: http://www.google.com</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="_getQualityHeader">_getQualityHeader</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _getQualityHeader (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Process a request header and return an array of values with their qualities</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$serverIndex</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="_getBestQuality">_getBestQuality</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected _getBestQuality (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Process a request header and return the one with best quality</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$qualityParts</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getAcceptableContent">getAcceptableContent</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getAcceptableContent (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets array with mime/types and their quality accepted by the browser/client from $_SERVER['HTTP_ACCEPT']</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="getBestAccept">getBestAccept</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getBestAccept (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets best mime/type accepted by the browser/client from $_SERVER['HTTP_ACCEPT']</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="getClientCharsets">getClientCharsets</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getClientCharsets (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets charsets array and their quality accepted by the browser/client from $_SERVER['HTTP_ACCEPT_CHARSET']</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="getBestCharset">getBestCharset</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getBestCharset (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets best charset accepted by the browser/client from $_SERVER['HTTP_ACCEPT_CHARSET']</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getLanguages">getLanguages</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getLanguages (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets languages array and their quality accepted by the browser/client from $_SERVER['HTTP_ACCEPT_LANGUAGE']</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="getBestLanguage">getBestLanguage</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getBestLanguage (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets best language accepted by the browser/client from $_SERVER['HTTP_ACCEPT_LANGUAGE']</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

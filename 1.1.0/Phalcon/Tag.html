@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Tag</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon</a></td>
+            </tr>
+
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Tag   Phalcon\Tag is designed to simplify building of HTML tags.  It provides a set of helpers to generate HTML in a dynamic way.  This component is an abstract class that you can extend to add more helpers.</div>
+        
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+            <h2>Constants</h2>
+
+            <ul class="two-columns">
+                                    <li>integer HTML32</li>
+                                    <li>integer HTML401_STRICT</li>
+                                    <li>integer HTML401_TRANSITIONAL</li>
+                                    <li>integer HTML401_FRAMESET</li>
+                                    <li>integer HTML5</li>
+                                    <li>integer XHTML10_STRICT</li>
+                                    <li>integer XHTML10_TRANSITIONAL</li>
+                                    <li>integer XHTML10_FRAMESET</li>
+                                    <li>integer XHTML11</li>
+                                    <li>integer XHTML20</li>
+                                    <li>integer XHTML5</li>
+                            </ul>
+
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDI">setDI</a></td>
+                        <td class="description">Sets the dependency injector container.</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDI">getDI</a></td>
+                        <td class="description">Internally gets the request dispatcher</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getUrlService">getUrlService</a></td>
+                        <td class="description">Return a URL service from the default DI</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getEscaperService">getEscaperService</a></td>
+                        <td class="description">Returns an Escaper service from the default DI</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setAutoescape">setAutoescape</a></td>
+                        <td class="description">Set autoescape mode in generated html</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDefault">setDefault</a></td>
+                        <td class="description">Assigns default values to generated tags by helpers</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDefaults">setDefaults</a></td>
+                        <td class="description">Assigns default values to generated tags by helpers</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#displayTo">displayTo</a></td>
+                        <td class="description">Alias of \Phalcon\Tag::setDefault</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#hasValue">hasValue</a></td>
+                        <td class="description">Check if a helper has a default value set using \Phalcon\Tag::setDefault or value from $_POST</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getValue">getValue</a></td>
+                        <td class="description">Every helper calls this function to check whether a component has a predefined  value using \Phalcon\Tag::setDefault or value from $_POST</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#resetInput">resetInput</a></td>
+                        <td class="description">Resets the request and internal values to avoid those fields will have any default value</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#linkTo">linkTo</a></td>
+                        <td class="description">Builds a HTML A tag using framework conventions</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#_inputField">_inputField</a></td>
+                        <td class="description">Builds generic INPUT tags</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#textField">textField</a></td>
+                        <td class="description">Builds a HTML input[type="text"] tag</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#numericField">numericField</a></td>
+                        <td class="description">Builds a HTML input[type="number"] tag</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dateField">dateField</a></td>
+                        <td class="description">Builds a HTML input[type="date"] tag</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#passwordField">passwordField</a></td>
+                        <td class="description">Builds a HTML input[type="password"] tag</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#hiddenField">hiddenField</a></td>
+                        <td class="description">Builds a HTML input[type="hidden"] tag</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fileField">fileField</a></td>
+                        <td class="description">Builds a HTML input[type="file"] tag</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#checkField">checkField</a></td>
+                        <td class="description">Builds a HTML input[type="check"] tag</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#radioField">radioField</a></td>
+                        <td class="description">Builds a HTML input[type="radio"] tag     Volt syntax:</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#imageInput">imageInput</a></td>
+                        <td class="description">Builds a HTML input[type="image"] tag     Volt syntax:</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#submitButton">submitButton</a></td>
+                        <td class="description">Builds a HTML input[type="submit"] tag     Volt syntax:</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#selectStatic">selectStatic</a></td>
+                        <td class="description">Builds a HTML SELECT tag using a PHP array for options</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#select">select</a></td>
+                        <td class="description">Builds a HTML SELECT tag using a \Phalcon\Mvc\Model resultset as options     Volt syntax:</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#textArea">textArea</a></td>
+                        <td class="description">Builds a HTML TEXTAREA tag     Volt syntax:</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#form">form</a></td>
+                        <td class="description">Builds a HTML FORM tag      Volt syntax:</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#endForm">endForm</a></td>
+                        <td class="description">Builds a HTML close FORM tag</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setTitle">setTitle</a></td>
+                        <td class="description">Set the title of view content</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#appendTitle">appendTitle</a></td>
+                        <td class="description">Appends a text to current document title</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#prependTitle">prependTitle</a></td>
+                        <td class="description">Prepends a text to current document title</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getTitle">getTitle</a></td>
+                        <td class="description">Gets the current document title</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#stylesheetLink">stylesheetLink</a></td>
+                        <td class="description">Builds a LINK[rel="stylesheet"] tag      Volt Syntax:</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#javascriptInclude">javascriptInclude</a></td>
+                        <td class="description">Builds a SCRIPT[type="javascript"] tag      Volt syntax:</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#image">image</a></td>
+                        <td class="description">Builds HTML IMG tags      Volt Syntax:</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#friendlyTitle">friendlyTitle</a></td>
+                        <td class="description">Converts texts into URL-friendly titles</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setDocType">setDocType</a></td>
+                        <td class="description">Set the document type of content</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDocType">getDocType</a></td>
+                        <td class="description">Get the document type declaration of content</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#tagHtml">tagHtml</a></td>
+                        <td class="description">Builds a HTML tag</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#tagHtmlClose">tagHtmlClose</a></td>
+                        <td class="description">Builds a HTML tag closing tag</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="setDI">setDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static setDI ( $dependencyInjector )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the dependency injector container.</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$dependencyInjector</span> <a href="#">\Phalcon\DiInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getDI">getDI</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static getDI (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Internally gets the request dispatcher</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\DiInterface</p>
+                
+                            <br/>
+                <h3 id="getUrlService">getUrlService</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static getUrlService (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Return a URL service from the default DI</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Mvc\UrlInterface</p>
+                
+                            <br/>
+                <h3 id="getEscaperService">getEscaperService</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static getEscaperService (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns an Escaper service from the default DI</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\EscaperInterface</p>
+                
+                            <br/>
+                <h3 id="setAutoescape">setAutoescape</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static setAutoescape ( $autoescape )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Set autoescape mode in generated html</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$autoescape</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setDefault">setDefault</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static setDefault ( $id, $value )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Assigns default values to generated tags by helpers</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ //Assigning "peter" to "name" component
+ \Phalcon\Tag::setDefault("name", "peter");
+
+ //Later in the view
+ echo \Phalcon\Tag::textField("name"); //Will have the value "peter" by default
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$id</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$value</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setDefaults">setDefaults</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static setDefaults ( $values )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Assigns default values to generated tags by helpers</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ //Assigning "peter" to "name" component
+ \Phalcon\Tag::setDefaults(array("name" => "peter"));
+
+ //Later in the view
+ echo \Phalcon\Tag::textField("name"); //Will have the value "peter" by default
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$values</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="displayTo">displayTo</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static displayTo ( $id, $value )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Alias of \Phalcon\Tag::setDefault</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$id</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$value</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="hasValue">hasValue</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static hasValue ( $name )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check if a helper has a default value set using \Phalcon\Tag::setDefault or value from $_POST</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getValue">getValue</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static getValue ( $name, $params = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Every helper calls this function to check whether a component has a predefined  value using \Phalcon\Tag::setDefault or value from $_POST</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$name</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$params</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>mixed</p>
+                
+                            <br/>
+                <h3 id="resetInput">resetInput</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static resetInput (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Resets the request and internal values to avoid those fields will have any default value</p>
+
+                
+                
+
+                
+                
+                            <br/>
+                <h3 id="linkTo">linkTo</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static linkTo ( $parameters, $text = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML A tag using framework conventions</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	echo \Phalcon\Tag::linkTo('signup/register', 'Register Here!');
+	echo \Phalcon\Tag::linkTo(array('signup/register', 'Register Here!'));
+	echo \Phalcon\Tag::linkTo(array('signup/register', 'Register Here!', 'class' => 'btn-primary'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array|string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="_inputField">_inputField</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected static _inputField (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds generic INPUT tags</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="textField">textField</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static textField ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML input[type="text"] tag</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	echo \Phalcon\Tag::textField(array("name", "size" => 30));
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="numericField">numericField</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static numericField ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML input[type="number"] tag</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	echo \Phalcon\Tag::numericField(array("price", "min" => "1", "max" => "5"));
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="dateField">dateField</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static dateField ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML input[type="date"] tag</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	echo \Phalcon\Tag::dateField(array("born", "value" => "14-12-1980"))
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="passwordField">passwordField</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static passwordField ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML input[type="password"] tag</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo \Phalcon\Tag::passwordField(array("name", "size" => 30));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="hiddenField">hiddenField</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static hiddenField ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML input[type="hidden"] tag</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo \Phalcon\Tag::hiddenField(array("name", "value" => "mike"));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="fileField">fileField</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static fileField ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML input[type="file"] tag</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo \Phalcon\Tag::fileField("file");
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="checkField">checkField</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static checkField ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML input[type="check"] tag</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo \Phalcon\Tag::checkField(array("name"));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="radioField">radioField</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static radioField ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML input[type="radio"] tag     Volt syntax:</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo \Phalcon\Tag::radioField(array("name"))
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="imageInput">imageInput</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static imageInput ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML input[type="image"] tag     Volt syntax:</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo \Phalcon\Tag::imageInput(array("src" => "/img/button.png"));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="submitButton">submitButton</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static submitButton ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML input[type="submit"] tag     Volt syntax:</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo \Phalcon\Tag::submitButton("Save")
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="selectStatic">selectStatic</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static selectStatic ( $parameters, $data = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML SELECT tag using a PHP array for options</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	echo \Phalcon\Tag::selectStatic("status", array("A" => "Active", "I" => "Inactive"))
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="select">select</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static select ( $parameters, $data = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML SELECT tag using a \Phalcon\Mvc\Model resultset as options     Volt syntax:</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	echo \Phalcon\Tag::select(array(
+		"robotId",
+		Robots::find("type = 'mechanical'"),
+		"using" => array("id", "name")
+ 	));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="textArea">textArea</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static textArea ( $parameters )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML TEXTAREA tag     Volt syntax:</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo \Phalcon\Tag::textArea(array("comments", "cols" => 10, "rows" => 4))
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="form">form</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static form ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML FORM tag      Volt syntax:</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo \Phalcon\Tag::form("posts/save");
+ echo \Phalcon\Tag::form(array("posts/save", "method" => "post"));
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="endForm">endForm</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static endForm (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML close FORM tag</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="setTitle">setTitle</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static setTitle ( $title )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Set the title of view content</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ \Phalcon\Tag::setTitle('Welcome to my Page');
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$title</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="appendTitle">appendTitle</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static appendTitle ( $title )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends a text to current document title</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$title</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="prependTitle">prependTitle</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static prependTitle ( $title )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Prepends a text to current document title</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$title</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getTitle">getTitle</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static getTitle ( $tags = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets the current document title</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	echo \Phalcon\Tag::getTitle();
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="stylesheetLink">stylesheetLink</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static stylesheetLink ( $parameters = null, $local = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a LINK[rel="stylesheet"] tag      Volt Syntax:</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	echo \Phalcon\Tag::stylesheetLink("http://fonts.googleapis.com/css?family=Rosario", false);
+ 	echo \Phalcon\Tag::stylesheetLink("css/style.css");
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="javascriptInclude">javascriptInclude</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static javascriptInclude ( $parameters = null, $local = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a SCRIPT[type="javascript"] tag      Volt syntax:</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	echo \Phalcon\Tag::javascriptInclude("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false);
+ 	echo \Phalcon\Tag::javascriptInclude("javascript/jquery.js");
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="image">image</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static image ( $parameters = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds HTML IMG tags      Volt Syntax:</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	echo \Phalcon\Tag::image("img/bg.png");
+ 	echo \Phalcon\Tag::image(array("img/photo.jpg", "alt" => "Some Photo"));
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="friendlyTitle">friendlyTitle</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static friendlyTitle ( $text, $separator = null, $lowercase = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Converts texts into URL-friendly titles</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ echo \Phalcon\Tag::friendlyTitle('Thiese are big important news', '-')
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$text</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$separator</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$lowercase</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>text</p>
+                
+                            <br/>
+                <h3 id="setDocType">setDocType</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static setDocType ( $doctype )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Set the document type of content</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$doctype</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getDocType">getDocType</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static getDocType (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Get the document type declaration of content</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="tagHtml">tagHtml</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static tagHtml ( $tagName, $parameters = null, $selfClose = null, $onlyStart = null, $useEol = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML tag</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	echo \Phalcon\Tag::tagHtml($name, $parameters, $selfClose, $onlyStart, $eol);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tagName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$parameters</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$selfClose</span> <a href="#">boolean</a></li>
+                                                    <li><span class="strong">$onlyStart</span> <a href="#">boolean</a></li>
+                                                    <li><span class="strong">$useEol</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="tagHtmlClose">tagHtmlClose</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public static tagHtmlClose ( $tagName, $useEol = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Builds a HTML tag closing tag</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	echo \Phalcon\Tag::tagHtmlClose('script', true)
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tagName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$useEol</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>

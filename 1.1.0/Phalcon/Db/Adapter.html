@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css?v=1"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="size-wrap">
+
+    <div class="header clear-fix">
+        <a class="header-logo" href="#">Phalcon</a>
+
+        <div class="header-right">
+            <!--<iframe src="http://ghbtns.com/github-btn.html?user=phalcon&amp;repo=cphalcon&amp;type=watch&amp;count=true&amp;size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>-->
+        </div>
+        <ul class="header-nav">
+
+            <li><a class="header-nav-link" href="#">Download</a></li>
+            <li><a class="header-nav-link" href="#">Documentation</a></li>
+            <li><a class="header-nav-link" href="#">Support</a></li>
+            <li><a class="header-nav-link" href="#">Blog</a></li>
+            <li><a class="header-nav-link" href="#">Get Involved</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Documentation</div>
+    </div>
+</div>
+
+<div class="size-wrap">
+
+<div class="note">Phalcon's documentation is maintained in <a href="#">Github repositories</a>. You are more than welcome to send us pull requests if you found an error or if</div>
+
+<ul class="tabs clear-fix">
+    <li><a class="tab-link" href="#"><u>Overview</u></a></li>
+    <li><a class="tab-link active" href="#"><u>API Reference</u></a></li>
+</ul>
+
+<div class="content-wrap clear-fix">
+
+    <div class="sidebar">
+
+        <div class="searchbox-wrap">
+            <input type="text" name="q" id="searchbox" class="searchbox" placeholder="Search"/>
+            <input type="submit" class="search-button"/>
+        </div>
+
+
+        <ul class="api-table-of-contents">
+            <li><a href="#" class="api-top-level-link">Acl</a></li>
+            <li><a href="#" class="api-top-level-link">Annotations</a></li>
+            <li><a href="#" class="api-top-level-link">Assets</a></li>
+            <li>
+                <a href="#" class="api-top-level-link active">Cache</a>
+                <ul class="api-sublist dash-list">
+                    <li>
+                        <a class="api-link active" href="#">Backend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Apc</a></li>
+                            <li><a href="#" class="api-link">File</a></li>
+                            <li><a href="#" class="api-link">Memcache</a></li>
+                            <li><a href="#" class="api-link">Memory</a></li>
+                            <li><a href="#" class="api-link">Mongo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Exeption</a></li>
+                    <li>
+                        <a class="api-link" href="#">Frontend</a>
+                        <ul class="api-sublist">
+                            <li><a href="#" class="api-link">Base64</a></li>
+                            <li><a href="#" class="api-link">Data</a></li>
+                            <li><a href="#" class="api-link">Json</a></li>
+                            <li><a href="#" class="api-link">None</a></li>
+                            <li><a href="#" class="api-link">Output</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="api-link" href="#">Multiple</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="api-top-level-link">CLI</a></li>
+            <li><a href="#" class="api-top-level-link">Config</a></li>
+            <li><a href="#" class="api-top-level-link">Crypt</a></li>
+            <li><a href="#" class="api-top-level-link">Db</a></li>
+            <li><a href="#" class="api-top-level-link">DI</a></li>
+            <li><a href="#" class="api-top-level-link">Escaper</a></li>
+            <li><a href="#" class="api-top-level-link">Events</a></li>
+            <li><a href="#" class="api-top-level-link">Filter</a></li>
+            <li><a href="#" class="api-top-level-link">Flash</a></li>
+            <li><a href="#" class="api-top-level-link">Forms</a></li>
+            <li><a href="#" class="api-top-level-link">Http</a></li>
+            <li><a href="#" class="api-top-level-link">Loader</a></li>
+            <li><a href="#" class="api-top-level-link">Logger</a></li>
+            <li><a href="#" class="api-top-level-link">Mvc</a></li>
+            <li><a href="#" class="api-top-level-link">Paginator</a></li>
+            <li><a href="#" class="api-top-level-link">Queue</a></li>
+            <li><a href="#" class="api-top-level-link">Security</a></li>
+            <li><a href="#" class="api-top-level-link">Session</a></li>
+            <li><a href="#" class="api-top-level-link">Tag</a></li>
+            <li><a href="#" class="api-top-level-link">Translate</a></li>
+            <li><a href="#" class="api-top-level-link">Validation</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1><span class="lighter">Class</span> Phalcon\Db\Adapter</h1>
+
+        <table class="api-info-table">
+
+            <tr>
+                <th>Namespace:</th>
+                <td><a href="#">Phalcon\Db</a></td>
+            </tr>
+
+                            <tr>
+                    <th>Implements:</th>
+                    <td>
+                                                    <a href="#">Phalcon\Events\EventsAwareInterface</a>,
+                                            </td>
+                </tr>
+            
+            
+
+        </table>
+
+                    <div class="note">Phalcon\Db\Adapter   Base class for Phalcon\Db adapters</div>
+        
+        
+        <!--
+                <h2>Subclasses</h2>
+
+                <ul class="two-columns">
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Apc</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">File</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memcache</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Memory</span></a></li>
+                    <li><a href="#">Phalcon\Cache\Backend\<span class="strong">Mongo</span></a></li>
+                </ul>
+        -->
+        
+        
+            <h2>Methods summary</h2>
+
+            <table class="api-methods-table">
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#__construct">__construct</a></td>
+                        <td class="description">\Phalcon\Db\Adapter constructor</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#setEventsManager">setEventsManager</a></td>
+                        <td class="description">Sets the event manager</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getEventsManager">getEventsManager</a></td>
+                        <td class="description">Returns the internal event manager</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fetchOne">fetchOne</a></td>
+                        <td class="description">Returns the first row in a SQL query result</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#fetchAll">fetchAll</a></td>
+                        <td class="description">Dumps the complete result of a query into an array</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#insert">insert</a></td>
+                        <td class="description">Inserts data into a table using custom RBDM SQL syntax</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#update">update</a></td>
+                        <td class="description">Updates data on a table using custom RBDM SQL syntax</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#delete">delete</a></td>
+                        <td class="description">Deletes data from a table using custom RBDM SQL syntax</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getColumnList">getColumnList</a></td>
+                        <td class="description">Gets a list of columns</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#limit">limit</a></td>
+                        <td class="description">Appends a LIMIT clause to $sqlQuery argument</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#tableExists">tableExists</a></td>
+                        <td class="description">Generates SQL checking for the existence of a schema.table</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#viewExists">viewExists</a></td>
+                        <td class="description">Generates SQL checking for the existence of a schema.view</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#forUpdate">forUpdate</a></td>
+                        <td class="description">Returns a SQL modified with a FOR UPDATE clause</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#sharedLock">sharedLock</a></td>
+                        <td class="description">Returns a SQL modified with a LOCK IN SHARE MODE clause</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#createTable">createTable</a></td>
+                        <td class="description">Creates a table</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dropTable">dropTable</a></td>
+                        <td class="description">Drops a table from a schema/database</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addColumn">addColumn</a></td>
+                        <td class="description">Adds a column to a table</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#modifyColumn">modifyColumn</a></td>
+                        <td class="description">Modifies a table column based on a definition</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dropColumn">dropColumn</a></td>
+                        <td class="description">Drops a column from a table</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addIndex">addIndex</a></td>
+                        <td class="description">Adds an index to a table</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dropIndex">dropIndex</a></td>
+                        <td class="description">Drop an index from a table</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addPrimaryKey">addPrimaryKey</a></td>
+                        <td class="description">Adds a primary key to a table</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dropPrimaryKey">dropPrimaryKey</a></td>
+                        <td class="description">Drops a table's primary key</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#addForeignKey">addForeignKey</a></td>
+                        <td class="description">Adds a foreign key to a table</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#dropForeignKey">dropForeignKey</a></td>
+                        <td class="description">Drops a foreign key from a table</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getColumnDefinition">getColumnDefinition</a></td>
+                        <td class="description">Returns the SQL column definition from a column</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#listTables">listTables</a></td>
+                        <td class="description">List all tables on a database</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#describeIndexes">describeIndexes</a></td>
+                        <td class="description">Lists table indexes</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#describeReferences">describeReferences</a></td>
+                        <td class="description">Lists table references</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#tableOptions">tableOptions</a></td>
+                        <td class="description">Gets creation options from a table</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDefaultIdValue">getDefaultIdValue</a></td>
+                        <td class="description">Returns the default identity value to be inserted in an identity column</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#supportSequences">supportSequences</a></td>
+                        <td class="description">Check whether the database system requires a sequence to produce auto-numeric values</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#useExplicitIdValue">useExplicitIdValue</a></td>
+                        <td class="description">Check whether the database system requires an explicit value for identity columns</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDescriptor">getDescriptor</a></td>
+                        <td class="description">Return descriptor used to connect to the active database</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getConnectionId">getConnectionId</a></td>
+                        <td class="description">Gets the active connection unique identifier</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getSQLStatement">getSQLStatement</a></td>
+                        <td class="description">Active SQL statement in the object</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getRealSQLStatement">getRealSQLStatement</a></td>
+                        <td class="description">Active SQL statement in the object without replace bound paramters</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getSQLVariables">getSQLVariables</a></td>
+                        <td class="description">Active SQL statement in the object</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getSQLBindTypes">getSQLBindTypes</a></td>
+                        <td class="description">Active SQL statement in the object</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getType">getType</a></td>
+                        <td class="description">Returns type of database system the adapter is used for</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDialectType">getDialectType</a></td>
+                        <td class="description">Returns the name of the dialect used</td>
+                    </tr>
+                                    <tr>
+                        <td class="method"><span class="method-type public" data-tooltip="public"></span> <a href="#getDialect">getDialect</a></td>
+                        <td class="description">Returns internal dialect instance</td>
+                    </tr>
+                            </table>
+
+            <h2>Method details</h2>
+
+                            <br/>
+                <h3 id="__construct">__construct</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>protected __construct (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>\Phalcon\Db\Adapter constructor</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$descriptor</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="setEventsManager">setEventsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public setEventsManager ( $eventsManager )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Sets the event manager</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$eventsManager</span> <a href="#">\Phalcon\Events\ManagerInterface</a></li>
+                                            </ul>
+
+                
+                
+                            <br/>
+                <h3 id="getEventsManager">getEventsManager</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getEventsManager (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the internal event manager</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Events\ManagerInterface</p>
+                
+                            <br/>
+                <h3 id="fetchOne">fetchOne</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public fetchOne ( $sqlQuery, $fetchMode = null, $bindParams = null, $bindTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the first row in a SQL query result</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	//Getting first robot
+	$robot = $connection->fecthOne("SELECT * FROM robots");
+	print_r($robot);
+
+	//Getting first robot with associative indexes only
+	$robot = $connection->fecthOne("SELECT * FROM robots", \Phalcon\Db::FETCH_ASSOC);
+	print_r($robot);
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$sqlQuery</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$fetchMode</span> <a href="#">int</a></li>
+                                                    <li><span class="strong">$bindParams</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$bindTypes</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="fetchAll">fetchAll</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public fetchAll ( $sqlQuery, $fetchMode = null, $bindParams = null, $bindTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Dumps the complete result of a query into an array</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+	//Getting all robots with associative indexes only
+	$robots = $connection->fetchAll("SELECT * FROM robots", \Phalcon\Db::FETCH_ASSOC);
+	foreach ($robots as $robot) {
+		print_r($robot);
+	}
+
+  //Getting all robots that contains word "robot" withing the name
+  $robots = $connection->fetchAll("SELECT * FROM robots WHERE name LIKE :name",
+		Phalcon\Db::FETCH_ASSOC,
+		array('name' => '%robot%')
+  );
+	foreach($robots as $robot){
+		print_r($robot);
+	}
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$sqlQuery</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$fetchMode</span> <a href="#">int</a></li>
+                                                    <li><span class="strong">$bindParams</span> <a href="#">array</a></li>
+                                                    <li><span class="strong">$bindTypes</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="insert">insert</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public insert ( $table, $values, $fields = null, $dataTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Inserts data into a table using custom RBDM SQL syntax</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ //Inserting a new robot
+ $success = $connection->insert(
+     "robots",
+     array("Astro Boy", 1952),
+     array("name", "year")
+ );
+
+ //Next SQL sentence is sent to the database system
+ INSERT INTO `robots` (`name`, `year`) VALUES ("Astro boy", 1952);
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>	boolean</p>
+                
+                            <br/>
+                <h3 id="update">update</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public update ( $table, $fields, $values, $whereCondition = null, $dataTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Updates data on a table using custom RBDM SQL syntax</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ //Updating existing robot
+ $success = $connection->update(
+     "robots",
+     array("name"),
+     array("New Astro Boy"),
+     "id = 101"
+ );
+
+ //Next SQL sentence is sent to the database system
+ UPDATE `robots` SET `name` = "Astro boy" WHERE id = 101
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>	boolean</p>
+                
+                            <br/>
+                <h3 id="delete">delete</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public delete ( $table, $whereCondition = null, $placeholders = null, $dataTypes = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Deletes data from a table using custom RBDM SQL syntax</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ //Deleting existing robot
+ $success = $connection->delete(
+     "robots",
+     "id = 101"
+ );
+
+ //Next SQL sentence is generated
+ DELETE FROM `robots` WHERE `id` = 101
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getColumnList">getColumnList</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getColumnList ( $columnList )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets a list of columns</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$columnList</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="limit">limit</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public limit ( $sqlQuery, $number )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Appends a LIMIT clause to $sqlQuery argument</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	echo $connection->limit("SELECT * FROM robots", 5);
+ </pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>	string</p>
+                
+                            <br/>
+                <h3 id="tableExists">tableExists</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public tableExists ( $tableName, $schemaName = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Generates SQL checking for the existence of a schema.table</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	var_dump($connection->tableExists("blog", "posts"));
+ </pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="viewExists">viewExists</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public viewExists ( $viewName, $schemaName = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Generates SQL checking for the existence of a schema.view</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ var_dump($connection->viewExists("active_users", "posts"));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$viewName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="forUpdate">forUpdate</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public forUpdate ( $sqlQuery )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns a SQL modified with a FOR UPDATE clause</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$sqlQuery</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="sharedLock">sharedLock</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public sharedLock ( $sqlQuery )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns a SQL modified with a LOCK IN SHARE MODE clause</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$sqlQuery</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="createTable">createTable</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public createTable ( $tableName, $schemaName, $definition )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Creates a table</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$definition</span> <a href="#">array</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="dropTable">dropTable</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dropTable ( $tableName, $schemaName, $ifExists = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Drops a table from a schema/database</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$ifExists</span> <a href="#">boolean</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="addColumn">addColumn</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addColumn ( $tableName, $schemaName, $column )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds a column to a table</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$column</span> <a href="#">\Phalcon\Db\ColumnInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="modifyColumn">modifyColumn</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public modifyColumn ( $tableName, $schemaName, $column )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Modifies a table column based on a definition</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$column</span> <a href="#">\Phalcon\Db\ColumnInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>	boolean</p>
+                
+                            <br/>
+                <h3 id="dropColumn">dropColumn</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dropColumn ( $tableName, $schemaName, $columnName )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Drops a column from a table</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$columnName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>	boolean</p>
+                
+                            <br/>
+                <h3 id="addIndex">addIndex</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addIndex ( $tableName, $schemaName, $index )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds an index to a table</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$index</span> <a href="#">\Phalcon\Db\IndexInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>	boolean</p>
+                
+                            <br/>
+                <h3 id="dropIndex">dropIndex</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dropIndex ( $tableName, $schemaName, $indexName )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Drop an index from a table</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$indexName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>	boolean</p>
+                
+                            <br/>
+                <h3 id="addPrimaryKey">addPrimaryKey</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addPrimaryKey ( $tableName, $schemaName, $index )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds a primary key to a table</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$index</span> <a href="#">\Phalcon\Db\IndexInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>	boolean</p>
+                
+                            <br/>
+                <h3 id="dropPrimaryKey">dropPrimaryKey</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dropPrimaryKey ( $tableName, $schemaName )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Drops a table's primary key</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>	boolean</p>
+                
+                            <br/>
+                <h3 id="addForeignKey">addForeignKey</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public addForeignKey ( $tableName, $schemaName, $reference )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Adds a foreign key to a table</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$reference</span> <a href="#">\Phalcon\Db\ReferenceInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean true</p>
+                
+                            <br/>
+                <h3 id="dropForeignKey">dropForeignKey</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public dropForeignKey ( $tableName, $schemaName, $referenceName )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Drops a foreign key from a table</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$referenceName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean true</p>
+                
+                            <br/>
+                <h3 id="getColumnDefinition">getColumnDefinition</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getColumnDefinition ( $column )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the SQL column definition from a column</p>
+
+                
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$column</span> <a href="#">\Phalcon\Db\ColumnInterface</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="listTables">listTables</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public listTables ( $schemaName = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>List all tables on a database</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ 	print_r($connection->listTables("blog"));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="describeIndexes">describeIndexes</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public describeIndexes ( $table, $schema = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Lists table indexes</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ print_r($connection->describeIndexes('robots_parts'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$table</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schema</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Db\Index[]</p>
+                
+                            <br/>
+                <h3 id="describeReferences">describeReferences</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public describeReferences ( $table, $schema = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Lists table references</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ print_r($connection->describeReferences('robots_parts'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$table</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schema</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Db\Reference[]</p>
+                
+                            <br/>
+                <h3 id="tableOptions">tableOptions</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public tableOptions ( $tableName, $schemaName = null )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets creation options from a table</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ print_r($connection->tableOptions('robots'));
+</pre>
+                    </div>
+
+                
+
+                
+                    <h4>Parameters:</h4>
+
+                    <ul>
+                                                    <li><span class="strong">$tableName</span> <a href="#">string</a></li>
+                                                    <li><span class="strong">$schemaName</span> <a href="#">string</a></li>
+                                            </ul>
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="getDefaultIdValue">getDefaultIdValue</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDefaultIdValue (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the default identity value to be inserted in an identity column</p>
+
+                
+                
+                    <div class="highlight">
+                        <pre>
+ //Inserting a new robot with a valid default value for the column 'id'
+ $success = $connection->insert(
+     "robots",
+     array($connection->getDefaultIdValue(), "Astro Boy", 1952),
+     array("id", "name", "year")
+ );
+</pre>
+                    </div>
+
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Db\RawValue</p>
+                
+                            <br/>
+                <h3 id="supportSequences">supportSequences</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public supportSequences (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check whether the database system requires a sequence to produce auto-numeric values</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="useExplicitIdValue">useExplicitIdValue</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public useExplicitIdValue (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Check whether the database system requires an explicit value for identity columns</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>boolean</p>
+                
+                            <br/>
+                <h3 id="getDescriptor">getDescriptor</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDescriptor (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Return descriptor used to connect to the active database</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="getConnectionId">getConnectionId</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getConnectionId (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Gets the active connection unique identifier</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getSQLStatement">getSQLStatement</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getSQLStatement (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Active SQL statement in the object</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getRealSQLStatement">getRealSQLStatement</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getRealSQLStatement (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Active SQL statement in the object without replace bound paramters</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getSQLVariables">getSQLVariables</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getSQLVariables (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Active SQL statement in the object</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="getSQLBindTypes">getSQLBindTypes</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getSQLBindTypes (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Active SQL statement in the object</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>array</p>
+                
+                            <br/>
+                <h3 id="getType">getType</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getType (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns type of database system the adapter is used for</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getDialectType">getDialectType</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDialectType (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns the name of the dialect used</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>string</p>
+                
+                            <br/>
+                <h3 id="getDialect">getDialect</h3>
+
+                <p>
+                <div class="highlight">
+                    <pre>public getDialect (  )</pre>
+                </div>
+                </p>
+
+                
+                    <p>Returns internal dialect instance</p>
+
+                
+                
+
+                
+                                    <h4>Returns:</h4>
+
+                    <p>\Phalcon\Db\DialectInterface</p>
+                
+            
+            </div>
+</div>
+
+
+<div class="size-wrap footer-wrap">
+
+    <table class="footer-links">
+        <tr>
+            <td>
+                <div class="footer-links-title">Main</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Download</a></li>
+                    <li><a href="#" class="link-black">Documentation</a></li>
+                    <li><a href="#" class="link-black">Blog</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Services</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Consulting</a></li>
+                    <li><a href="#" class="link-black">Hosting</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Support</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Forum/Community</a></li>
+                    <li><a href="#" class="link-black">Stack Overflow</a></li>
+                    <li><a href="#" class="link-black">Issue Tracker</a></li>
+                </ul>
+            </td>
+            <td>
+                <div class="footer-links-title">Get Involved</div>
+                <ul class="footer-links-list unstyled">
+                    <li><a href="#" class="link-black">Team</a></li>
+                    <li><a href="#" class="link-black">About</a></li>
+                    <li><a href="#" class="link-black">Roadmap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="donate-wrap">
+        Donate to Phalcon: <a href="#" class="button button-small orange">Flattr</a> or <a href="#" class="button button-small orange">via PayPal</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="social-link tw">Twitter</a>
+        <a href="#" class="social-link fb">Facebook</a>
+        <a href="#" class="social-link gp">Google Plus</a>
+        <a href="#" class="social-link vm">Vimeo</a>
+    </div>
+
+</div>
+
+
+</div>
+</body>
+</html>
