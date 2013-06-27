@@ -9,4 +9,9 @@
     <meta name="description" content="Phalcon is a web framework delivered as a C extension providing high performance and lower resource consumption"/>
     <meta name="author" content="Phalcon Team" />
 
+
+    <script type="text/javascript" src="http://yandex.st/jquery/2.0.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+
+
 </head>

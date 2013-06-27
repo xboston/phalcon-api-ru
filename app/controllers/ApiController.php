@@ -8,15 +8,22 @@ class ApiController extends ControllerBase
         $className = str_replace('/' , '\\' , $class);
         $className = 'Phalcon\\' . $className;
 
-        $claData = new classData;
+        $claData   = new classData;
         $classData = $claData->get($className);
-        /*
-        echo '<pre>';
-        print_r($classData);
-        die;
-*/
+
         $this->view->setVar('classData' , $classData);
+
+        $tree = PhalconClassInfo::tree();
+
+        $this->view->setVar('tree', $tree);
     }
 
+    public function treeAction()
+    {
+
+        $classes = PhalconClassInfo::get();
+
+        $this->view->setVar('classes' , $classes);
+    }
 }
 

@@ -1,0 +1,18 @@
+<div class="header-line">
+    <div class="size-wrap">
+        <div class="header-line-title title-white">Phalcon API</div>
+    </div>
+</div>
+
+
+<div class="size-wrap">
+    <ul>
+        <?php foreach ( $classes as $classe ): ?>
+            <li>
+                <?php echo $classe['name'] ?>
+                <?php echo $classe['extends'] ? 'extends ' . $classe['extends'] : '' ?>
+                <?php echo $classe['implements'] ? 'implements ' . implode(', ' , $classe['implements']) : '' ?>
+            </li>
+        <?php endforeach ?>
+    </ul>
+</div>

@@ -12,7 +12,11 @@ $router->add('/download' , [ 'controller' => 'download' ])->setName('download');
 $router->add('/documentation' , [ 'controller' => 'documentation' ])->setName('documentation');
 
 
+
+
 $router->add('/api/{slug:[a-zA-Z/]+}' , [ 'controller' => 'api','action'=>'show' ])->setName('api');
+
+$router->add('/api/tree' , [ 'controller' => 'api','action'=>'tree' ])->setName('tree');
 
 
 $router->add('/test' , [ 'controller' => 'pages','action'=>'index' ])->setName('test');
